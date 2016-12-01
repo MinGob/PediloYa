@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"><link rel="shortcut icon" href="http://www.buenosaires.gob.ar/sites/gcaba/files/faviconba.ico" type="image/vnd.microsoft.icon">
+<title>Pedido de diseño</title>
+<link href="bootstrap.css" rel="stylesheet" media="screen">
+    <link href="bootstrap-responsive.css" rel="stylesheet">
+	  <link href='fonts.css' rel='stylesheet' type='text/css'>
+       <link rel="stylesheet" href="pure-min.css">
+       <link rel="stylesheet" href="fonts.css">
+       <!-- Style The Contact Form How Ever You Prefer -->
+      
+      <link href="csspedidos de  diseño.css" rel="stylesheet">
+      <link href="buenosairescss.css" rel="stylesheet">
+</head>
+
+<body>
+   <div class="gcba-fixed-top">
+      <div class="header-gcba">
+          <div class="header-inner">
+            <div class="container">
+              <div id="logo">Buenos Aires Ciudad</div>
+              <h2 class="slogan">Vamos Buenos Aires</h2>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+ <div class="jumbotron jumbotron-main jumbotron-small area-header" style="background-image: url(http://www.buenosaires.gob.ar/sites/gcaba/files/gopr0208_0.jpg);margin-top: -20px;background-position: center;">
+    <!-- imprimo el breadcrumb, el título y la descripción sobre la imagen. -->
+    <div class="jumbotron-overlay">
+    	<div class="container">
+        	            
+          
+                    	<div class="area-title"><h1>Ministerio de Gobierno</h1>
+            <p class="lead">Fortaleciendo el ejercicio pleno de la autonomía hacia la construcción de una cultura de convivencia y gestión responsable, abierta e innovadora entre la Ciudad, la Nación, las Provincias y los Municipios.</p>
+            </div>
+          
+          
+        </div>
+    </div>
+</div>
+<div class="contenedor">
+<form class="ingreso">
+
+<p>Nombre de Usuario :
+
+  <input type="text" name="text2">
+
+</p>
+
+<p> Contraseña :
+
+<input type="password" name="text1">
+
+  <input class="btn btn-primary" type="button" value="Entrar" name="Submit" onclick=javascript:validate(text2.value,"boris",text1.value,"boris") >
+
+</p>
+
+ 
+
+</form>
+</div>
+ <footer class="footer">
+      <hr class="footer-ba">
+    </footer>
+<script language = "javascript">
+ 
+/*
+Script by Anubhav Misra (anubhav_misra@hotmail.com)
+Submitted to JavaScript Kit (http://javascriptkit.com)
+For this and 400+ free scripts, visit http://javascriptkit.com
+*/
+ 
+function validate(text1,text2,text3,text4)
+{
+ if (text1==text2 && text3==text4)
+ load('pedido de diseño2.html');
+ else
+ {
+  load('failure.htm');
+ }
+}
+function load(url)
+{
+ location.href=url;
+}
+</script>
+  <script src="jquery.js"></script>
+    <script src="bootstrap-min.js"></script>
+</body>
+</html>
