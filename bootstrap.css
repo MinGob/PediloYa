@@ -6869,7 +6869,7 @@ body {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
   filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffe200', endColorstr='#f0d400', GradientType=0);
-  box-shadow: 0 0 6px black;
+ 
 }
 
 .header-inner {
