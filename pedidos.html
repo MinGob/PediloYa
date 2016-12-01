@@ -72,6 +72,91 @@
            </h1>
        </aside>
 	  </div>
+	  
+	  <div class="contenedor">
+      <form id="gform" method="POST" class="pure-form pure-form-stacked"
+      action="https://script.google.com/macros/s/AKfycbxg7WBdothT5asnX9sigKQCemeYyiJu6313zfZTWhyWWbfj8r0n/exec">
+        <!-- change the form action to your script url -->
+    
+        <fieldset class="pure-group">
+          <label for="name">Tu nombre:</label>
+          <input id="name" name="Nombre" placeholder="Ej: Juan Gonzales" />
+        </fieldset> 
+        
+        <fieldset class="pure-group">
+          <label for="area">&Aacute;rea: </label>
+          <input id="area" name="area" placeholder="SS - DG - UP" />
+        </fieldset>
+        
+         <fieldset class="pure-group">
+          <label for="programa">Programa (si aplica): </label>
+          <input id="programa" name="programa" placeholder="Ej: ConociendoBA" />
+        </fieldset>
+    
+       <fieldset class="pure-group">
+          <label for="email">Correo Electr&oacute;nico</label>
+          <input id="email" name="email" type="email" value=""
+          required placeholder="tu.nombre@email.com"/>
+          <span id="email-invalid" style="visibility:hidden">
+            Must be a valid email address</span>
+        </fieldset>
+   
+    <fieldset class="form-group">
+    <legend>Tipo de Pieza</legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital" checked="">
+        Pieza Digital
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="Tipo de pieza" id="optionsRadios2" value="Pieza Impresa">
+        Pieza Impresa
+      </label>
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="Tipo de pieza" id="optionsRadios2" value="Ambas">
+        Ambas
+      </label>
+    </div>
+    
+    
+  </fieldset>
+       <fieldset class="pure-group">
+          <label for="message">Especificaciones: </label>
+          <textarea id="message" name="Especificaciones" rows="3"
+          placeholder="DIGITALES: Pieza para facebook, Mailing, Firma para mail, etc...
+IMPRESOS: Folleto doble faz, Libro, etc..."></textarea>
+        </fieldset>
+
+<fieldset class="pure-group">
+          <label for="message">Texto para la pieza: </label>
+          <textarea id="message" name="Texto para la pieza" rows="5"
+          placeholder="Texto a situarse dentro de la pieza"></textarea>
+        </fieldset>
+        
+     <fieldset class="pure-group">
+          <label for="name">Para enviarnos imagenes o documentos subilos a GoogleDrive/DropBox y pega el enalce acá:</label>
+          <input id="name" name="Enlace a imagenes" placeholder="https://drive.google.com/file/etc.jpg" />
+</fieldset>
+   
+            <fieldset class="pure-group">
+          <label for="message">Observaciones: </label>
+          <textarea id="message" name="observaciones" rows="5" placeholder=""></textarea>
+        </fieldset>
+    
+        <button class="btn button-xlarge btn-primary" style="margin-bottom: 35px;">
+          <i class="fa fa-paper-plane"></i>&nbsp;Env&iacute;ar</button>
+    
+      </form>
+    
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div style="display:none;" id="thankyou_message">
+        <h2><b>Gracias</b> por tu pedido!
+          Nos comunicaremos por email a la brevedad</h2>
+      </div>
+</div>
+	  
     <!-- aca termina el primer formulario -->
     
      <!-- aca va el segundo formulario -->
