@@ -2,9 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>PediloYa</title>
-	<link rel="shortcut icon" href="bastrap3/https://gcba.github.io/BAstrap7/bastrap3/bac-header.png">
-	<link rel="apple-touch-icon-precomposed" href="https://gcba.github.io/BAstrap7/bastrap3/favicon-mobile.png">
+<title>Documento sin título</title>
  <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bastrap.css">
     <link rel="stylesheet" href="css/docs.css">
@@ -59,18 +57,17 @@ html {
       <div class="contenedor">
 <form class="ingreso col-md-12">
 
-<p class="col-md-12">Nombre de Usuario :
+<p class="col-md-12">Nombre de Usuario:
 
-  <input class="col-md-12 form-control" type="text" name="text2">
+  <input class="col-md-12" type="text" name="text2">
 
 </p>
 
-<p class="col-md-12"> Contraseña :
+<p class="col-md-12"> Contraseña:
 
-<input class="col-md-12 form-control" type="password" name="text1">
+<input class="col-md-12" type="password" name="text1">
 
-  <input class="btn btn-primary" type="button" value="Entrar" name="Submit" onclick="javascript:validate(text2.value,&quot;boris&quot;,text1.value,&quot;boris&quot;)">
-
+ <input class="btn btn-primary btn-ingreso" type="button" value="Check In" name="Submit" onclick=javascript:validate(text2.value,"boris",text1.value,"boris") >
 </p>
 
  
@@ -87,7 +84,7 @@ html {
             </div>
             <div class="col-md-6 col-sm-6">
               <div class="sub-brand">
-                <p>Comunicación Interna<br />
+                <p>Comunicación Institucional<br />
                 <span class="text-muted">Ministerio de Gobierno</span></p>
               </div>
             </div>
@@ -95,7 +92,35 @@ html {
         </div>
       </div>
     </footer>
+<script language="javascript">
+function validate(text1,text2,text3,text4)
 
+{
+
+ if (text1==text2 && text3==text4)
+
+ load('PediloYa.html');
+
+ else
+
+ {
+
+  load('failure.htm');
+
+ }
+
+}
+
+function load(url)
+
+{
+
+ location.href=url;
+
+}
+
+</script>
+</script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/docs.js"></script>
