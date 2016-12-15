@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bastrap.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/csspedidos_de _diseño.css">
+    <link rel="stylesheet" href="css/fonts.css">
+      <script src="https://use.fontawesome.com/e379886307.js"></script>
+     <link href="https://use.fontawesome.com/73b0b97073.css" media="all" rel="stylesheet">
+<style>
+html {
+	background-color:#fff;
+}
+</style>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="navbar navbar-primary navbar-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <a class="navbar-brand bac-header" href="index.html" data-original-title="" title=""></a>
+            </div>
+            <div class="col-md-6 col-sm-6 text-right oculto">
+              <h5 class="sub-brand"><img src="https://gcba.github.io/BAstrap7/bastrap3/bac-header-2.png"></h5>
+              <!--<h5 class="sub-brand">Vamos Buenos Aires</h5>-->
+           </div>
+          </div>
+        </div>
+      </header>
+      <!-- portada -->
+      <div class="jumbotron jumbotron-small jumbotron-misc jumbotron-main">
+      <nav class="navbar navbar-default yellownav" role="navigation">
+        <div class="container">
+          <div class="row">
+           <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Cambiar navegación</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" data-toggle="tab" href="#home" data-original-title="" title="">Inicio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-nav">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a data-toggle="tab" href="#menu6" data-original-title="" title="">Cómo hacer un pedido</a></li>
+                <li><a data-toggle="tab" href="#menu7" data-original-title="" title="">Material Útil</a></li>
+              <!--  <li><a data-toggle="tab" href="#menu8">Noticias Web</a></li>-->
+                <!-- <li class="disabled"><a href="#">Lineamientos</a></li> -->
+                <li><a data-toggle="tab" href="#menu5" data-original-title="" title="">Contacto</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+        <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Ministerio de Gobierno</h1>
+        <p class="lead">Fortaleciendo el ejercicio pleno de la autonomía hacia la construcción de una cultura de convivencia y gestión responsable, abierta e innovadora entre la Ciudad, la Nación, las Provincias y los Municipios.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- aca va el formulario de noticia web-->
+     <div id="menu3" class="tab-pane ">
+      <aside>
+           <h1>
+               ¿Quéres publicar una <b>noticia en la Web</b>? </h1>
+               <h1>¡Pedila!
+           </h1>
+      </aside>
+      <form id="gform" method="POST" class="pure-form pure-form-stacked container" action="https://script.google.com/macros/s/AKfycbwA5o49OOE_ssi5eamABj3e7kqUTON4A6uKmC4rEBArOPi4zSCm/exec">
+    
+        <!-- change the form action to your script url -->
+    
+        <fieldset class="pure-group">
+          <label for="name">Tu nombre: </label>
+          <input class="form-control" id="nombre" name="Nombre" placeholder="Ej: Juan Vecinos">
+          
+        </fieldset> 
+        
+        <fieldset class="pure-group">
+          <label for="area">Área: </label>
+          <input class="form-control" id="area" name="area" placeholder="SS - DG - UPE">
+        </fieldset>
+         
+       <fieldset class="pure-group">
+          <label for="email">Correo Electrónico</label>
+          <input class="form-control" id="email" name="email" type="email" value="" required placeholder="tu.nombre@email.com">
+          <span id="email-invalid" style="visibility:hidden">
+            Tiene que ser un email valido</span>
+        </fieldset>
+        
+        <div style="display:inline"> <a class="btn btn-primary" id="7" data-toggle="modal" data-target="#myModal-7" data-original-title="" title="">Ejemplo de Noticia Web</a>
+ <div id="myModal-7" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
+                <img class="img-responsive" src="imagenes/Ej de noticia.png">
+            </div>
+                    </div>
+    </div></div></div>
+
+ <fieldset class="pure-group">
+      <label for="titulo">Titulo: </label>
+      <input class="form-control" id="titulo" name="titulo" placeholder="Máximo 70 caracteres. No uses signos de admiración, interrogación ni puntuación. No escribas el título todo en mayúsculas." onkeyup="countChar(this)">
+          <div id="charNum"></div>
+      <script>
+      function countChar(val) {
+        var len = val.value.length;
+        if (len >= 70) {
+          val.value = val.value.substring(0, 70);
+        } else {
+          $('#charNum').text(70 - len);
+        }
+      };
+    </script>
+        </fieldset>
+
+<fieldset class="pure-group">
+          <label for="texto">Resumen: </label>
+      <textarea class="form-control" id="Resumen" name="Resumen" rows="5" placeholder="Máximo 150 caracteres. 
+Son obligatorios y su contenido indexa en las búsquedas de Google. Son complemento del título, explican de manera atractiva y concisa el objetivo del contenido.
+No deben repetir información, conceptos o palabras ya usados en el título." onkeyup="countChar2(this)"></textarea>
+<div id="charNum2"></div>
+      <script>
+      function countChar2(val) {
+        var len = val.value.length;
+        if (len >= 150) {
+          val.value = val.value.substring(0, 150);
+        } else {
+          $('#charNum2').text(150 - len);
+        }
+      };
+    </script>
+        </fieldset>
+        
+        <fieldset class="pure-group">
+          <label for="cuerpo">Texto para el cuerpo: </label>
+          <textarea class="form-control" id="cuerpo" name="cuerpo" rows="8" placeholder=""></textarea>
+        </fieldset>
+        
+	       <fieldset class="pure-group">
+          <label for="Fecha">Fecha de publicación: </label>
+          <input class="form-control" id="Fecha" name="Fecha" placeholder="Ej: 18/11/2016 puede contener horario si en necesario">
+          
+        </fieldset> 
+     <fieldset class="pure-group">
+           <label for="name">Para enviarnos imagenes o videos subilos a GoogleDrive/DropBox y pega el enalce acá:</label>  <label for="name">Las imagenes deberán tener un tamaño minimo de: 960 X 640px</label>
+          <input class="form-control" id="enlace" name="Enlace_a_imagenes" placeholder="https://drive.google.com/file/etc.jpg">
+      
+</fieldset>
+   
+            <fieldset class="pure-group">
+          <label for="observaciones">Observaciones: </label>
+          <textarea class="form-control" id="observaciones" name="observaciones" rows="5" placeholder=""></textarea>
+        </fieldset>
+
+        <button class="btn button-xlarge btn-primary btnenviar" style="margin-bottom: 35px;">
+          <i class="fa fa-paper-plane"></i>&nbsp;Envíar</button>
+    
+      </form>
+    
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div style="display:none;" id="thankyou_message">
+        <h2><b>Gracias</b> por tu pedido!
+          Nos comunicaremos por email a la brevedad</h2>
+      </div>
+      
+	  </div>
+
+    
+<!-- footer -->
+<footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <a class="navbar-brand bac-footer" href="http://www.buenosaires.gob.ar/gobierno" target="_blank" data-original-title="" title=""></a>
+            </div>
+            <div class="col-md-6 col-sm-6">
+            <div style="text-align:right;">
+            <div class="sub-brand">
+                <p>Comunicación Interna<br>
+                <span class="text-muted">Ministerio de Gobierno</span></p>
+              </div>
+           <a href="#" data-original-title="" title=""><i class="fa fa-facebook-official fa-3x margin-left-md redes"></i></a>
+            <a href="#" data-original-title="" title=""><i class="fa fa-twitter-square fa-3x margin-left-md redes"></i></a>
+            <a href="#" data-original-title="" title=""><i class="fa fa-youtube-square fa-3x margin-left-md redes"></i></a>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/docs.js"></script>
+</body>
+</html>
