@@ -1,0 +1,606 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bastrap.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/csspedidos_de _diseño.css">
+    <link rel="stylesheet" href="css/fonts.css">
+      <script src="https://use.fontawesome.com/e379886307.js"></script>
+     <link href="https://use.fontawesome.com/73b0b97073.css" media="all" rel="stylesheet">
+<style>
+html {
+	background-color:#fff;
+}
+</style>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="navbar navbar-primary navbar-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <a class="navbar-brand bac-header" href="index.html" data-original-title="" title=""></a>
+            </div>
+            <div class="col-md-6 col-sm-6 text-right oculto">
+              <h5 class="sub-brand"><img src="https://gcba.github.io/BAstrap7/bastrap3/bac-header-2.png"></h5>
+              <!--<h5 class="sub-brand">Vamos Buenos Aires</h5>-->
+           </div>
+          </div>
+        </div>
+      </header>
+      <!-- portada -->
+      <div class="jumbotron jumbotron-small jumbotron-misc jumbotron-main">
+      <nav class="navbar navbar-default yellownav" role="navigation">
+        <div class="container">
+          <div class="row">
+           <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Cambiar navegación</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" data-toggle="tab" href="#home" data-original-title="" title="">Inicio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-nav">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a data-toggle="tab" href="#menu6" data-original-title="" title="">Cómo hacer un pedido</a></li>
+                <li><a data-toggle="tab" href="#menu7" data-original-title="" title="">Material Útil</a></li>
+              <!--  <li><a data-toggle="tab" href="#menu8">Noticias Web</a></li>-->
+                <!-- <li class="disabled"><a href="#">Lineamientos</a></li> -->
+                <li><a data-toggle="tab" href="#menu5" data-original-title="" title="">Contacto</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+        <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Ministerio de Gobierno</h1>
+        <p class="lead">Fortaleciendo el ejercicio pleno de la autonomía hacia la construcción de una cultura de convivencia y gestión responsable, abierta e innovadora entre la Ciudad, la Nación, las Provincias y los Municipios.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Formulario diseño -->
+ <div id="menu1" class="tab-pane  ">
+       <aside>
+           <h1>
+               ¿Tenés un pedido de <b>diseño</b>? </h1>
+               <h1>¡Inicialo!
+           </h1>
+       </aside>
+<div class="container">
+<ul class="nav nav-tabs nav-justified">
+    <li class="active"><a data-toggle="pill" href="#diseno1">Folletos</a></li>
+    <li class=""><a data-toggle="pill" href="#diseno2">Merchandising</a></li>
+ </ul>
+  
+  <div class="tab-content">
+      <div id="diseno1" class="tab-pane active in">
+     
+      <!-- diseño -->
+            <form id="gform" method="POST" class="pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbycUqbgc9uyZAaxztMs97QdspfyYeynw0XQEYMjmfF4KYFQnwX_/exec">
+        <!-- change the form action to your script url -->
+    
+        <fieldset class="pure-group">
+          <label for="name">Tu nombre:</label>
+          <input class="form-control" id="name" name="Nombre" placeholder="Ej: Juan Vecinos">
+        </fieldset> 
+        
+        <fieldset class="pure-group">
+          <label for="area">Área: </label>
+          <input class="form-control" id="area" name="area" placeholder="SS - DG - UPE">
+        </fieldset>
+        
+         <fieldset class="pure-group">
+          <label for="programa">Programa (si aplica): </label>
+          <input class="form-control" id="programa" name="programa" placeholder="Ej: ConociendoBA">
+        </fieldset>
+    
+       <fieldset class="pure-group">
+          <label for="email">Correo Electrónico</label>
+          <input class="form-control" id="email" name="email" type="email" value="" required placeholder="tu.nombre@email.com">
+          <span id="email-invalid" style="visibility:hidden">
+            Tiene que ser un email valido</span>
+        </fieldset>
+   
+    <fieldset class="form-group">
+    <legend>Tipo de Pieza</legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Pieza Digital
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Tipo de pieza" id="optionsRadios2" value="Pieza Impresa"> 
+    Pieza Impresa</label></div>
+      <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="Tipo de pieza" id="optionsRadios3" value="Ambas">
+        Ambas
+      </label>
+    </div>
+  </fieldset>
+<!-- ejemplos de flyers --><h3 style="text-align:center">Ejemplos de Piezas Digitales</h3>
+<div class="col-md-3"> <a class="btn btn-primary col-md-12" id="1" data-toggle="modal" data-target="#myModal-1">Mailing HTML</a>
+ <div id="myModal-1" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+            	<div class="close" data-dismiss="modal">X
+            	</div>
+                <img class="img-responsive" src="imagenes/ejdemailingHTML.png">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div  class="col-md-3"> <a class="btn btn-primary col-md-12" id="2" data-toggle="modal" data-target="#myModal-2">Mailing Imagen</a>
+ <div id="myModal-2" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
+                <img class="img-responsive" src="imagenes/ejdemailingIMAGEN.png">
+            </div>
+                    </div>
+    </div></div></div>
+    <div  class="col-md-3"> <a class="btn btn-primary col-md-12" id="3" data-toggle="modal" data-target="#myModal-3">Flyer para publicación</a>
+ <div id="myModal-3" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
+                <img class="img-responsive" src="imagenes/flyer_digital.png">
+            </div>
+                    </div>
+    </div></div></div>
+     <div  class="col-md-3"> <a class="btn btn-primary col-md-12" id="3" data-toggle="modal" data-target="#myModal-4">Frima para mail</a>
+ <div id="myModal-4" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
+                <img class="img-responsive" src="imagenes/ejfirmamail.png">
+            </div>
+                    </div>
+    </div></div></div>
+    <h3 style="text-align:center; padding-top:50px;">Ejemplos de Piezas Impresas</h3>
+    <div class="col-md-3"> <a class="btn btn-primary col-md-12" id="4" data-toggle="modal" data-target="#myModal-5">Flyer doble faz</a>
+ <div id="myModal-5" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
+                <img class="img-responsive" src="imagenes/folleto_doblefaz.png">
+            </div>
+                    </div>
+    </div></div></div>
+    <div class="col-md-3"> <a class="btn btn-primary col-md-12" id="5" data-toggle="modal" data-target="#myModal-6">Flyer Díptico</a>
+ <div id="myModal-6" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
+                <img class="img-responsive" src="imagenes/flyer_diptico.gif">
+            </div>
+                    </div>
+    </div></div></div>
+    
+      <div class="col-md-3"> <a class="btn btn-primary col-md-12" id="6" data-toggle="modal" data-target="#myModal-7">Flyer Tríptico</a>
+ <div id="myModal-7" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
+                <img class="img-responsive" src="imagenes/flyer_triptico.gif">
+            </div>
+                    </div>
+    </div></div></div>
+     <div class="col-md-3"> <a class="btn btn-primary col-md-12" id="4" data-toggle="modal" data-target="#myModal-8">Diploma</a>
+ <div id="myModal-8" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
+                <img class="img-responsive" src="imagenes/ej-diploma.png">
+            </div>
+                    </div>
+    </div></div></div>
+
+       <fieldset class="pure-group">
+          <label for="message">Especificaciones: </label>
+          <textarea class="form-control" id="message" name="Especificaciones" rows="3" placeholder="DIGITALES: Pieza para facebook, Mailing, Firma para mail, etc...
+IMPRESOS: Flyer doble faz, Libro, etc..."></textarea>
+        </fieldset>
+
+<fieldset class="pure-group">
+          <label for="message">Texto para la pieza: </label>
+          <textarea class="form-control" id="message" name="Texto para la pieza" rows="5" placeholder="Texto a situarse dentro de la pieza"></textarea>
+        </fieldset>
+        
+                
+        
+     <fieldset class="pure-group">
+          <label for="name">Para enviarnos imagenes o documentos subilos a GoogleDrive/DropBox y pega el enalce acá:</label>  <p>Las imagenes deberán tener un tamaño minimo de: --- X ---px</p>
+          <input class="form-control" id="name" name="Enlace a imagenes" placeholder="https://drive.google.com/file/etc.jpg">
+</fieldset>
+   
+            <fieldset class="pure-group">
+          <label for="message">Observaciones: </label>
+          <textarea class="form-control" id="message" name="observaciones" rows="4" placeholder=""></textarea>
+        </fieldset>
+    
+        <button class="btn button-xlarge btn-primary btnenviar" style="margin-bottom: 35px;">
+          <i class="fa fa-paper-plane"></i>&nbsp;Envíar</button>
+    
+      </form>
+   
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div style="display:none;" id="thankyou_message">
+        <h2><b>Gracias</b> por tu pedido!
+          Nos comunicaremos por email a la brevedad</h2>
+      </div>
+
+    </div>
+    
+    <div id="diseno2" class="tab-pane fade">
+      
+      <!-- merchandising -->
+     <form id="gform" method="POST" class="pure-form pure-form-stacked" action="">
+        <!-- change the form action to your script url -->
+    
+        <fieldset class="pure-group">
+          <label for="name">Tu nombre:</label>
+          <input class="form-control" id="name" name="Nombre" placeholder="Ej: Juan Vecinos">
+        </fieldset> 
+        
+        <fieldset class="pure-group">
+          <label for="area">Área: </label>
+          <input class="form-control" id="area" name="area" placeholder="SS - DG - UPE">
+        </fieldset>
+        
+         <fieldset class="pure-group">
+          <label for="programa">Programa (si aplica): </label>
+          <input class="form-control" id="programa" name="programa" placeholder="Ej: ConociendoBA">
+        </fieldset>
+    
+       <fieldset class="pure-group">
+          <label for="email">Correo Electrónico</label>
+          <input class="form-control" id="email" name="email" type="email" value="" required placeholder="tu.nombre@email.com">
+          <span id="email-invalid" style="visibility:hidden">
+            Tiene que ser un email valido</span>
+        </fieldset>
+        <fieldset>
+        <div class="col-md-12">
+         <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_banner.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Banner Rollup 80x200cm
+      </label>
+      </div>
+    </div>
+  </div>
+        <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_agenda.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Agenda A5
+      </label>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_lapicera.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Birome
+      </label>
+      </div>
+    </div>
+  </div>  
+    <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/Bolsa thumbs.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Bolsa ecologica institucional
+      </label>
+      </div>
+    </div>
+  </div>  </div>
+          <div class="col-md-12">
+ <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_botella.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Botella plástica
+
+      </label>
+      </div>
+    </div>
+  </div>  
+        <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_calco.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Calco
+      </label>
+      </div>
+    </div>
+  </div>
+          
+    <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_cinta_tarjeta.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Cinta para llave o precinto
+      </label>
+      </div>
+    </div>
+  </div>  
+    <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_llavero.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Llavero
+      </label>
+      </div>
+    </div>
+  </div>  </div>  
+        <div class="col-md-12"> 
+          <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_paraguas.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Paraguas
+      </label>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_pendrivetarjeta.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Pendrive tarjeta 
+      </label>
+      </div>
+    </div>
+  </div>  
+    <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_paraguas-sombrilla.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Sombrilla
+      </label>
+      </div>
+    </div>
+  </div>  
+ <div class="col-sm-6 col-md-3">
+    <div class="thumbnail"><img src="imagenes/thumbs_remera.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Remera
+      </label>
+      </div>
+    </div>
+  </div>  </div>
+          <div class="col-md-12">
+      <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_campera.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Campera 
+      </label>
+      </div>
+    </div>
+  </div>  
+ <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_gorra.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Gorra
+      </label>
+      </div>
+    </div>
+  </div>  
+          <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_sobre.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Sobres Institucional
+      </label>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_carpeta.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Carpetas Institucional
+      </label>
+      </div>
+    </div>
+  </div>  </div>
+          <div class="col-md-12">
+    <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_sticker.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Stickers
+      </label>
+      </div>
+    </div>
+  </div>  
+ <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_anotador.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Anotador
+      </label>
+      </div>
+    </div>
+  </div> 
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_mate.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Mate
+      </label>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_mochila.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Mochila
+      </label>
+      </div>
+    </div>
+  </div>
+  </div> 
+  <div class="col-md-12">
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_backdeprensa.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Back de Prensa
+      </label>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_credencial.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Credencial
+      </label>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_pin.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Pin
+      </label>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="imagenes/thumbs_senaladormagnetico.png" alt="...">
+      <div class="caption">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="Tipo de pieza" id="optionsRadios1" value="Pieza Digital">
+        Señalador Magnético
+      </label>
+      </div>
+    </div>
+  </div>
+  </div>
+   <fieldset class="pure-group">
+          <label for="message">Otros: </label>
+          <textarea class="form-control" id="message" name="Otros" rows="2" placeholder=""></textarea>
+        </fieldset>
+  </fieldset> 
+  <div class="col-md-12 pull-left"> 
+   <button class="btn button-xlarge btn-primary btnenviar" style="margin-bottom: 35px;">
+          <i class="fa fa-paper-plane"></i>&nbsp;Envíar</button>
+    </div></form>
+     
+   
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div style="display:none;" id="thankyou_message">
+        <h2><b>Gracias</b> por tu pedido!
+          Nos comunicaremos por email a la brevedad</h2>
+      </div>
+</div></div></div>
+</div>
+
+    
+<!-- footer -->
+<footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <a class="navbar-brand bac-footer" href="http://www.buenosaires.gob.ar/gobierno" target="_blank" data-original-title="" title=""></a>
+            </div>
+            <div class="col-md-6 col-sm-6">
+            <div style="text-align:right;">
+            <div class="sub-brand">
+                <p>Comunicación Interna<br>
+                <span class="text-muted">Ministerio de Gobierno</span></p>
+              </div>
+           <a href="#" data-original-title="" title=""><i class="fa fa-facebook-official fa-3x margin-left-md redes"></i></a>
+            <a href="#" data-original-title="" title=""><i class="fa fa-twitter-square fa-3x margin-left-md redes"></i></a>
+            <a href="#" data-original-title="" title=""><i class="fa fa-youtube-square fa-3x margin-left-md redes"></i></a>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<script src="js/form-submission-handler.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/docs.js"></script>
+</body>
+</html>
