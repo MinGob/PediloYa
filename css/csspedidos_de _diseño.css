@@ -138,7 +138,7 @@ margin: 0 auto;
 .gracias {
 padding: 35px 0px 35px 0px;	
 }
- @media only screen and (max-device-width:480px){
+  @media only screen and (max-device-width:480px){
        /* styles for mobile browsers smaller than 480px; (iPhone) */
 p {
 	font-size:25px;	
@@ -166,4 +166,13 @@ a {
 .navbar-brand {
 	font-size:25px;
  }
+legend {
+	font-size:35px;	
+}
+.form-check {
+	font-size:30px;
+}
+.check-responsive {
+	font-size: 25px;	
+}
  }
