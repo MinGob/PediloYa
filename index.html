@@ -73,7 +73,28 @@ html {
   <td align=right><input type="button" value="Entrar" onClick="Login(this.form);" style="background:#bfbfbf;color:#000000;border-color:#212121;" onMouseOver="this.style.color = '#404040';" onMouseOut="this.style.color = '#000000';" onFocusr="this.style.color = '#404040';" onBlur="this.style.color = '#000000';"><a href="https://mingob.github.io/PediloYa/olvidelacontrase%C3%B1a.html"><p style="text-align:right">Olvidé la contraseña</p></a></td>
   </tr>
 </table>
-</form>
+</form><script>
+$('[type=password]').keypress(function(e) {
+  var $password = $(this),
+      tooltipVisible = $('.tooltip').is(':visible'),
+      s = String.fromCharCode(e.which);
+  
+  //Check if capslock is on. No easy way to test for this
+  //Tests if letter is upper case and the shift key is NOT pressed.
+  if ( s.toUpperCase() === s && s.toLowerCase() !== s && !e.shiftKey ) {
+    if (!tooltipVisible)
+    	$password.tooltip('show');
+  } else {
+    if (tooltipVisible)
+    	$password.tooltip('hide');
+  }
+  
+  //Hide the tooltip when moving away from the password field
+  $password.blur(function(e) {
+    $password.tooltip('hide');
+  });
+});	
+	</script>
 	      <script>
 function Login(form) {
 username = new Array("Admin","admin","MGOBGC","SSGOBIER","SSRPYAL","SSAIYPM","DGTALGOB","DGRC","DGRPM","DGRPOLYE","DGSOCAI","DGALE","DGAIYTC","DGPCYCCIU","CUMAR","UPEPBA","CEAMSE","MC","CAPM");
@@ -114,28 +135,7 @@ return true;
       </div>
     </footer>
 
-<script>
-$('[type=password]').keypress(function(e) {
-  var $password = $(this),
-      tooltipVisible = $('.tooltip').is(':visible'),
-      s = String.fromCharCode(e.which);
-  
-  //Check if capslock is on. No easy way to test for this
-  //Tests if letter is upper case and the shift key is NOT pressed.
-  if ( s.toUpperCase() === s && s.toLowerCase() !== s && !e.shiftKey ) {
-    if (!tooltipVisible)
-    	$password.tooltip('show');
-  } else {
-    if (tooltipVisible)
-    	$password.tooltip('hide');
-  }
-  
-  //Hide the tooltip when moving away from the password field
-  $password.blur(function(e) {
-    $password.tooltip('hide');
-  });
-});	
-	</script>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/docs.js"></script>
