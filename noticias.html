@@ -155,14 +155,15 @@ No deben repetir información, conceptos o palabras ya usados en el título." on
         <fieldset class="pure-group">
           <label for="cuerpo">Texto para el cuerpo: </label>
           <textarea placeholder="El texto deberá tener un mínimo de 650 caracteres y un máximo de 1500" class="form-control textarea1" id="cuerpo" name="entry.532843725" rows="8"></textarea>
-       	   <script>
+       	   <span id="chars">1500</span> 
+		<script>
   var maxLength = 1500;
-$('textarea1').keyup(function() {
+$('.textarea1').keyup(function() {
   var length = $(this).val().length;
   var length = maxLength-length;
   $('#chars').text(length);
 });</script>
-  <span id="chars">1500</span> 
+ 
 
 	      
 	      </fieldset>
