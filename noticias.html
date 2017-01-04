@@ -153,14 +153,14 @@ No deben repetir información, conceptos o palabras ya usados en el título." on
         
         <fieldset class="pure-group">
           <label for="cuerpo">Texto para el cuerpo: </label>
-          <textarea onkeyup="countChar3(this)" placeholder="El texto deberá tener un mínimo de 650 caracteres y un máximo de 1500" class="form-control" id="cuerpo" name="entry.532843725" rows="8" placeholder=""></textarea>
+          <textarea onkeyup="countChar3(this)" placeholder="El texto deberá tener un mínimo de 650 caracteres y un máximo de 1500" class="form-control" id="cuerpo" name="entry.532843725" rows="8"></textarea>
         <script>
       function countChar3(val) {
         var len = val.value.length;
-        if (len >= 1500) {
-          val.value = val.value.substring(0, 1500);
+        if (len >= 150) {
+          val.value = val.value.substring(0, 150);
         } else {
-          $('#charNum3').text(1500 - len);
+          $('#charNum3').text(150 - len);
         }
       };
     </script>
