@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/fonts.css">
       <script src="https://use.fontawesome.com/e379886307.js"></script>
      <link href="https://use.fontawesome.com/73b0b97073.css" media="all" rel="stylesheet">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <style>
 html {
 	background-color:#fff;
@@ -153,8 +154,18 @@ No deben repetir información, conceptos o palabras ya usados en el título." on
         
         <fieldset class="pure-group">
           <label for="cuerpo">Texto para el cuerpo: </label>
-          <textarea placeholder="El texto deberá tener un mínimo de 650 caracteres y un máximo de 1500" class="form-control" id="cuerpo" name="entry.532843725" rows="8"></textarea>
-       	      </fieldset>
+          <textarea placeholder="El texto deberá tener un mínimo de 650 caracteres y un máximo de 1500" class="form-control textarea1" id="cuerpo" name="entry.532843725" rows="8"></textarea>
+       	   <script>
+  var maxLength = 1500;
+$('textarea1').keyup(function() {
+  var length = $(this).val().length;
+  var length = maxLength-length;
+  $('#chars').text(length);
+});</script>
+  <span id="chars">1500</span> 
+
+	      
+	      </fieldset>
         
 	       <fieldset class="pure-group">
           <label for="Fecha">Fecha de publicación: </label>
