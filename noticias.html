@@ -153,7 +153,7 @@ No deben repetir información, conceptos o palabras ya usados en el título." on
         
         <fieldset class="pure-group">
           <label for="cuerpo">Texto para el cuerpo: </label>
-          <textarea pattern=".{650,1500}" required title="650 to 1500 characters" oninvalid="this.setCustomValidity('El texto es demasiado largo o corto')" class="form-control" id="cuerpo" name="entry.532843725" rows="8" placeholder=""></textarea>
+          <textarea minlength:650 maxlength:1500 class="form-control" id="cuerpo" name="entry.532843725" rows="8" placeholder=""></textarea>
         </fieldset>
         
 	       <fieldset class="pure-group">
