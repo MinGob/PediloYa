@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/bootstrap-responsive.css">
     <link rel="stylesheet" href="css/csspedidos_de _diseño.css">
     <link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<script href="js/jquery-1.12.4.js"></script>
+	<script href="js/jquery-ui.js"> </script>
       <script src="https://use.fontawesome.com/e379886307.js"></script><link href="https://use.fontawesome.com/e379886307.css" media="all" rel="stylesheet">
      <link href="https://use.fontawesome.com/73b0b97073.css" media="all" rel="stylesheet">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -154,7 +157,13 @@ $(document).ready(function(){
   </fieldset>
    <fieldset class="pure-group">
 		<label for="fecha">Fecha de Entrega del Original: </label>
-            <input name="entry.1669131330" type="text" class="form-control" placeholder="dd/mm/yyyy">
+	   
+            <input  id="datepicker" name="entry.1669131330" type="text" class="form-control" placeholder="dd/mm/yyyy">
+	   <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
       </fieldset> 
 <!-- ejemplos de flyers --><h3 style="text-align:center">Ejemplos de Piezas Digitales</h3>
 <div class="col-md-3 col-sm-12 col-xs-12"> <a class="btn btn-primary col-md-12 col-sm-12 col-xs-12" id="1" data-toggle="modal" data-target="#myModal-1" data-original-title="" title="">Mailing HTML</a>
