@@ -34,6 +34,38 @@ $(document).ready(function(){
     });
 });
 </script>
+<script>
+$(document).ready(function(){
+    $(".heatcalendar").click(function(){
+        $(".heat").toggle();
+        $(".heatcalendar").toggle();
+        $(".calendar").toggle();
+    });
+});
+$(document).ready(function(){
+    $(".calendar").click(function(){ 
+        $(".heat").toggle();
+        $(".heatcalendar").toggle();
+        $(".calendar").toggle();
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $(".heatcalendar2").click(function(){
+        $(".heat2").toggle();
+        $(".heatcalendar2").toggle();
+        $(".calendar2").toggle();
+    });
+});
+$(document).ready(function(){
+    $(".calendar2").click(function(){ 
+        $(".heat2").toggle();
+        $(".heatcalendar2").toggle();
+        $(".calendar2").toggle();
+    });
+});
+</script>
 	 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -156,9 +188,914 @@ $(document).ready(function(){
       </label>
     </div>
   </fieldset>
+  <a class="btn btn-primary heatcalendar">Disponibilidad de Diseño</a>
+
+<div style="display:none" class="heat">
+<a class="btn btn-primary calendar" style="display:none;">Esconder</a>
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-wrap="false" data-ride="carousel" data-interval="false">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+     
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner"  role="listbox">
+    
+      <div style="text-align:center" class="item active">
+      <div class="container">
+      <h3>2016</h3>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+    	    <table style="text-align:center;" class="table-condensed table-bordered">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Enero
+                      </th>
+                    </tr>
+                    <tr >
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td class="alert alert-success">16</td>
+                        <td class="alert alert-success">17</td>
+                        <td class="alert alert-success">18</td>
+                        <td class="alert alert-success">19</td>
+                        <td class="alert alert-success">20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>22</td>
+                        <td class="alert alert-success">23</td>
+                        <td class="alert alert-success">24</td>
+                        <td class="alert alert-success">25</td>
+                        <td class="alert alert-success">26</td>
+                        <td class="alert alert-success">27</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td class="alert alert-success">30</td>
+                        <td class="alert alert-success">31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Febrero
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td class="alert alert-success">2</td>
+                        <td class="alert alert-success">3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td class="alert alert-success">8</td>
+                        <td class="alert alert-success">9</td>
+                        <td class="alert alert-success">10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td class="alert alert-success">15</td>
+                        <td class="alert alert-success">16</td>
+                        <td class="alert alert-success">17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td class="alert alert-success">20</td>
+                        <td class="alert alert-success">21</td>
+                        <td class="alert alert-success">22</td>
+                        <td class="alert alert-success">23</td>
+                        <td class="alert alert-success">24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+  <div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Marzo
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td class="alert alert-success">2</td>
+                        <td class="alert alert-success">3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td class="alert alert-success">8</td>
+                        <td class="alert alert-success">9</td>
+                        <td class="alert alert-success">10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td class="alert alert-success">15</td>
+                        <td class="alert alert-success">16</td>
+                        <td class="alert alert-success">17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td class="alert alert-success">20</td>
+                        <td class="alert alert-success">21</td>
+                        <td class="alert alert-success">22</td>
+                        <td class="alert alert-success">23</td>
+                        <td class="alert alert-success">24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td class="alert alert-success">29</td>
+                        <td class="alert alert-success">30</td>
+                        <td class="alert alert-success">31</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+
+<div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Abril
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="alert alert-success">3</td>
+                        <td class="alert alert-success">4</td>
+                        <td class="alert alert-success">5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="alert alert-success">10</td>
+                        <td class="alert alert-success">11</td>
+                        <td class="alert alert-success">12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td class="alert alert-success">17</td>
+                        <td class="alert alert-success">18</td>
+                        <td class="alert alert-success">19</td>
+                        <td class="alert alert-success">20</td>
+                        <td class="alert alert-success">21</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td class="alert alert-success">24</td>
+                        <td class="alert alert-success">25</td>
+                        <td class="alert alert-success">26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td>29</td>
+                    </tr>
+                      <tr>
+                        <td>30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+
+      </div>
+	</div>
+     
+      <div style="text-align:center" class="item">
+             <div class="container">
+             <h3>2016</h3>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+    	    <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Mayo
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td class="alert alert-success">2</td>
+                        <td class="alert alert-success">3</td>
+                        <td class="alert alert-success">4</td>
+                        <td class="alert alert-success">5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="alert alert-success">8</td>
+                        <td class="alert alert-success">9</td>
+                        <td class="alert alert-success">10</td>
+                        <td class="alert alert-success">11</td>
+                        <td class="alert alert-success">12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td class="alert alert-success">15</td>
+                        <td class="alert alert-success">16</td>
+                        <td class="alert alert-success">17</td>
+                        <td class="alert alert-success">18</td>
+                        <td class="alert alert-success">19</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td class="alert alert-success">22</td>
+                        <td class="alert alert-success">23</td>
+                        <td class="alert alert-success">24</td>
+                        <td class="alert alert-success">25</td>
+                        <td class="alert alert-success">26</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td class="alert alert-success">29</td>
+                        <td class="alert alert-success">30</td>
+                        <td class="alert alert-success">31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Junio
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td class="alert alert-success">2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="alert alert-success">5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td class="alert alert-success">8</td>
+                        <td class="alert alert-success">9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td class="alert alert-success">12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td class="alert alert-success">15</td>
+                        <td class="alert alert-success">16</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td class="alert alert-success">19</td>
+                        <td class="alert alert-success">20</td>
+                        <td class="alert alert-success">21</td>
+                        <td class="alert alert-success">22</td>
+                        <td class="alert alert-success">23</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td class="alert alert-success">26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td class="alert alert-success">29</td>
+                        <td class="alert alert-success">30</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+  <div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Julio
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="alert alert-success">3</td>
+                        <td class="alert alert-success">4</td>
+                        <td class="alert alert-success">5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="alert alert-success">10</td>
+                        <td class="alert alert-success">11</td>
+                        <td class="alert alert-success">12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td class="alert alert-success">17</td>
+                        <td class="alert alert-success">18</td>
+                        <td class="alert alert-success">19</td>
+                        <td class="alert alert-success">20</td>
+
+                        <td class="alert alert-success">21</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td class="alert alert-success">24</td>
+                        <td class="alert alert-success">25</td>
+                        <td class="alert alert-success">26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td>29</td>
+                    </tr>
+                      <tr>
+                        <td>30</td>
+                        <td class="alert alert-success">31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+
+<div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Agosto
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td class="alert alert-success">2</td>
+                        <td class="alert alert-success">3</td>
+                        <td class="alert alert-success">4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="alert alert-success">7</td>
+                        <td class="alert alert-success">8</td>
+                        <td class="alert alert-success">9</td>
+                        <td class="alert alert-success">10</td>
+                        <td class="alert alert-success">11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td class="alert alert-success">14</td>
+                        <td class="alert alert-success">15</td>
+                        <td class="alert alert-success">16</td>
+                        <td class="alert alert-success">17</td>
+                        <td class="alert alert-success">18</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td class="alert alert-success">21</td>
+                        <td class="alert alert-success">22</td>
+                        <td class="alert alert-success">23</td>
+                        <td class="alert alert-success">24</td>
+                        <td class="alert alert-success">25</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td class="alert alert-success">28</td>
+                        <td class="alert alert-success">29</td>
+                        <td class="alert alert-success">30</td>
+                        <td class="alert alert-success">31</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+
+      </div>
+      </div>
+    
+      <div style="text-align:center" class="item">
+        <div class="container">
+        <h3>2016</h3>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+    	    <table style="text-align:center;" class="table-condensed table-bordered">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Septiembre
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="alert alert-success">4</td>
+                        <td class="alert alert-success">5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td class="alert alert-success">8</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="alert alert-success">11</td>
+                        <td class="alert alert-success">12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td class="alert alert-success">15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td class="alert alert-success">18</td>
+                        <td class="alert alert-success">19</td>
+                        <td class="alert alert-success">20</td>
+                        <td class="alert alert-success">21</td>
+                        <td class="alert alert-success">22</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td class="alert alert-success">25</td>
+                        <td class="alert alert-success">26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td class="alert alert-success">29</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+            </table>    
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Octubre
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="alert alert-success">2</td>
+                        <td class="alert alert-success">3</td>
+                        <td class="alert alert-success">4</td>
+                        <td class="alert alert-success">5</td>
+                        <td class="alert alert-success">6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="alert alert-success">9</td>
+                        <td class="alert alert-success">10</td>
+                        <td class="alert alert-success">11</td>
+                        <td class="alert alert-success">12</td>
+                        <td class="alert alert-success">13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td class="alert alert-success">16</td>
+                        <td class="alert alert-success">17</td>
+                        <td class="alert alert-success">18</td>
+                        <td class="alert alert-success">19</td>
+                        <td class="alert alert-success">20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>22</td>
+                        <td class="alert alert-success">23</td>
+                        <td class="alert alert-success">24</td>
+                        <td class="alert alert-success">25</td>
+                        <td class="alert alert-success">26</td>
+                        <td class="alert alert-success">27</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td class="alert alert-success">30</td>
+                        <td class="alert alert-success">31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+  <div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Noviembre
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td class="alert alert-success">2</td>
+                        <td class="alert alert-success">3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td class="alert alert-success">8</td>
+                        <td class="alert alert-success">9</td>
+                        <td class="alert alert-success">10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td class="alert alert-success">15</td>
+                        <td class="alert alert-success">16</td>
+                        <td class="alert alert-success">17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td class="alert alert-success">20</td>
+                        <td class="alert alert-success">21</td>
+                        <td class="alert alert-success">22</td>
+                        <td class="alert alert-success">23</td>
+                        <td class="alert alert-success">24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td class="alert alert-success">29</td>
+                        <td class="alert alert-success">30</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+
+<div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Diciembre
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="alert alert-success">4</td>
+                        <td class="alert alert-success">5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td class="alert alert-success">8</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="alert alert-success">11</td>
+                        <td class="alert alert-success">12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td class="alert alert-success">15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td class="alert alert-success">18</td>
+                        <td class="alert alert-success">19</td>
+                        <td class="alert alert-success">20</td>
+                        <td class="alert alert-success">21</td>
+                        <td class="alert alert-success">22</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td class="alert alert-success">25</td>
+                        <td class="alert alert-success">26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td class="alert alert-success">29</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+
+      </div>
+      </div>
+
+      
+      
+      
+    </div>
+
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span style="color:#ffd200" class="fa fa-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span style="color:#ffd200" class="fa fa-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<div class="container">
+<h3>Referencias:
+</h3>
+<div class="col-md-12">
+<div class="alert alert-success col-md-6" style="height:35px; width:35px;display">
+
+</div><p class="col-md-3">Disponibilidad para diseñar</p>
+
+<div class="alert alert-warning col-md-3" style="height:35px; width:35px;display">
+
+</div><p class="col-md-3">Disponibilidad baja</p>
+
+<div class="alert alert-danger col-md-3" style="height:35px; width:35px;display">
+
+</div><p class="col-md-3">Sin disponibilidad</p></div>
+
+</div>
+</div>
    <fieldset class="pure-group">
 		<label for="fecha">Fecha de Entrega del Original: </label>
 	   
+       
+       
             <input pattern="\d{1,2}/\d{1,2}/\d{4}" name="entry.1669131330" type="text" class="form-control" placeholder="dd/mm/yyyy">
 	  
       </fieldset> 
@@ -307,7 +1244,907 @@ IMPRESOS: Flyer doble faz, Libro, etc..."></textarea>
           <span id="email-invalid" style="visibility:hidden">
             Tiene que ser un email valido</span>
         </fieldset>
-	     
+	     <a class="btn btn-primary heatcalendar2">Disponibilidad de Diseño</a>
+
+<div style="display:none" class="heat2">
+<a class="btn btn-primary calendar2" style="display:none;">Esconder</a>
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-wrap="false" data-ride="carousel" data-interval="false">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+     
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner"  role="listbox">
+    
+      <div style="text-align:center" class="item active">
+      <div class="container">
+      <h3>2016</h3>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+    	    <table style="text-align:center;" class="table-condensed table-bordered">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Enero
+                      </th>
+                    </tr>
+                    <tr >
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td class="alert alert-success">16</td>
+                        <td class="alert alert-success">17</td>
+                        <td class="alert alert-success">18</td>
+                        <td class="alert alert-success">19</td>
+                        <td class="alert alert-success">20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>22</td>
+                        <td class="alert alert-success">23</td>
+                        <td class="alert alert-success">24</td>
+                        <td class="alert alert-success">25</td>
+                        <td class="alert alert-success">26</td>
+                        <td class="alert alert-success">27</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td class="alert alert-success">30</td>
+                        <td class="alert alert-success">31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Febrero
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td class="alert alert-success">2</td>
+                        <td class="alert alert-success">3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td class="alert alert-success">8</td>
+                        <td class="alert alert-success">9</td>
+                        <td class="alert alert-success">10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td class="alert alert-success">15</td>
+                        <td class="alert alert-success">16</td>
+                        <td class="alert alert-success">17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td class="alert alert-success">20</td>
+                        <td class="alert alert-success">21</td>
+                        <td class="alert alert-success">22</td>
+                        <td class="alert alert-success">23</td>
+                        <td class="alert alert-success">24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+  <div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Marzo
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td class="alert alert-success">2</td>
+                        <td class="alert alert-success">3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td class="alert alert-success">8</td>
+                        <td class="alert alert-success">9</td>
+                        <td class="alert alert-success">10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td class="alert alert-success">15</td>
+                        <td class="alert alert-success">16</td>
+                        <td class="alert alert-success">17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td class="alert alert-success">20</td>
+                        <td class="alert alert-success">21</td>
+                        <td class="alert alert-success">22</td>
+                        <td class="alert alert-success">23</td>
+                        <td class="alert alert-success">24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td class="alert alert-success">29</td>
+                        <td class="alert alert-success">30</td>
+                        <td class="alert alert-success">31</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+
+<div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Abril
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="alert alert-success">3</td>
+                        <td class="alert alert-success">4</td>
+                        <td class="alert alert-success">5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="alert alert-success">10</td>
+                        <td class="alert alert-success">11</td>
+                        <td class="alert alert-success">12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td class="alert alert-success">17</td>
+                        <td class="alert alert-success">18</td>
+                        <td class="alert alert-success">19</td>
+                        <td class="alert alert-success">20</td>
+                        <td class="alert alert-success">21</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td class="alert alert-success">24</td>
+                        <td class="alert alert-success">25</td>
+                        <td class="alert alert-success">26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td>29</td>
+                    </tr>
+                      <tr>
+                        <td>30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+
+      </div>
+	</div>
+     
+      <div style="text-align:center" class="item">
+             <div class="container">
+             <h3>2016</h3>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+    	    <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Mayo
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td class="alert alert-success">2</td>
+                        <td class="alert alert-success">3</td>
+                        <td class="alert alert-success">4</td>
+                        <td class="alert alert-success">5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="alert alert-success">8</td>
+                        <td class="alert alert-success">9</td>
+                        <td class="alert alert-success">10</td>
+                        <td class="alert alert-success">11</td>
+                        <td class="alert alert-success">12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td class="alert alert-success">15</td>
+                        <td class="alert alert-success">16</td>
+                        <td class="alert alert-success">17</td>
+                        <td class="alert alert-success">18</td>
+                        <td class="alert alert-success">19</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td class="alert alert-success">22</td>
+                        <td class="alert alert-success">23</td>
+                        <td class="alert alert-success">24</td>
+                        <td class="alert alert-success">25</td>
+                        <td class="alert alert-success">26</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td class="alert alert-success">29</td>
+                        <td class="alert alert-success">30</td>
+                        <td class="alert alert-success">31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Junio
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td class="alert alert-success">2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="alert alert-success">5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td class="alert alert-success">8</td>
+                        <td class="alert alert-success">9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td class="alert alert-success">12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td class="alert alert-success">15</td>
+                        <td class="alert alert-success">16</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td class="alert alert-success">19</td>
+                        <td class="alert alert-success">20</td>
+                        <td class="alert alert-success">21</td>
+                        <td class="alert alert-success">22</td>
+                        <td class="alert alert-success">23</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td class="alert alert-success">26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td class="alert alert-success">29</td>
+                        <td class="alert alert-success">30</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+  <div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Julio
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="alert alert-success">3</td>
+                        <td class="alert alert-success">4</td>
+                        <td class="alert alert-success">5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="alert alert-success">10</td>
+                        <td class="alert alert-success">11</td>
+                        <td class="alert alert-success">12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td class="alert alert-success">17</td>
+                        <td class="alert alert-success">18</td>
+                        <td class="alert alert-success">19</td>
+                        <td class="alert alert-success">20</td>
+                        <td class="alert alert-success">21</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td class="alert alert-success">24</td>
+                        <td class="alert alert-success">25</td>
+                        <td class="alert alert-success">26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td>29</td>
+                    </tr>
+                      <tr>
+                        <td>30</td>
+                        <td class="alert alert-success">31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+
+<div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Agosto
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td class="alert alert-success">2</td>
+                        <td class="alert alert-success">3</td>
+                        <td class="alert alert-success">4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="alert alert-success">7</td>
+                        <td class="alert alert-success">8</td>
+                        <td class="alert alert-success">9</td>
+                        <td class="alert alert-success">10</td>
+                        <td class="alert alert-success">11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td class="alert alert-success">14</td>
+                        <td class="alert alert-success">15</td>
+                        <td class="alert alert-success">16</td>
+                        <td class="alert alert-success">17</td>
+                        <td class="alert alert-success">18</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td class="alert alert-success">21</td>
+                        <td class="alert alert-success">22</td>
+                        <td class="alert alert-success">23</td>
+                        <td class="alert alert-success">24</td>
+                        <td class="alert alert-success">25</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td class="alert alert-success">28</td>
+                        <td class="alert alert-success">29</td>
+                        <td class="alert alert-success">30</td>
+                        <td class="alert alert-success">31</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+
+      </div>
+      </div>
+    
+      <div style="text-align:center" class="item">
+        <div class="container">
+        <h3>2016</h3>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+    	    <table style="text-align:center;" class="table-condensed table-bordered">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Septiembre
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="alert alert-success">4</td>
+                        <td class="alert alert-success">5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td class="alert alert-success">8</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="alert alert-success">11</td>
+                        <td class="alert alert-success">12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td class="alert alert-success">15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td class="alert alert-success">18</td>
+                        <td class="alert alert-success">19</td>
+                        <td class="alert alert-success">20</td>
+                        <td class="alert alert-success">21</td>
+                        <td class="alert alert-success">22</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td class="alert alert-success">25</td>
+                        <td class="alert alert-success">26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td class="alert alert-success">29</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+            </table>    
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Octubre
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="alert alert-success">2</td>
+                        <td class="alert alert-success">3</td>
+                        <td class="alert alert-success">4</td>
+                        <td class="alert alert-success">5</td>
+                        <td class="alert alert-success">6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="alert alert-success">9</td>
+                        <td class="alert alert-success">10</td>
+                        <td class="alert alert-success">11</td>
+                        <td class="alert alert-success">12</td>
+                        <td class="alert alert-success">13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td class="alert alert-success">16</td>
+                        <td class="alert alert-success">17</td>
+                        <td class="alert alert-success">18</td>
+                        <td class="alert alert-success">19</td>
+                        <td class="alert alert-success">20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>22</td>
+                        <td class="alert alert-success">23</td>
+                        <td class="alert alert-success">24</td>
+                        <td class="alert alert-success">25</td>
+                        <td class="alert alert-success">26</td>
+                        <td class="alert alert-success">27</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td class="alert alert-success">30</td>
+                        <td class="alert alert-success">31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+  <div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Noviembre
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td class="alert alert-success">2</td>
+                        <td class="alert alert-success">3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td class="alert alert-success">8</td>
+                        <td class="alert alert-success">9</td>
+                        <td class="alert alert-success">10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td class="alert alert-success">15</td>
+                        <td class="alert alert-success">16</td>
+                        <td class="alert alert-success">17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td class="alert alert-success">20</td>
+                        <td class="alert alert-success">21</td>
+                        <td class="alert alert-success">22</td>
+                        <td class="alert alert-success">23</td>
+                        <td class="alert alert-success">24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td class="alert alert-success">29</td>
+                        <td class="alert alert-success">30</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+
+<div class="col-md-3 col-sm-6 col-xs-6">
+		 <table style="text-align:center;" class="table-condensed table-bordered ">
+                <thead>
+                    <tr>
+                      <th colspan="7">
+                        Diciembre
+                      </th>
+                    </tr>
+                    <tr>
+                        <th>Do</th>
+                        <th>Lu</th>
+                        <th>Ma</th>
+                        <th>Mi</th>
+                        <th>Ju</th>
+                        <th>Vi</th>
+                        <th>Sá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="alert alert-success">1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="alert alert-success">4</td>
+                        <td class="alert alert-success">5</td>
+                        <td class="alert alert-success">6</td>
+                        <td class="alert alert-success">7</td>
+                        <td class="alert alert-success">8</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="alert alert-success">11</td>
+                        <td class="alert alert-success">12</td>
+                        <td class="alert alert-success">13</td>
+                        <td class="alert alert-success">14</td>
+                        <td class="alert alert-success">15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td class="alert alert-success">18</td>
+                        <td class="alert alert-success">19</td>
+                        <td class="alert alert-success">20</td>
+                        <td class="alert alert-success">21</td>
+                        <td class="alert alert-success">22</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td class="alert alert-success">25</td>
+                        <td class="alert alert-success">26</td>
+                        <td class="alert alert-success">27</td>
+                        <td class="alert alert-success">28</td>
+                        <td class="alert alert-success">29</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+            </table>    
+</div>
+
+      </div>
+      </div>
+
+      
+      
+      
+    </div>
+
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span style="color:#ffd200" class="fa fa-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span style="color:#ffd200" class="fa fa-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<div class="container">
+<h3>Referencias:
+</h3>
+<div class="col-md-12">
+<div class="alert alert-success col-md-6" style="height:35px; width:35px;display">
+
+</div><p class="col-md-3">Disponibilidad para diseñar</p>
+
+<div class="alert alert-warning col-md-3" style="height:35px; width:35px;display">
+
+</div><p class="col-md-3">Disponibilidad baja</p>
+
+<div class="alert alert-danger col-md-3" style="height:35px; width:35px;display">
+
+</div><p class="col-md-3">Sin disponibilidad</p></div>
+
+</div></div>
 	    <fieldset class="pure-group">
 		    <label for="fecha">Fecha de Entrega del Original: </label><p>(De tener más de una fecha para entrega de los originales utilizar la más próxima)</p>
             <input pattern="\d{1,2}/\d{1,2}/\d{4}" name="entry.1235453217" type="text" class="form-control" placeholder="dd/mm/yyyy">
