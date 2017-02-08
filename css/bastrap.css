@@ -3783,11 +3783,11 @@ url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Conf
 
 @font-face {
   font-family: "CHANEWEI";
-  src: url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/CHANEWEI.eot");
-  src: url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/CHANEWEI.eot?#iefix") format("embedded-opentype"), 
-url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/CHANEWEI.svg#Gotham") format("svg"), 
-url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/CHANEWEI.woff") format("woff"), 
-url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/CHANEWEI.ttf") format("truetype");
+  src: url("fonts/CHANEWEI.eot");
+  src: url("fonts/CHANEWEI.eot?#iefix") format("embedded-opentype"), 
+url("fonts/CHANEWEI.svg#Gotham") format("svg"), 
+url("fonts/CHANEWEI.woff") format("woff"), 
+url("fonts/CHANEWEI.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; 
 }
