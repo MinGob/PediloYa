@@ -6,6 +6,9 @@
 	
 	
 }
+.carousel .carousel-control {
+	top:20px
+}
 .contenedor {
 	padding: 15px 20em;
 	min-height: calc(100vh - 465px);
