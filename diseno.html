@@ -2,17 +2,23 @@
 <meta charset="utf-8">
 <title>Pedilo Ya</title>
 	<link rel="shortcut icon" href="imagenes/favicon.png" type="image/png">
- <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bastrap.css">
     <link rel="stylesheet" href="css/docs.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.css">
     <link rel="stylesheet" href="css/csspedidos_de _diseño.css">
     <link rel="stylesheet" href="css/fonts.css">
 	<link href="https://use.fontawesome.com/73b0b97073.css" media="all" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://use.fontawesome.com/e379886307.js"></script><link href="https://use.fontawesome.com/e379886307.css" media="all" rel="stylesheet">
-     
-    
+    <link href="https://use.fontawesome.com/e379886307.css" media="all" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+ <script>
+	$( function() {
+		$( ".datepicker" ).datepicker({ minDate: 6, maxDate: "+2M" });
+	} );
+	</script>
 <style>	
 html {
 	background-color:#fff;
@@ -72,7 +78,9 @@ $(document).ready(function(){
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
+
 <header class="navbar navbar-primary navbar-top">
         <div class="container">
           <div class="row">
@@ -175,12 +183,12 @@ $(document).ready(function(){
                         <td>2</td>
                         <td>3</td>
                         <td>4</td>
-                        <td>5</td>
+                        <td class="alert alert-warning">5</td>
                         <td>6</td>
                     </tr>
                     <tr>
                         <td>7</td>
-                        <td>8</td>
+                        <td class="alert alert-warning">8</td>
                         <td class="alert alert-warning">9</td>
                         <td class="alert alert-warning">10</td>
                         <td class="alert alert-warning">11</td>
@@ -207,9 +215,9 @@ $(document).ready(function(){
                     </tr>
                     <tr>
                         <td>28</td>
-                        <td class="alert alert-warning">29</td>
-                        <td class="alert alert-warning">30</td>
-                        <td class="alert alert-warning">31</td>
+                        <td class="alert alert-success">29</td>
+                        <td class="alert alert-success">30</td>
+                        <td class="alert alert-success">31</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -241,8 +249,8 @@ $(document).ready(function(){
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td class="alert alert-warning">1</td>
-                        <td class="alert alert-warning">2</td>
+                        <td class="alert alert-success">1</td>
+                        <td class="alert alert-success">2</td>
                         <td>3</td>
                     </tr>
                     <tr>
@@ -457,6 +465,7 @@ $(document).ready(function(){
                 <tbody>
                     <tr>
                         <td></td>
+
                         <td></td>
                         <td></td>
                         <td></td>
@@ -1025,93 +1034,97 @@ $(document).ready(function(){
        </aside>
 <div class="container">
 <img class="img-responsive circuito" src="imagenes/Circuito-de-pedido (1).png" />
-<ul class="nav nav-tabs nav-justified">
-    <li class="active"><a data-toggle="pill" href="#diseno1" data-original-title="" title="">Piezas gráficas<br><i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
-    <li class=""><a data-toggle="pill" href="#diseno2" data-original-title="" title="">Merchandising<br><i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
- </ul>
   
-  <div class="tab-content">
-      <div id="diseno1" class="tab-pane active">
-     
-      <!-- diseño --><script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)
+<ul class="nav nav-tabs nav-justified">
+	<li class="active"><a data-toggle="tab" href="#diseño1">Piezas gráficas<br><i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+    <li><a data-toggle="tab" href="#diseño2">Merchandising<br><i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+
+  </ul>
+    <div class="tab-content">
+    <div id="diseño1" class="tab-pane fade in active">
+<!-- ---------------------------------------- primer tab ---------------------------------------- -->
+		<script type="text/javascript">var submitted=false;</script>
+		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)
 {window.location='https://mingob.github.io/PediloYa/gracias.html';}"></iframe>
-            <form class="pure-form pure-form-stacked" form="" action="https://docs.google.com/forms/d/e/1FAIpQLSfRDJ_BgjnJcuKFbMn36B2GKG0ZEWG2P_Nve_ueA4SX_XD_rQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+		<form class="pure-form pure-form-stacked" form="" action="https://docs.google.com/forms/d/e/1FAIpQLSfRDJ_BgjnJcuKFbMn36B2GKG0ZEWG2P_Nve_ueA4SX_XD_rQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
         <!-- change the form action to your script url -->
     
-        <fieldset class="pure-group">
-          <label for="name">Tu nombre:</label>
-          <input class="form-control" id="name" name="entry.45610068" placeholder="Ej: Juan Vecinos">
-        </fieldset> 
+        	<fieldset class="pure-group">
+				<label for="name">Tu nombre:</label>
+				<input class="form-control" id="name" name="entry.45610068" placeholder="Ej: Juan Vecinos">
+			</fieldset> 
+            
+			<fieldset class="pure-group">
+				<label for="area">Área: </label>
+				<input class="form-control" id="area" name="entry.22646789" placeholder="SS - DG - UPE">
+			</fieldset>
         
-        <fieldset class="pure-group">
-          <label for="area">Área: </label>
-          <input class="form-control" id="area" name="entry.22646789" placeholder="SS - DG - UPE">
-        </fieldset>
-        
-         <fieldset class="pure-group">
-          <label for="programa">Programa (si aplica): </label>
-          <input class="form-control" id="programa" name="entry.1334255680" placeholder="Ej: ConociendoBA, Mi Voto, Mi Elección, etc">
-        </fieldset>
+			<fieldset class="pure-group">
+				<label for="programa">Programa (si aplica): </label>
+				<input class="form-control" id="programa" name="entry.1334255680" placeholder="Ej: ConociendoBA, Mi Voto, Mi Elección, etc">
+			</fieldset>
     
-       <fieldset class="pure-group">
-          <label for="email">Correo Electrónico</label>
-          <input class="form-control" id="email" name="entry.1601509392" type="email" value="" required placeholder="tu.nombre@email.com">
-          <span id="email-invalid" style="visibility:hidden">
-            Tiene que ser un email valido</span>
-        </fieldset>
+			<fieldset class="pure-group">
+				<label for="email">Correo Electrónico</label>
+				<input class="form-control" id="email" name="entry.1601509392" type="email" value="" required placeholder="tu.nombre@email.com">
+				<span id="email-invalid" style="visibility:hidden">Tiene que ser un email valido
+                </span>
+			</fieldset>
  
-    <fieldset class="form-group">
-    <legend>Tipo de Pieza</legend>
-    <div class="form-check">
-      <label class="form-check-label check-responsive">
-        <input type="radio" class="form-check-input" name="entry.1658896877" id="optionsRadios1" value="Pieza Digital">
-        Pieza Digital
-      </label>
-    </div>
-	 <div class="form-check">
-    <label class="form-check-label check-responsive">
-    <input type="radio" class="form-check-input" name="entry.1658896877" id="optionsRadios2" value="Pieza Impresa"> 
-    Pieza Impresa</label></div>
-      <div class="form-check">
-      <label class="form-check-label check-responsive">
-        <input type="radio" class="form-check-input" name="entry.1658896877" id="optionsRadios3" value="Ambas">
-        Ambas
-      </label>
-    </div>
-  </fieldset>
+			<fieldset class="form-group">
+				<legend>Tipo de Pieza</legend>
+				<div class="form-check">
+					<label class="form-check-label check-responsive">
+					<input type="radio" class="form-check-input" name="entry.1658896877" id="optionsRadios1" value="Pieza Digital">Pieza Digital
+					</label>
+				</div>
+                
+				<div class="form-check">
+					<label class="form-check-label check-responsive">
+					<input type="radio" class="form-check-input" name="entry.1658896877" id="optionsRadios2" value="Pieza Impresa">Pieza Impresa</label>
+				</div>
+                
+				<div class="form-check">
+					<label class="form-check-label check-responsive">
+					<input type="radio" class="form-check-input" name="entry.1658896877" id="optionsRadios3" value="Ambas">Ambas
+					</label>
+				</div>
+  			</fieldset>
 
-   <fieldset class="pure-group">
-		<label for="fecha">Fecha de Entrega del Original: </label>
-	   
-       
-       
-            <input pattern="\d{1,2}/\d{1,2}/\d{4}" name="entry.1669131330" type="text" class="form-control" placeholder="dd/mm/yyyy">
-	  
-      </fieldset> 
-<!-- ejemplos de flyers --><h3 style="text-align:center">Ejemplos de Piezas Digitales</h3>
-<div class="col-md-3 col-sm-12 col-xs-12"> <a class="btn btn-primary col-md-12 col-sm-12 col-xs-12" id="1" data-toggle="modal" data-target="#myModal-1" data-original-title="" title="">Mailing HTML</a>
- <div id="myModal-1" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-            	<div class="close" data-dismiss="modal">X
-            	</div>
-                <img class="img-responsive" src="imagenes/ejdemailingHTML.png">
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div class="col-md-3 col-sm-12 col-xs-12"> <a class="btn btn-primary col-md-12 col-sm-12 col-xs-12" id="2" data-toggle="modal" data-target="#myModal-2" data-original-title="" title="">Mailing Imagen</a>
- <div id="myModal-2" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/ejdemailingIMAGEN.png">
-            </div>
-                    </div>
-    </div></div></div>
+			<fieldset class="pure-group">
+				<label for="fecha">Fecha de Entrega del Original: </label>
+<!-- ----------------------------------------------datepicker---------------------------------------------- -->
+				<input name="entry.1669131330" type="text" class="datepicker" class="form-control" placeholder="dd/mm/yyyy">
+<!-- ----------------------------------------------datepicker---------------------------------------------- -->
+			</fieldset>
+<!-- ejemplos de flyers -->
+			<h3 style="text-align:center">Ejemplos de Piezas Digitales</h3>
+			<div class="col-md-3 col-sm-12 col-xs-12"> <a class="btn btn-primary col-md-12 col-sm-12 col-xs-12" id="1" data-toggle="modal" data-target="#myModal-1" data-original-title="" title="">Mailing HTML</a>
+ 				<div id="myModal-1" class="modal fade" role="dialog">
+    				<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+								<div class="close" data-dismiss="modal">X
+								</div>
+								<img class="img-responsive" src="imagenes/ejdemailingHTML.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12 col-xs-12"> <a class="btn btn-primary col-md-12 col-sm-12 col-xs-12" id="2" data-toggle="modal" data-target="#myModal-2" data-original-title="" title="">Mailing Imagen</a>
+				<div id="myModal-2" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+                            	<div class="close" data-dismiss="modal">X
+                                </div>
+								<img class="img-responsive" src="imagenes/ejdemailingIMAGEN.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
     <div class="col-md-3 col-sm-12 col-xs-12"> <a class="btn btn-primary col-md-12 col-sm-12 col-xs-12" id="3" data-toggle="modal" data-target="#myModal-3" data-original-title="" title="">Flyer para publicación</a>
  <div id="myModal-3" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -1168,8 +1181,8 @@ $(document).ready(function(){
             </div>
                     </div>
     </div></div></div>
-
-       <fieldset class="pure-group">
+    
+           <fieldset class="pure-group">
           <label for="message">Especificaciones: </label>
           <textarea class="form-control" id="message" name="entry.1806980425" rows="3" placeholder="DIGITALES: Pieza para facebook, Mailing, Firma para mail, etc...
 IMPRESOS: Flyer doble faz, Libro, etc..."></textarea>
@@ -1194,597 +1207,609 @@ IMPRESOS: Flyer doble faz, Libro, etc..."></textarea>
     
         <button class="btn button-xlarge btn-primary btnenviar" style="margin-bottom: 35px;">
           <i class="fa fa-paper-plane"></i>&nbsp;Envíar</button>
-    
-      </form>
-   
-      <!-- Customise the Thankyou Message People See when they submit the form: -->
-      <div style="display:none;" id="thankyou_message">
-        <h2><b>Gracias</b> por tu pedido!
-          Nos comunicaremos por email a la brevedad</h2>
-      </div>
+</form>
 
     </div>
-    
-    <div id="diseno2" class="tab-pane">
-      
-      <!-- merchandising  <form id="gform" method="POST" class="pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycby42lTi3A7HWWSKnlogGJL1TUo0eIRgNQ7sWPGH_kV2W1GvaxU/exec">-->
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)
+    <div id="diseño2" class="tab-pane fade">
+<!-- ---------------------------------------- segunda tab ---------------------------------------- -->
+
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)
 {window.location='https://mingob.github.io/PediloYa/gracias.html';}"></iframe>
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSeq7HJfF5G_FLpOM6Ge2BRYf18a7-KnkTdwGgH3s3Gvo_whfA/formResponse" method="POST" class="pure-form pure-form-stacked" target="hidden_iframe" onsubmit="submitted=true;">
+	<form action="https://docs.google.com/forms/d/e/1FAIpQLSeq7HJfF5G_FLpOM6Ge2BRYf18a7-KnkTdwGgH3s3Gvo_whfA/formResponse" method="POST" class="pure-form pure-form-stacked" target="hidden_iframe" onsubmit="submitted=true;">
         <!-- change the form action to your script url -->
     
-        <fieldset class="pure-group">
-          <label for="name">Tu nombre:</label>
-          <input name="entry.928034543" class="form-control" id="name" placeholder="Ej: Juan Vecinos">
-        </fieldset> 
+		<fieldset class="pure-group">
+			<label for="name">Tu nombre:</label>
+			<input name="entry.928034543" class="form-control" id="name" placeholder="Ej: Juan Vecinos">
+		</fieldset> 
         
-        <fieldset class="pure-group">
-          <label for="area">Área: </label>
-          <input name="entry.1028166210" class="form-control" id="area" placeholder="SS - DG - UPE">
-        </fieldset>
+		<fieldset class="pure-group">
+			<label for="area">Área: </label>
+			<input name="entry.1028166210" class="form-control" id="area" placeholder="SS - DG - UPE">
+		</fieldset>
         
-         <fieldset class="pure-group">
-          <label for="programa">Programa (si aplica): </label>
-          <input name="entry.1608623474" class="form-control" id="programa" placeholder="Ej: ConociendoBA, Mi Voto Mi Elección, etc">
-        </fieldset>
+		<fieldset class="pure-group">
+			<label for="programa">Programa (si aplica): </label>
+			<input name="entry.1608623474" class="form-control" id="programa" placeholder="Ej: ConociendoBA, Mi Voto Mi Elección, etc">
+		</fieldset>
     
-       <fieldset class="pure-group">
-          <label for="email">Correo Electrónico</label>
-          <input name="entry.1535527545" class="form-control" id="email" type="email" placeholder="tu.nombre@email.com">
-          <span id="email-invalid" style="visibility:hidden">
+		<fieldset class="pure-group">
+			<label for="email">Correo Electrónico</label>
+			<input name="entry.1535527545" class="form-control" id="email" type="email" placeholder="tu.nombre@email.com">
+			<span id="email-invalid" style="visibility:hidden">
             Tiene que ser un email valido</span>
-        </fieldset>
-	   
+		</fieldset>
 
-
-
-
-	    <fieldset class="pure-group">
-		    <label for="fecha">Fecha de Entrega del Original: </label><p>(De tener más de una fecha para entrega de los originales utilizar la más próxima)</p>
-            <input pattern="\d{1,2}/\d{1,2}/\d{4}" name="entry.1235453217" type="text" class="form-control" placeholder="dd/mm/yyyy">
-      </fieldset>
+		<fieldset class="pure-group">
+			<label for="fecha">Fecha de Entrega del Original: </label><p>(De tener más de una fecha para entrega de los originales utilizar la más próxima)</p>
+            <input class="datepicker"  name="entry.1235453217" type="text" class="form-control" placeholder="dd/mm/yyyy">
+		</fieldset>
 	    
-        <fieldset>
-        <div class="col-md-12">
-         <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-1" data-original-title="" title=""> <img src="imagenes/thumbs_banner.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input name="entry.143259455" value="Banner Rollup 80x200cm" type="checkbox" class="form-check-input">
-        Banner Rollup 80x200cm
-      </label><a class="plus btn btn-primary">¿Lleva texto el banner?</a>
-      </div> 
-    </div>
-  </div> 
-   <div id="momer-1" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/banner-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
-  <div style="display:none;" class="col-sm-6 col-md-3 textobanner">
-    <div class="thumbnail">
-       <fieldset class="pure-group">
-          <label for="message">Texto para el banner: </label>
-          <textarea class="form-control" id="textobanner" name="entry.426399266" rows="7" placeholder=""></textarea>
-        </fieldset>
-   
-    <a style="display:none;" class="minus btn btn-primary">Me arrepentí</a>
+		<fieldset>
+			<div class="col-md-12">
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-1" data-original-title="" title=""> <img src="imagenes/thumbs_banner.png" alt="..."></a>
+						<div class="caption">
+							<label class="form-check-label">
+								<input name="entry.143259455" value="Banner Rollup 80x200cm" type="checkbox" class="form-check-input">Banner Rollup 80x200cm
+							</label>
+                            <a class="plus btn btn-primary">¿Lleva texto el banner?</a>
+						</div> 
+					</div>
+				</div> 
+				<div id="momer-1" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+                            	<div class="close" data-dismiss="modal">X
+                                </div>
+								<img class="img-responsive" src="imagenes/modal/banner-modal.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="display:none;" class="col-sm-6 col-md-3 textobanner">
+					<div class="thumbnail">
+						<fieldset class="pure-group">
+							<label for="message">Texto para el banner: </label>
+							<textarea class="form-control" id="textobanner" name="entry.426399266" rows="7" placeholder=""></textarea>
+						</fieldset>
+						<a style="display:none;" class="minus btn btn-primary">Me arrepentí</a>
 
-      </div>
-    </div>
-        <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <a style="cursor:pointer" id="11" data-toggle="modal" data-target="#momer-2" data-original-title="" title=""> <img src="imagenes/thumbs_agenda.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Agenda A5">
-        Agenda A5
-      </label>
-      </div>
-    </div>
-  </div>
-   <div id="momer-2" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/cuaderno-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a style="cursor:pointer" id="11" data-toggle="modal" data-target="#momer-2" data-original-title="" title=""> <img src="imagenes/thumbs_agenda.png" alt="..."></a>
+						<div class="caption">
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Agenda A5">Agenda A5
+							</label>
+						</div>
+					</div>
+				</div>
+				<div id="momer-2" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+                            	<div class="close" data-dismiss="modal">X</div>
+								<img class="img-responsive" src="imagenes/modal/cuaderno-modal.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
   
-    <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-    <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-3" data-original-title="" title="">  <img src="imagenes/thumbs_lapicera.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Birome">
-        Birome
-      </label>
-      </div>
-    </div>
-  </div> 
-  <div id="momer-3" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/lapicera-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
-  
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-3" data-original-title="" title=""><img src="imagenes/thumbs_lapicera.png" alt="..."></a>
+						<div class="caption">
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Birome">Birome
+							</label>
+						</div>
+					</div>
+				</div> 
+				<div id="momer-3" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+                            	<div class="close" data-dismiss="modal">X</div>
+								<img class="img-responsive" src="imagenes/modal/lapicera-modal.jpg">
+							</div>
+						</div>
+					</div>
+				</div> 
    
-    <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-     <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-4" data-original-title="" title=""> <img src="imagenes/Bolsa thumbs.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Bolsa ecologica institucional">
-        Bolsa ecologica institucional
-      </label>
-      </div>
-    </div>
-  </div>  <div id="momer-4" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/bolsa-modal.jpg">
-            </div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-4" data-original-title="" title=""> <img src="imagenes/Bolsa thumbs.png" alt="..."></a>
+							<div class="caption">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Bolsa ecologica institucional">Bolsa ecologica institucional
+								</label>
+							</div>
+					</div>
+				</div>
+                
+                <div id="momer-4" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+                                <div class="close" data-dismiss="modal">X</div>
+                                <img class="img-responsive" src="imagenes/modal/bolsa-modal.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+  
+  
+			<div class="col-md-12">
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-5" data-original-title="" title=""><img src="imagenes/thumbs_botella.png" alt="..."></a>
+						<div class="caption">
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Botella plástica">Botella plástica
+							</label>
+						</div>
+					</div>
+				</div>  
+				<div id="momer-5" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+                            	<div class="close" data-dismiss="modal">X</div>
+								<img class="img-responsive" src="imagenes/modal/botella-modal.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+  
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-6" data-original-title="" title=""><img src="imagenes/thumbs_calco.png" alt="..."></a>
+                        <div class="caption">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Calco">Calco
+                            </label>
+                        </div>
                     </div>
-    </div></div></div>
-  
-  
-          <div class="col-md-12">
- <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-    <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-5" data-original-title="" title="">  <img src="imagenes/thumbs_botella.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Botella plástica">
-        Botella plástica
-
-      </label>
-      </div>
-    </div>
-  </div>  
-  <div id="momer-5" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/botella-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
-  
-  
-        <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-6" data-original-title="" title=""><img src="imagenes/thumbs_calco.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Calco">
-        Calco
-      </label>
-      </div>
-    </div>
-  </div>
-         <div id="momer-6" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/calco-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
+                </div>
+				<div id="momer-6" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+                            	<div class="close" data-dismiss="modal">X</div>
+								<img class="img-responsive" src="imagenes/modal/calco-modal.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
          
           
-    <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-7" data-original-title="" title=""><img src="imagenes/thumbs_cinta_tarjeta.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Cinta para llave o precinto">
-        Cinta para llave o precinto
-      </label>
-      </div>
-    </div>
-  </div>  
-  <div id="momer-7" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/cinta-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-7" data-original-title="" title=""><img src="imagenes/thumbs_cinta_tarjeta.png" alt="..."></a>
+						<div class="caption">
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Cinta para llave o precinto">Cinta para llave o precinto
+							</label>
+						</div>
+					</div>
+				</div>  
+                
+				<div id="momer-7" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+                            	<div class="close" data-dismiss="modal">X</div>
+								<img class="img-responsive" src="imagenes/modal/cinta-modal.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
   
-    <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-     <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-8" data-original-title="" title=""> <img src="imagenes/thumbs_llavero.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Llavero">
-        Llavero
-      </label>
-      </div>
-    </div>
-  </div>  
+				<div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-8" data-original-title="" title=""> <img src="imagenes/thumbs_llavero.png" alt="..."></a>
+                        <div class="caption">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Llavero">Llavero
+                            </label>
+                        </div>
+					</div>
+				</div>  
   
-  <div id="momer-8" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/llavero-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
-  </div>  
+				<div id="momer-8" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+                                <div class="close" data-dismiss="modal">X</div>
+                                <img class="img-responsive" src="imagenes/modal/llavero-modal.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>  
   
-        <div class="col-md-12"> 
-          <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-     <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-9" data-original-title="" title=""> <img src="imagenes/thumbs_paraguas.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Paraguas">
-        Paraguas
-      </label>
-      </div>
-    </div>
-  </div>
-  <div id="momer-9" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/paraguas-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
+			<div class="col-md-12"> 
+				<div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-9" data-original-title="" title=""><img src="imagenes/thumbs_paraguas.png" alt="..."></a>
+                        <div class="caption">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Paraguas">Paraguas
+                            </label>
+						</div>
+					</div>
+				</div>
+			<div id="momer-9" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+                        	<div class="close" data-dismiss="modal">X</div>
+							<img class="img-responsive" src="imagenes/modal/paraguas-modal.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
   
-    <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-     <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-10" data-original-title="" title=""> <img src="imagenes/thumbs_pendrivetarjeta.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Pendrive tarjeta">
-        Pendrive tarjeta 
-      </label>
-      </div>
-    </div>
-  </div>  
-  <div id="momer-10" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/pendrive-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
+            <div class="col-sm-6 col-md-3">
+	            <div class="thumbnail">
+    	        <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-10" data-original-title="" title=""><img src="imagenes/thumbs_pendrivetarjeta.png" alt="..."></a>
+	            <div class="caption">
+    		        <label class="form-check-label">
+            			<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Pendrive tarjeta">Pendrive tarjeta 
+		            </label>
+        	    </div>
+            	</div>
+            </div>  
+			<div id="momer-10" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+                            <div class="close" data-dismiss="modal">X</div>
+                            <img class="img-responsive" src="imagenes/modal/pendrive-modal.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
   
-    <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-    <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-11" data-original-title="" title="">  <img src="imagenes/thumbs_paraguas-sombrilla.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Sombrilla">
-        Sombrilla
-      </label>
-      </div>
-    </div>
-  </div>  
-  <div id="momer-11" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/sombrilla-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
+            <div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+            		<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-11" data-original-title="" title=""><img src="imagenes/thumbs_paraguas-sombrilla.png" alt="..."></a>
+            		<div class="caption">
+            			<label class="form-check-label">
+            				<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Sombrilla">Sombrilla
+            			</label>
+            		</div>
+            	</div>
+            </div>  
+            <div id="momer-11" class="modal fade" role="dialog">
+            	<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+                        	<div class="close" data-dismiss="modal">X</div>
+							<img class="img-responsive" src="imagenes/modal/sombrilla-modal.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
   
- <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-    <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-12" data-original-title="" title=""><img src="imagenes/thumbs_remera.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Remera">
-        Remera
-      </label>
-      </div>
-    </div>
-  </div>  
-  <div id="momer-12" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/remera-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
+            <div class="col-sm-6 col-md-3">
+            	<div class="thumbnail">
+            		<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-12" data-original-title="" title=""><img src="imagenes/thumbs_remera.png" alt="..."></a>
+            		<div class="caption">
+            			<label class="form-check-label">
+            				<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Remera">Remera
+            			</label>
+            		</div>
+            	</div>
+			</div>  
+
+            <div id="momer-12" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
+                        <img class="img-responsive" src="imagenes/modal/remera-modal.jpg">
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        
+		<div class="col-md-12">
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-13" data-original-title="" title=""><img src="imagenes/thumbs_campera.png" alt="..."></a>
+					<div class="caption">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Campera">Campera 
+						</label>
+					</div>
+				</div>
+			</div> 
+             
+			<div id="momer-13" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+                        	<div class="close" data-dismiss="modal">X</div>
+							<img class="img-responsive" src="imagenes/modal/campera-modal.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
   
-  </div>
-          <div class="col-md-12">
-      <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-13" data-original-title="" title=""><img src="imagenes/thumbs_campera.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Campera">
-        Campera 
-      </label>
-      </div>
-    </div>
-  </div>  
-  <div id="momer-13" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/campera-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
-  
- <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-     <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-14" data-original-title="" title=""> <img src="imagenes/thumbs_gorra.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Gorra">
-        Gorra
-      </label>
-      </div>
-    </div>
-  </div>  
-  <div id="momer-14" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/gorra-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
-  
-  
-          <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-15" data-original-title="" title=""><img src="imagenes/thumbs_sobre.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Sobre Institucional">
-        Sobre Institucional
-      </label>
-      </div>
-    </div>
-  </div>
-  <div id="momer-15" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/sobre-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
-  
-    <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-16" data-original-title="" title=""><img src="imagenes/thumbs_carpeta.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Carpeta Institucional">
-        Carpeta Institucional
-      </label>
-      </div>
-    </div>
-  </div>  
-  <div id="momer-16" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/carpeta-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
-  
-  </div>
-          <div class="col-md-12">
-    <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-17" data-original-title="" title=""><img src="imagenes/thumbs_sticker.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Stickers">
-        Stickers
-      </label>
-      </div>
-    </div>
-  </div>  
-  <div id="momer-17" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/sticker-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-14" data-original-title="" title=""> <img src="imagenes/thumbs_gorra.png" alt="..."></a>
+						<div class="caption">
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Gorra">Gorra
+							</label>
+						</div>
+					</div>
+				</div>  
+				<div id="momer-14" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+                            	<div class="close" data-dismiss="modal">X</div>
+								<img class="img-responsive" src="imagenes/modal/gorra-modal.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
   
   
- <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-18" data-original-title="" title=""><img src="imagenes/thumbs_anotador.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Anotador">
-        Anotador
-      </label>
-      </div>
-    </div>
-  </div> 
-  <div id="momer-18" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/anotador-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-15" data-original-title="" title=""><img src="imagenes/thumbs_sobre.png" alt="..."></a>
+						<div class="caption">
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Sobre Institucional">Sobre Institucional
+							</label>
+						</div>
+					</div>
+				</div>
+				<div id="momer-15" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+                                <div class="close" data-dismiss="modal">X</div>
+                                <img class="img-responsive" src="imagenes/modal/sobre-modal.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+  
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-16" data-original-title="" title=""><img src="imagenes/thumbs_carpeta.png" alt="..."></a>
+							<div class="caption">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Carpeta Institucional">Carpeta Institucional
+                                </label>
+							</div>
+						</div>
+					</div>  
+				<div id="momer-16" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+                            	<div class="close" data-dismiss="modal">X</div>
+								<img class="img-responsive" src="imagenes/modal/carpeta-modal.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            
+			<div class="col-md-12">
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-17" data-original-title="" title=""><img src="imagenes/thumbs_sticker.png" alt="..."></a>
+						<div class="caption">
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Stickers">Stickers
+							</label>
+						</div>
+					</div>
+				</div>  
+                
+				<div id="momer-17" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+                            	<div class="close" data-dismiss="modal">X</div>
+									<img class="img-responsive" src="imagenes/modal/sticker-modal.jpg">
+								</div>
+							</div>
+					</div>
+				</div>
   
   
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-     <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-19" data-original-title="" title=""> <img src="imagenes/thumbs_mate.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Mate">
-        Mate
-      </label>
-      </div>
-    </div>
-  </div>
-  <div id="momer-19" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/mate-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-18" data-original-title="" title=""><img src="imagenes/thumbs_anotador.png" alt="..."></a>
+						<div class="caption">
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Anotador">Anotador
+							</label>
+						</div>
+					</div>
+				</div> 
+                
+				<div id="momer-18" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+                            	<div class="close" data-dismiss="modal">X</div>
+								<img class="img-responsive" src="imagenes/modal/anotador-modal.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
   
   
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-     <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-20" data-original-title="" title=""> <img src="imagenes/thumbs_mochila.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Mochila">
-        Mochila
-      </label>
-      </div>
-    </div>
-  </div>
-  <div id="momer-20" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/mochila-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
-  
-  
-  </div> 
-  <div class="col-md-12">
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-    <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-21" data-original-title="" title="">  <img src="imagenes/thumbs_backdeprensa.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Back de Prensa">
-        Back de Prensa
-      </label>
-      </div>
-    </div>
-  </div>
-  <div id="momer-21" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/backprensa-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
-  
-  
-    <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-     <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-22" data-original-title="" title=""> <img src="imagenes/thumbs_credencial.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Credencial">
-        Credencial
-      </label>
-      </div>
-    </div>
-  </div>
-  <div id="momer-22" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/credencial-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
-  
-  
-   <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-    <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-23" data-original-title="" title="">  <img src="imagenes/thumbs_pin.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Pin">
-        Pin
-      </label>
-      </div>
-    </div>
-  </div>
-  <div id="momer-23" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/pin-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
-  
-  
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-    <a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-24" data-original-title="" title="">  <img src="imagenes/thumbs_senaladormagnetico.png" alt="..."></a>
-      <div class="caption">
-        <label class="form-check-label">
-        <input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Señalador Magnético">
-        Señalador Magnético
-      </label>
-      </div>
-    </div>
-  </div><div id="momer-24" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body"><div class="close" data-dismiss="modal">X</div>
-                <img class="img-responsive" src="imagenes/modal/señalador-modal.jpg">
-            </div>
-                    </div>
-    </div></div>
-  </div>
-		     </fieldset> 
-     <fieldset class="pure-group">
-           <label for="name">Para enviarnos imagenes subilos a <a href="https://drive.google.com" target="_blank">GoogleDrive</a>/<a href="https://www.dropbox.com/" target="_blank">DropBox</a> y pega el enalce acá:</label>  
-          <input class="form-control" id="enlace" name="entry.1798328402" placeholder="https://drive.google.com/file/etc.jpg">
-      
-</fieldset>
-		
-   <fieldset class="pure-group">
-          <label for="message">Otros: </label>
-          <textarea class="form-control" id="message" name="entry.2121704585" rows="2" placeholder=""></textarea>
-        </fieldset>
-  </fieldset> 
-  <div class="col-md-12 pull-left"> 
-   <button class="btn button-xlarge btn-primary btnenviar" style="margin-bottom: 35px;">
-          <i class="fa fa-paper-plane"></i>&nbsp;Envíar</button>
-    </div></form>
-     
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-19" data-original-title="" title=""> <img src="imagenes/thumbs_mate.png" alt="..."></a>
+						<div class="caption">
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Mate">Mate
+							</label>
+						</div>
+					</div>
+				</div>
+				<div id="momer-19" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+                            	<div class="close" data-dismiss="modal">X</div>
+								<img class="img-responsive" src="imagenes/modal/mate-modal.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
    
-      <!-- Customise the Thankyou Message People See when they submit the form: -->
-      <div style="display:none;" id="thankyou_message">
-        <h2><b>Gracias</b> por tu pedido!
-          Nos comunicaremos por email a la brevedad</h2>
-      </div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-20" data-original-title="" title=""><img src="imagenes/thumbs_mochila.png" alt="..."></a>
+							<div class="caption">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Mochila">Mochila
+								</label>
+							</div>
+						</div>
+					</div>
+					<div id="momer-20" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-body">
+                                	<div class="close" data-dismiss="modal">X</div>
+									<img class="img-responsive" src="imagenes/modal/mochila-modal.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+                
+				<div class="col-md-12">
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-21" data-original-title="" title=""><img src="imagenes/thumbs_backdeprensa.png" alt="..."></a>
+							<div class="caption">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Back de Prensa">Back de Prensa
+								</label>
+							</div>
+						</div>
+					</div>
+					<div id="momer-21" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-body">
+                                	<div class="close" data-dismiss="modal">X</div>
+									<img class="img-responsive" src="imagenes/modal/backprensa-modal.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+  
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-22" data-original-title="" title=""> <img src="imagenes/thumbs_credencial.png" alt="..."></a>
+							<div class="caption">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Credencial">Credencial
+								</label>
+							</div>
+						</div>
+					</div>
+					<div id="momer-22" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-body">
+                                	<div class="close" data-dismiss="modal">X</div>
+									<img class="img-responsive" src="imagenes/modal/credencial-modal.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+  
+  
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-23" data-original-title="" title=""><img src="imagenes/thumbs_pin.png" alt="..."></a>
+								<div class="caption">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Pin">Pin
+									</label>
+								</div>
+							</div>
+						</div>
+                        
+						<div id="momer-23" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+                                    	<div class="close" data-dismiss="modal">X</div>
+										<img class="img-responsive" src="imagenes/modal/pin-modal.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+  
+  
+						<div class="col-sm-6 col-md-3">
+							<div class="thumbnail">
+								<a style="cursor:pointer" id="10" data-toggle="modal" data-target="#momer-24" data-original-title="" title=""><img src="imagenes/thumbs_senaladormagnetico.png" alt="..."></a>
+								<div class="caption">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input" name="entry.143259455" id="optionsRadios1" value="Señalador Magnético">Señalador Magnético
+									</label>
+								</div>
+							</div>
+						</div>
+  
+						<div id="momer-24" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+                                        <div class="close" data-dismiss="modal">X</div>
+                                        <img class="img-responsive" src="imagenes/modal/señalador-modal.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</fieldset> 
+                
+				<fieldset class="pure-group">
+					<label for="name">Para enviarnos imagenes subilos a <a href="https://drive.google.com" target="_blank">GoogleDrive</a>/<a href="https://www.dropbox.com/" target="_blank">DropBox</a> y pega el enalce acá:</label>  
+					<input class="form-control" id="enlace" name="entry.1798328402" placeholder="https://drive.google.com/file/etc.jpg">
+				</fieldset>
+		
+				<fieldset class="pure-group">
+					<label for="message">Otros: </label>
+					<textarea class="form-control" id="message" name="entry.2121704585" rows="2" placeholder=""></textarea>
+				</fieldset>
+				
+				<div class="col-md-12 pull-left"> 
+					<button class="btn button-xlarge btn-primary btnenviar" style="margin-bottom: 35px;">
+						<i class="fa fa-paper-plane"></i>&nbsp;Envíar</button>
+				</div>
+			</form>
 
-</div></div></div>
+    </div>
+
+  </div>
 </div>
-
-    
 <!-- footer -->
 <footer>
       <div class="footer">
@@ -1810,10 +1835,6 @@ IMPRESOS: Flyer doble faz, Libro, etc..."></textarea>
       </div>
     </footer>
 
-<script src="js/form-submission-handler.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/docs.js"></script>
-	
 
-</body></html>
+</body>
+</html>
