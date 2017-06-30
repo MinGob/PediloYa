@@ -19,6 +19,9 @@
 	margin:0px auto;
 	padding:25px 0 ;
 }
+a.list-group-item.list-thumb {
+	border-top:0px;
+}
 
 @media only screen and (max-width: 1300px)  {
 .contenedor {
