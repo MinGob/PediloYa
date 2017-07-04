@@ -89,15 +89,29 @@ html {
 
 <!-- aca va el formulario de noticia web-->
      <div id="menu3" class="tab-pane ">
-      <aside>
+      <aside class="container">
+      
+      
+      
            <h1>
-		   Compartí tus <strong>noticias</strong>
+		   Compartí tus <strong>noticias</strong>, solicitá la <strong>creación</strong> de páginas o <strong>modificación</strong> de páginas ya existentes
            </h1>
       </aside>
+      
+      <div class="container">
+      <ul class="nav nav-tabs nav-justified">
+		<li class="active"><a data-toggle="pill" href="#home">Noticias<br><br><i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+		<li><a data-toggle="pill" href="#menu1">Creá o modificá<br>contenido<br><i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+	</ul>
+    
+    <div class="tab-content">
+    
+    
+		<div id="home" class="tab-pane fade in active">
       <iframe name="hidden_iframe" id="hidden_iframe"
 style="display:none;" onload="if(submitted)
 {window.location='https://mingob.github.io/PediloYa/gracias.html';}"></iframe>
-      <form method="POST" class="pure-form pure-form-stacked container" action="https://docs.google.com/forms/d/e/1FAIpQLSdTKj2wQRO2-Zl2dozPLIyqeYFInB-DUHKgiTgNSTYqwnVG-g/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+      <form method="POST" class="pure-form pure-form-stacked" action="https://docs.google.com/forms/d/e/1FAIpQLSdTKj2wQRO2-Zl2dozPLIyqeYFInB-DUHKgiTgNSTYqwnVG-g/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
     
         <!-- change the form action to your script url -->
     
@@ -206,15 +220,116 @@ $('.textarea1').keyup(function() {
     
       </form>
     
-      <!-- Customise the Thankyou Message People See when they submit the form: -->
-      <div style="display:none;" id="thankyou_message">
-        <h2><b>Gracias</b> por tu pedido!
-          Nos comunicaremos por email a la brevedad</h2>
+
       </div>
+	<div id="menu1" class="tab-pane fade">
+		
+        <h3 style="text-align:center">Tipos de contenido en la web</h3>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+            <a class="btn btn-primary col-md-12 col-sm-12 col-xs-12" id="1" data-toggle="modal" data-target="#myModal-1" data-original-title="" title="">Página Simple</a>
+                <div id="myModal-1" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="close" data-dismiss="modal">X
+                                </div>
+                            <img class="img-responsive" src="imagenes/ej-paginasimple.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+            <a class="btn btn-primary col-md-12 col-sm-12 col-xs-12" id="1" data-toggle="modal" data-target="#myModal-2" data-original-title="" title="">Página de libro</a>
+                <div id="myModal-2" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="close" data-dismiss="modal">X
+                                </div>
+                            <img class="img-responsive" src="imagenes/ej-paginadelibro.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)
+{window.location='https://mingob.github.io/PediloYa/gracias.html';}"></iframe>
+      <form method="POST" class="pure-form pure-form-stacked" action="https://docs.google.com/forms/d/e/1FAIpQLSc5SGz7u2QZFCQFI-jyEbygvxzekdMOXi6c1IJqRyCdTtfK7Q/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+    
+        <!-- change the form action to your script url -->
+    
+        <fieldset class="pure-group">
+          <label for="name">Tu nombre: </label>
+          <input required class="form-control" id="nombre" name="entry.1127387261" placeholder="Ej: Juan Vecinos">
+          
+        </fieldset> 
+        
+        <fieldset class="pure-group">
+          <label for="area">Área: </label>
+          <input required class="form-control" id="area" name="entry.1783900827" placeholder="SS - DG - UPE">
+        </fieldset>
+         
+       <fieldset class="pure-group">
+          <label for="email">Correo Electrónico</label>
+          <input class="form-control" id="email" name="entry.872189728" type="email" value="" required placeholder="tu.nombre@email.com">
+          <span id="email-invalid" style="visibility:hidden">
+            Tiene que ser un email valido</span>
+        </fieldset>
+
+       <fieldset class="pure-group">
+          <label for="email">Correos Electrónicos en Copia</label>
+          <input class="form-control" name="entry.983987513"  placeholder="tu.nombre@email.com">
+        </fieldset>
+
+		<fieldset class="form-group">
+    <legend>Que vas a pedir</legend>
+         <div class="form-check">
+      <label class="form-check-label check-responsive">
+        <input type="radio" class="form-check-input" name="entry.1491541302" id="optionsRadios1" aria-label="Creación de Contenido" value="Creación de Contenido" data-value="Creación de Contenido">
+        Creación de Contenido
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label check-responsive">
+        <input type="radio" class="form-check-input" name="entry.1491541302" id="optionsRadios2" aria-label="Modificación de Contenido"m value="Modificación de Contenido" data-value="Modificación de Contenido">
+        Modificación de Contenido
+      </label>
+    </div>
+  </fieldset>
+
+        <fieldset class="pure-group">
+          <label for="enlacedelapaginaamodificar">Enlace de la página a modificar o donde se debe crear contenido: </label>
+          <input required class="form-control" id="Enlace" name="entry.819376302" placeholder="www.buenosaires.gob.ar/gobierno/..."></input>
+        </fieldset>
       
+       <fieldset class="pure-group">
+          <label for="cambios">Cambios a realizar o nuevo contenido: </label>
+          <textarea class="form-control" id="Enlace" name="entry.1381951776" rows="5" placeholder=""></textarea>
+        </fieldset>
+
+     
+     <fieldset class="pure-group">
+           <label for="name">Para enviarnos imágenes, videos o documentos subilos a <a href="https://drive.google.com" target="_blank">GoogleDrive</a>/<a href="https://www.dropbox.com/" target="_blank">DropBox</a> y pega el enalce acá:</label>  
+          <input class="form-control" id="enlace" name="entry.1201013584" placeholder="https://drive.google.com/file/etc.jpg">
+      
+</fieldset>
+   
+  <fieldset class="pure-group">
+          <label for="observaciones">Observaciones: </label>
+          <textarea class="form-control" id="observaciones" name="entry.2076308639" placeholder="" rows="2"></textarea>
+        </fieldset>
+
+        <button class="btn button-xlarge btn-primary btnenviar" style="margin-bottom: 35px;">
+          <i class="fa fa-paper-plane"></i>&nbsp;Envíar</button>
+    
+      </form>
+</div>
 	  </div>
 
-    
+    </div>
 <!-- footer -->
 <footer>
       <div class="footer">
