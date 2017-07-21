@@ -2511,8 +2511,20 @@ ul.affix-bottom {
   -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
 }
 
-.carousel-inner > .item {
+/*.carousel-inner > .item {
   max-height: 512px;
+}*/
+.carousel, .item, .active {
+	height:100%;
+}
+.carousel-inner { 
+	height:100%;
+}
+.fill { 
+	width:100%;
+	height:100%;
+	background-position:center;
+	background-size:cover;
 }
 
 .carousel-inner > .item > img,
