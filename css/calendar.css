@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 .calendar {
-	margin: 0px 40px;
+	margin: 0px 40px 40px;
 }
 .popover.calendar-event-popover {
 	font-family: 'Roboto', sans-serif;
@@ -103,9 +103,8 @@
 .calendar-day > .events {
 	cursor: pointer;
 }
-.calendar-day > .events > .event h4 {
+.calendar-day > .events > .event h3 {
 	font-size: 12px;
-	font-weight: 700;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -114,24 +113,107 @@
 	color:white;
 	border-radius:3px;
 }
-.calendar-day > .events > #charla.event h4 {
+.calendar-day > .events > #evento.event h3 {
 	background-color:#d13f34;
 }
-.calendar-day > .events > #curso.event h4 {
+.calendar-day > .events > #curso.event h3 {
 	background-color:#ff9624;
 }
-.calendar-day > .events > #evento.event h4 {
+.calendar-day > .events > #lanzamiento.event h3 {
 	background-color:#9bc12b;
 }
-.calendar-day > .events > #acto.event h4 {
+.calendar-day > .events > #reuniondetrabajo.event h3 {
 	background-color:#3cb5b1;
+}
+.calendar-day > .events > #convenio.event h3 {
+	background-color:#4265bc;
+}
+.calendar-day > .events > #efemeride.event h3 {
+	background-color:#9c43a3;
+}
+.calendar-day > .events > #visita.event h3 {
+	background-color:#c64b7d;
+}
+.calendar-day > .events > #coparticipacion.event h3 {
+	background-color:#ffd300;
+}
+.calendar-day > .events > #legislativa.event h3 {
+	background-color:#5a2a5e;
+}
+.calendar-day > .events > #otros.event h3 {
+	background-color:#424245;
+}
+.img-center {
+	margin:0px auto;
+	text-align:center;
+}
+.ref {
+	border:solid 1px #9e9e9e;
+}
+ul.pagination.pagination-sm {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+}
+ul.pagination.pagination-sm li {
+	 display: table-cell;
+  width: auto;
+  text-align: center;
+}
+ul.pagination.pagination-sm li a.active {
+	background-color:#fcda59;
+	color:white;
+}
+.mes-titulo {
+	text-align:center;
+}
+.cuadrado-ref {
+	height:100%;
+	width:100%;
+	margin:15px auto;
+	color:white;
+	border-radius:3px;
+	font-weight:700;
+	padding:5px;
+}
+
+.cuadrado-ref.evento {
+	background-color:#d13f34;
+}
+.cuadrado-ref.curso {
+	background-color:#ff9624;
+}
+.cuadrado-ref.lanzamiento {
+	background-color:#9bc12b;
+}
+.cuadrado-ref.reuniondetrabajo {
+	background-color:#3cb5b1;
+}
+.cuadrado-ref.convenio {
+	background-color:#4265bc;
+}
+.cuadrado-ref.efemeride {
+	background-color:#9c43a3;
+}
+.cuadrado-ref.visita {
+	background-color:#c64b7d;
+}
+.cuadrado-ref.coparticipacion {
+	background-color:#ffd300;
+}
+.cuadrado-ref.legislativa {
+	background-color:#5a2a5e;
+}
+.cuadrado-ref.otros {
+	background-color:#424245;
 }
 
 .calendar-day > .events > .event > .desc,
 .calendar-day > .events > .event > .location,
 .calendar-day > .events > .event > .datetime,
 .calendar-day > .events > .event > .attending,
-.calendar-day > .events > .event > .escribinos.btn.btn-success {
+.calendar-day > .events > .event > .escribinos.btn.btn-success,
+.calendar-day > .events > .event > .area {
 	display: none;
 }
 .calendar-day > .events > .event > .progress {
