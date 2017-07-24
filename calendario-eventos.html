@@ -20,13 +20,15 @@
     <link rel="stylesheet" href="css/bootstrap-responsive.css">
     <link rel="stylesheet" href="css/csspedidos_de _diseño.css">
     <link rel="stylesheet" href="css/fonts.css">
-     
-     <link href="https://use.fontawesome.com/73b0b97073.css" media="all" rel="stylesheet">
-	<script src="https://use.fontawesome.com/e379886307.js"></script>
-	<script>
+    <link rel="stylesheet" href="css/calendar.css">
+	<link href="https://use.fontawesome.com/73b0b97073.css" media="all" rel="stylesheet">
+      <script src="https://use.fontawesome.com/e379886307.js"></script>
+     <script>
 if (document.cookie.indexOf("CrewCentreSession=Valid") == -1) {
   location.href = "https://mingob.github.io/PediloYa/";}
 </script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     
 <style>
 html {
 	background-color:#fff;
@@ -63,15 +65,15 @@ html {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="https://mingob.github.io/PediloYa/PediloYa.html">Inicio</a>
+              <a class="navbar-brand"  href="https://mingob.github.io/PediloYa/PediloYa.html">Inicio</a>
             </div>
             <div class="collapse navbar-collapse" id="main-nav">
               <ul class="nav navbar-nav navbar-right">
-             <!--   <li><a class="navbar-brand" data-toggle="tab" href="#menu6" data-original-title="" title="">Cómo hacer un pedido</a></li> -->
+        <!--        <li><a class="navbar-brand" data-toggle="tab" href="#menu6" data-original-title="" title="">Cómo hacer un pedido</a></li> -->
                 <li><a class="navbar-brand" href="https://mingob.github.io/PediloYa/descargas.html" data-original-title="" title="">Material Útil</a></li>
               <!--  <li><a data-toggle="tab" href="#menu8">Noticias Web</a></li>-->
                 <!-- <li class="disabled"><a href="#">Lineamientos</a></li> 
-               -->
+                -->
                 <li><a class="navbar-brand" href="https://mingob.github.io/PediloYa/contacto.html" data-original-title="" title="">Contacto</a></li>
               </ul>
             </div>
@@ -90,151 +92,1932 @@ html {
 
 
 
-<!-- aca va el formulario de publicacion en facebook-->
-     <div id="menu2" class="tab-pane">
-      <aside>
-           <h1>
-		   Cargá un evento
-           </h1>
-           <h3>Una vez enviado el evento se cargará a la brevedad
-           </h3>
-      </aside>
-      <script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe"
-style="display:none;" onload="if(submitted)
-{window.location='https://mingob.github.io/PediloYa/calendario-eventos.html';}"></iframe>
-     <form method="POST" class="pure-form pure-form-stacked container" action="https://docs.google.com/forms/d/e/1FAIpQLSelJ2fepF3c3fdp3yQv6w1xsCbj5pEWn_4MrZp-C4B361p-tQ/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
-    
-        <!-- change the form action to your script url -->
-    
-        <fieldset class="pure-group">
-          <label for="name">Nombre: </label>
-          <input class="form-control" id="nombre" name="entry.2122687369" required placeholder="Ej: Juan Vecinos">
-          
-        </fieldset> 
-        
-        <fieldset class="pure-group">
-          <label for="area">Área: </label>
-          <input class="form-control" id="area" name="entry.277489402" required placeholder="SS - DG - UPE">
-        </fieldset>
-        
-        
-    
-       <fieldset class="pure-group">
-          <label for="email">Correo Electrónico de Contacto para el evento (para pedir información o inscribirse)</label>
-          <input class="form-control" id="email" name="entry.897989635" type="email" value="" required placeholder="tu.nombre@email.com">
-          <span id="email-invalid" style="visibility:hidden">
-            Tiene que ser un email valido</span>
-        </fieldset>
+<div class="container">
+	<h1 class="mes-titulo">Calendario del Ministerio de Gobierno</h1>
+	<a href="publica-un-evento.html" class="btn btn-primary">Publicá un evento</a>
+</div>
+<div class="container">
 
-       
-
-   
-   <fieldset class="form-group">
-    <legend>Tipo de evento</legend>
-    <div class="form-check">
-      <label class="form-check-label check-responsive">
-        <input type="radio" class="form-check-input" name="entry.301593438" id="optionsRadios1" value="Evento / Festival" area-value="Evento / Festival">
-	      Evento / Festival (Ej: BA Celebra las Regiones, etc.) 
-      </label><div id="evento-form" class="referencia-form"></div>
-    </div>
-    <div class="form-check">
-    <label class="form-check-label check-responsive">
-        <input type="radio" class="form-check-input" name="entry.301593438" id="optionsRadios2" value="Curso / Jornada" area-value="Curso / Jornada">
-        Curso / Jornada (Ej: Dialobando BA, Gestionable, etc.) 
-      </label><div id="curso-form" class="referencia-form"></div>
-
-      </div>
-      <div class="form-check">
-      <label class="form-check-label check-responsive">
-        <input type="radio" class="form-check-input" name="entry.301593438" id="optionsRadios3" value="Lanzamiento / Cierre de Programa" area-value="Lanzamiento / Cierre de Programa">
-       Lanzamiento / Cierre de Programa (Ej: Lanzamiento Argentina Legisla; Cierre MVME, etc.) 
-      </label><div id="lanzamiento-form" class="referencia-form"></div>
-    </div>
-    <div class="form-check">
-      <label class="form-check-label check-responsive">
-        <input type="radio" class="form-check-input" name="entry.301593438" id="optionsRadios4" value="Reunión de trabajo con otras Áreas GCBA" area-value="Reunión de trabajo con otras Áreas GCBA">
-        Reunión de trabajo con otras Áreas GCBA (Ej: Modernización, Cultura, Turismo, etc.)
-      </label><div id="reuniondetrabajo-form" class="referencia-form"></div>
-    </div>
-    <div class="form-check">
-      <label class="form-check-label check-responsive">
-        <input type="radio" class="form-check-input" name="entry.301593438" id="optionsRadios5" value="Firma de convenio" area-value="Firma de convenio">
-        Firma de convenio (Ej: con universidades, con otros municipios, etc.)
-      </label><div id="convenio-form" class="referencia-form"></div>
-    </div>
-    <div class="form-check">
-      <label class="form-check-label check-responsive">
-        <input type="radio" class="form-check-input" name="entry.301593438" id="optionsRadios6" value="Celebración / Efeméride" area-value="Celebración / Efeméride">
-        Celebración / Efeméride (Ej: Día del Riachuelo, Día global de las buenas acciones, etc.)
-      </label><div id="efemeride-form" class="referencia-form"></div>
-    </div>
-    <div class="form-check">
-      <label class="form-check-label check-responsive">
-        <input type="radio" class="form-check-input" name="entry.301593438" id="optionsRadios7" value="Co Participación en Programa / Evento / Acción /Jornada" area-value="Co Participación en Programa / Evento / Acción /Jornada">
-        Co Participación en Programa / Evento / Acción / Jornada (Ej: Estrategas Urbanos, etc.)
-      </label><div id="visita-form" class="referencia-form"></div>
-    </div>
-    <div class="form-check">
-      <label class="form-check-label check-responsive">
-        <input type="radio" class="form-check-input" name="entry.301593438" id="optionsRadios8" value="Definición Legislativa Vinculada" area-value="Definición Legislativa Vinculada">
-       Definición Legislativa Vinculada (Ej: Prórroga de la Ley de Emergencia Ambiental, etc.)
-      </label><div id="coparticipacion-form" class="referencia-form"></div>
-    </div>
-    <div class="form-check">
-      <label class="form-check-label check-responsive">
-        <input type="radio" class="form-check-input" name="entry.301593438" id="optionsRadios9" value="Visita Municipios / Provincias" area-value="Visita Municipios / Provincias">
-        Visita Municipios / Provincias
-      </label><div id="legislativa-form" class="referencia-form"></div>
-    </div>
-    <div class="form-check">
-      <label class="form-check-label check-responsive">
-        <input type="radio" class="form-check-input" name="entry.301593438" id="optionsRadios10" value="otro" area-value="otro">
-        Otro: <input  name="entry.1566235662" >
-      </label><div id="otros-form" class="referencia-form"></div>
-    </div>
-  </fieldset>
-      
-
-<fieldset class="pure-group">
-          <label for="texto">Titulo del evento: </label>
-          <input class="form-control" id="titulo" name="entry.1500680750" required></input>
-        </fieldset>
+	<ul class="pagination pagination-sm">
+            <li data-target="#myCarousel" data-slide-to="0"><a class="active" href="#">Julio</a></li>
+            <li data-target="#myCarousel" data-slide-to="1"><a href="#">Agosto</a></li>
+            <li data-target="#myCarousel" data-slide-to="2"><a href="#">Septiembre</a></li>
+            <li data-target="#myCarousel" data-slide-to="3"><a href="#">Octubre</a></li>
+            <li data-target="#myCarousel" data-slide-to="4"><a href="#">Noviembre</a></li>
+            <li data-target="#myCarousel" data-slide-to="5"><a href="#">Diciembre</a></li>
+            <li data-target="#myCarousel" data-slide-to="6"><a href="#">Enero</a></li>
+            <li data-target="#myCarousel" data-slide-to="7"><a href="#">Febrero</a></li>
+            <li data-target="#myCarousel" data-slide-to="8"><a href="#">Marzo</a></li>
+            <li data-target="#myCarousel" data-slide-to="9"><a href="#">Abril</a></li>
+            <li data-target="#myCarousel" data-slide-to="10"><a href="#">Mayo</a></li>
+            <li data-target="#myCarousel" data-slide-to="11"><a href="#">Junio</a></li>
+        </ul>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+    <!-- Indicators -->
         
-        <fieldset class="pure-group">
-          <label for="email">Breve Descripción del Evento</label>
-          <textarea rows="5" class="form-control" id="email" name="entry.1351314668" type="email" required></textarea>
-        </fieldset>
-        
-	       <fieldset class="pure-group">
-          <label for="Fecha">Fecha: </label>
-          <input pattern="\d{1,2}/\d{1,2}/\d{4}" class="form-control" required id="Fecha" name="entry.800296466" placeholder="dd/mm/yyyy">
-          
-        </fieldset> 
-        	       <fieldset class="pure-group">
-          <label for="Hora">Horario: </label>
-          <input class="form-control" id="Hora" name="entry.2009198859" required placeholder="10:00 hs.">
-          
-        </fieldset> 
-     
-    
-       
-    
-        <button class="btn button-xlarge btn-primary btnenviar" style="margin-bottom: 35px;">
-          <i class="fa fa-paper-plane"></i>&nbsp;Envíar</button>
-    
-      </form>
-    
-      <!-- Customise the Thankyou Message People See when they submit the form: -->
-      <div style="display:none;" id="thankyou_message">
-        <h2><b>Gracias</b> por tu pedido!
-          Nos comunicaremos por email a la brevedad</h2>
-      </div>
-	  </div>
-<!-- aca termina el segundo formulario -->
+    <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+            <!-- -------------------------------------------------------------- Julio -------------------------------------------------------------- -->
+                <h1 class="mes-titulo">Julio 2017</h1>
+                <div class="calendar" data-toggle="calendar">
+                    <div class="row">
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Domingo</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Lunes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Martes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Miércoles</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Jueves</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Viernes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Sábado</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-06-25">25</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-06-26">26</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-06-27">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-06-28">28</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-06-29">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-06-30">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-01">01</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-02">02</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-03">03</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-04">04</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-05">05</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-06">06</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-07">07</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-08">08</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-09">09</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-10">10</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-11">11</time>
+                            <div class="events">
+                                <div class="event" id="curso">
+                                    <h3>Dialogando BA Puertos</h3>
+                                    <div class="area"><h4>UPE Puertos</h4></div>
+                                    <div class="desc">
+                                        <p>Última mesa de trabajo de Dialogando BA Ley de Puertos, bajo la temática: “Autoridad Portuaria”, en el Centro Cívico Parque Patricios</p>
+                                    </div>
+                                    <div class="location"> <i class="fa fa-map-marker" aria-hidden="true"></i> Centro Civico Parque Patricios - Uspallata 3160 </div>
+                                    <div class="datetime"> <i class="fa fa-calendar" aria-hidden="true"></i> 09:00 hs.</div>
+                                    <a href="#signup" class="btn btn-success escribinos" role="button">Escribínos para participar</a>
+                                </div>
+                                <div class="event" id="curso">
+                                    <h3>Dialogando BA Conflicto de Intereses</h3>
+                                    <div class="area"><h4>Subsecretaría de Reforma Política y Asuntos Legislativos</h4></div>
+                                    <div class="desc">
+                                        <p>Se llevará adelante el debate sobre la normativa en materia de Conflicto de Intereses para la Ciudad</p>
+                                    </div>
+                                    
+                                    <div class="location"> <i class="fa fa-map-marker" aria-hidden="true"></i> Centro Civico Parque Patricios - Uspallata 3160 </div>
+                                    <div class="datetime"> <i class="fa fa-calendar" aria-hidden="true"></i> 14:00 hs.</div>
+                                    <a href="#signup" class="btn btn-success escribinos" role="button">Escribínos para participar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-12">12</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-17">13</time>
+                            <div class="events">
+                                <div class="event" id="efemeride">
+                                    <h3>Celebración del Día del Riachuelo 2017</h3>
+                                     <div class="area"><h4>UPE CUMAR</h4></div>
+                                    <div class="desc">
+                                        <p>"Escuelas por el Riachuelo" es un proyecto creado con el objetivo de generar conciencia desde la escuela y hacia la comunidad respecto la problemática ambiental que afecta a la Cuenca Matanza Riachuelo</p>
+                                    </div>
+                                    <div class="location"> <i class="fa fa-map-marker" aria-hidden="true"></i> Centro Civico Parque Patricios - Uspallata 3160 </div>
+                                    <div class="datetime"> <i class="fa fa-calendar" aria-hidden="true"></i> 10:00 hs.</div>
+                                    <a href="#signup" class="btn btn-success escribinos" role="button">Escribínos para participar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-18">14</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-19">15</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-20">16</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-21">17</time>
+                            <div class="events">
+                                <div class="event" id="convenio">
+                                    <h3>Firma de convenio con IPS</h3>
+                                    <div class="area"><h4>Subsecretaría de Asuntos Interjurisdiccionales y Política Metropolitana</h4></div>
+                                    <div class="desc">
+                                        <p>Desde la Subsecretaria de Asuntos Interjurisdiccionales y Política Metropolitana firmamos un convenio con el IPS del Gobierno de la Provincia de Buenos Aires</p>
+                                    </div>
+                                    <div class="location"> <i class="fa fa-map-marker" aria-hidden="true"></i> Centro Civico Parque Patricios - Uspallata 3160 </div>
+                                    <div class="datetime"> <i class="fa fa-calendar" aria-hidden="true"></i> 10:00 hs.</div>
+                                    <a href="#signup" class="btn btn-success escribinos" role="button">Escribínos para participar</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-22">18</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-23">19</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-24">20</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-25">21</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-26">22</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-27">23</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-28">24</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-29">25</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-30">26</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-31">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-01">28</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-02">29</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-27">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-07-28">31</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-07-29">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-07-30">02</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-07-31">03</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-08-01">04</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-08-02">05</time>
+                        </div>
+                    </div>
+                </div>
+                	
+            </div>
+            <div class="item">
+            <!-- -------------------------------------------------------------- Agosto -------------------------------------------------------------- -->
+            <h1 class="mes-titulo">Agosto 2017</h1>
+                <div class="calendar" data-toggle="calendar">
+                    <div class="row">
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Domingo</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Lunes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Martes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Miércoles</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Jueves</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Viernes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Sábado</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-07-30">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-07-31">31</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-02">02</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-03">03</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-04">04</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-05">05</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-06">06</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-07">07</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-08">08</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-09">09</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-10">10</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-11">11</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-12">12</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-13">13</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-14">14</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-15">15</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-16">16</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-17">17</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-18">18</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-19">19</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-20">20</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-21">21</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-22">22</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-23">23</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-24">24</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-25">25</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-26">26</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-27">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-28">28</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-29">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-30">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-08-31">31</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-09-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-09-02">02</time>
+                        </div>
+                    </div>
+                    </div>
+            	</div>
+            <div class="item">
+            <!-- -------------------------------------------------------------- Septiembre -------------------------------------------------------------- -->
+                            <h1 class="mes-titulo">Septiembre 2017</h1>
+                <div class="calendar" data-toggle="calendar">
+                    <div class="row">
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Domingo</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Lunes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Martes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Miércoles</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Jueves</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Viernes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Sábado</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-08-27">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-08-28">28</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-08-29">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-08-30">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-08-31">31</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-02">02</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-03">03</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-04">04</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-05">05</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-06">06</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-07">07</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-08">08</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-09">09</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-10">10</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-11">11</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-12">12</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-13">13</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-14">14</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-15">15</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-16">16</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-17">17</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-18">18</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-19">19</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-20">20</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-21">21</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-22">22</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-23">23</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-24">24</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-25">25</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-26">26</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-27">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-28">28</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-29">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-09-30">30</time>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            <div class="item">
+            <!-- -------------------------------------------------------------- Octubre -------------------------------------------------------------- -->
+               <h1 class="mes-titulo">Octubre 2017</h1>
+                <div class="calendar" data-toggle="calendar">
+                    <div class="row">
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Domingo</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Lunes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Martes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Miércoles</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Jueves</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Viernes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Sábado</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-02">02</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-03">03</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-04">04</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-05">05</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-06">06</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-07">07</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-08">08</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-09">09</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-10">10</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-11">11</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-12">12</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-13">13</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-14">14</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-15">15</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-16">16</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-17">17</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-18">18</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-19">19</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-20">20</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-21">21</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-22">22</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-23">23</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-24">24</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-25">25</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-26">26</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-27">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-23">28</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-24">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-25">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-10-26">31</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-11-27">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-11-28">02</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-11-29">03</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-11-30">04</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+            <!-- -------------------------------------- Noviembre ----------------------------------------- -->
+                <h1 class="mes-titulo">Noviembre 2017</h1>
+                <div class="calendar" data-toggle="calendar">
+                    <div class="row">
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Domingo</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Lunes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Martes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Miércoles</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Jueves</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Viernes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Sábado</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-10-29">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-10-28">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-10-29">31</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-02">02</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-03">03</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-04">04</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-05">05</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-06">06</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-07">07</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-08">08</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-09">09</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-10">10</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-11">11</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-12">12</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-13">13</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-14">14</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-15">15</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-16">16</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-17">17</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-18">18</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-19">19</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-20">20</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-21">21</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-22">22</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-23">23</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-24">24</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-25">25</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-26">26</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-27">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-28">28</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-29">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-11-30">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-12-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-12-02">02</time>
+                        </div>
+                    </div>
+                </div>
 
-    
-<!-- footer -->
+            </div>
+            <div class="item">
+            <!-- ----------------------------------------------------- Diciembre ---------------------------------------------------------- -->
+                <h1 class="mes-titulo">Diciembre 2017</h1>
+                <div class="calendar" data-toggle="calendar">
+                    <div class="row">
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Domingo</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Lunes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Martes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Miércoles</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Jueves</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Viernes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Sábado</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-11-27">26</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-11-28">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-11-29">28</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-11-30">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-11-31">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-02">02</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-03">03</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-04">04</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-05">05</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-06">06</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-07">07</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-08">08</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-09">09</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-10">10</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-11">11</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-12">12</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-13">13</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-14">14</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-15">15</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-16">16</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-17">17</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-18">18</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-19">19</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-20">20</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-21">21</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-22">22</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-23">23</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-24">24</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-25">25</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-26">26</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-27">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-28">28</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-29">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-30">30</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2017-12-31">31</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-01-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-01-02">02</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-01-03">03</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-01-04">04</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-01-05">05</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-01-06">06</time>
+                        </div>
+                    </div>
+                    </div>
+
+            </div>
+            <div class="item">
+                        <!-- ----------------------------------------------------- Enero ---------------------------------------------------------- -->
+                <h1 class="mes-titulo">Enero 2018</h1>
+                <div class="calendar" data-toggle="calendar">
+                    <div class="row">
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Domingo</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Lunes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Martes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Miércoles</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Jueves</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Viernes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Sábado</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2017-12-31">31</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-02">02</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-03">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-04">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-05">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-06">02</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-07">07</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-08">08</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-09">09</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-10">10</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-11">11</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-12">12</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-13">13</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-14">14</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-15">15</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-16">16</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-17">17</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-18">18</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-19">19</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-20">20</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-21">21</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-22">22</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-23">23</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-24">24</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-25">25</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-26">26</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-27">27</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-28">28</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-29">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-30">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-01-31">31</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-02-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-02-02">02</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-02-03">03</time>
+                        </div>
+                    </div>
+                    
+                    </div>
+            </div>
+            <div class="item">
+                        <!-- ----------------------------------------------------- Febrero ---------------------------------------------------------- -->
+                <h1 class="mes-titulo">Febrero 2018</h1>
+                <div class="calendar" data-toggle="calendar">
+                    <div class="row">
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Domingo</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Lunes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Martes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Miércoles</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Jueves</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Viernes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Sábado</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-01-28">28</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-01-29">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-01-30">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-01-31">31</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-02">02</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-03">03</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-04">04</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-05">05</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-06">06</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-07">07</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-08">08</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-09">09</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-10">10</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-11">11</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-12">12</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-13">13</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-14">14</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-15">15</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-16">16</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-17">17</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-18">18</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-19">19</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-20">20</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-21">21</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-22">22</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-23">23</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-24">24</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-25">24</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-26">25</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-27">26</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-27">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-02-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-02-01">02</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-02-02">03</time>
+                        </div>
+                    </div>
+                    
+                    </div>
+            </div>
+            <div class="item">
+                        <!-- ----------------------------------------------------- Marzo ---------------------------------------------------------- -->
+                <h1 class="mes-titulo">Marzo 2018</h1>
+                <div class="calendar" data-toggle="calendar">
+                    <div class="row">
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Domingo</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Lunes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Martes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Miércoles</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Jueves</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Viernes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Sábado</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-02-25">25</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-02-26">25</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-02-27">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-02-28">28</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-02">02</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-03">03</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-04">04</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-02-05">05</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-06">06</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-07">07</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-08">08</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-09">09</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-10">10</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-11">11</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-12">12</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-13">13</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-14">14</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-15">15</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-16">16</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-17">17</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-0318">18</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-19">19</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-20">20</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-21">21</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-22">22</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-23">23</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-24">24</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-25">24</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-26">25</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-27">26</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-27">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-01">28</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-01">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-03-02">30</time>
+                        </div>
+                    </div>
+                    
+                    </div>
+            </div>
+            <div class="item">
+                        <!-- ----------------------------------------------------- Abril ---------------------------------------------------------- -->
+                <h1 class="mes-titulo">Abril 2018</h1>
+                <div class="calendar" data-toggle="calendar">
+                    <div class="row">
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Domingo</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Lunes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Martes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Miércoles</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Jueves</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Viernes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Sábado</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-02">02</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-03">03</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-04">04</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-05">05</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-06">06</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-07">07</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-08">08</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-09">09</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-10">10</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-11">11</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-12">12</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-13">13</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-14">14</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-15">15</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-16">16</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-17">17</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-18">18</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-19">19</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-20">20</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-21">21</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-22">22</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-23">23</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-24">24</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-25">25</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-26">26</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-27">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-28">28</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-29">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-04-30">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-04-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-04-02">02</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-04-03">03</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-04-04">04</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-04-05">05</time>
+                        </div>
+                    </div>
+                    
+                    </div>
+            </div>            
+            <div class="item">
+                        <!-- ----------------------------------------------------- Mayo ---------------------------------------------------------- -->
+                <h1 class="mes-titulo">Mayo 2018</h1>
+                <div class="calendar" data-toggle="calendar">
+                    <div class="row">
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Domingo</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Lunes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Martes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Miércoles</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Jueves</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Viernes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Sábado</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-04-29">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-04-30">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-02">02</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-03">03</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-04">04</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-05">05</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-06">06</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-07">07</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-08">08</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-09">09</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-10">10</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-11">11</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-12">12</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-13">13</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-14">14</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-15">15</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-16">16</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-17">17</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-18">18</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-19">19</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-20">20</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-21">21</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-22">21</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-23">23</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-24">24</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-25">25</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-26">26</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-27">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-28">28</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-29">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-30">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-05-31">31</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-06-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-06-02">02</time>
+                        </div>
+                    </div>
+                    
+                    </div>
+            </div>            
+            <div class="item">
+                        <!-- ----------------------------------------------------- Junio ---------------------------------------------------------- -->
+                <h1 class="mes-titulo">Junio 2018</h1>
+                <div class="calendar" data-toggle="calendar">
+                    <div class="row">
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Domingo</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Lunes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Martes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Miércoles</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Jueves</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Viernes</h3>
+                        </div>
+                        <div class="col-xs-12 calendar-name-day">
+                            <h3>Sábado</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-04-29">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-04-30">28</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-05-01">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-05-02">30</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day calendar-no-current-month">
+                            <time datetime="2018-05-03">31</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-01">01</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-02">02</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-03">03</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-04">04</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-05">05</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-06">06</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-07">07</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-08">08</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-09">09</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-10">10</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-11">11</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-12">12</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-13">13</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-14">14</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-15">15</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-16">16</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-17">17</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-18">18</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-19">19</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-20">20</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-21">21</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-22">22</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-23">23</time>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-24">24</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-25">25</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-26">26</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-27">27</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-28">28</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-29">29</time>
+                        </div>
+                        <div class="col-xs-12 calendar-day">
+                            <time datetime="2018-06-30">30</time>
+                        </div>
+                    </div>
+                    
+                    </div>
+            </div>       
+		</div>
+    <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+    </div>
+<div class="container">
+	<h3 class="mes-titulo">Referencias</h3>
+	<div class="img-center">
+    	<div class="col-md-3">
+        	<div class="cuadrado-ref evento">
+	            <p>Evento / Festival (Ej: BA Celebra las Regiones, etc.)</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+        	<div class="cuadrado-ref curso">
+                <p>Curso / Jornada (Ej: Dialobando BA, Gestionable, etc.)</p>
+            </div>
+        	</div>
+        <div class="col-md-3">
+        	<div class="cuadrado-ref lanzamiento">
+                <p>Lanzamiento / Cierre de Programa (Ej: Lanzamiento Argentina Legisla; Cierre MVME, etc.)</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+        	<div class="cuadrado-ref reuniondetrabajo">
+                <p>Reunión de trabajo con otras Áreas GCBA (Ej: Modernización, Cultura, Turismo, etc.)</p>
+           </div>
+        </div>
+        <div class="col-md-3">
+        	<div class="cuadrado-ref convenio">
+                <p>Firma de convenio (Ej: con universidades, con otros municipios, etc.)</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+        	<div class="cuadrado-ref efemeride">
+                <p>Celebración / Efeméride (Ej: Día del Riachuelo, Día global de las buenas acciones, etc.)</p>
+           </div>
+        </div>
+        <div class="col-md-3">
+        	<div class="cuadrado-ref coparticipacion">
+                <p>Co Participación en Programa/ Evento/ Acción /Jornada (Ej: Estrategas Urbanos, etc.)</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+        	<div class="cuadrado-ref legislativa">
+                <p>Definición Legislativa Vinculada (Ej: Prórroga de la Ley de Emergencia Ambiental)</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+        	<div class="cuadrado-ref visita">
+                <p>Visita Municipios / Provincias</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+        	<div class="cuadrado-ref otros">
+                <p>Otros</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer>
       <div class="footer">
         <div class="container">
@@ -248,7 +2031,7 @@ style="display:none;" onload="if(submitted)
                 <p>Comunicación Interna<br>
                 <span class="text-muted">Ministerio de Gobierno</span></p>
               </div>
-          <a href="https://www.facebook.com/MinisterioDeGobiernoBA/" data-original-title="" title=""><i class="fa fa-facebook-official fa-3x margin-left-md redes"></i></a>
+           <a href="https://www.facebook.com/MinisterioDeGobiernoBA/" data-original-title="" title=""><i class="fa fa-facebook-official fa-3x margin-left-md redes"></i></a>
             <a href="https://twitter.com/MinGobBA" data-original-title="" title=""><i class="fa fa-twitter-square fa-3x margin-left-md redes"></i></a>
             <a href="https://www.youtube.com/channel/UCBR7UnGnxmh8fFEOoCqEWvQ" data-original-title="" title=""><i class="fa fa-youtube-square fa-3x margin-left-md redes"></i></a>
             </div>
@@ -258,7 +2041,52 @@ style="display:none;" onload="if(submitted)
         </div>
       </div>
     </footer>
+<script>
+$(function () {
+	$('[data-toggle="calendar"] > .row > .calendar-day > .events > .event').popover({
+		container: 'body',
+		content: 'Hello World',
+		html: true,
+		placement: 'bottom',
+		template: '<div class="popover calendar-event-popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+	});
 
+	$('[data-toggle="calendar"] > .row > .calendar-day > .events > .event').on('show.bs.popover', function () {
+		var html = [
+				'<button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>',
+				'<h3>'+$(this).find('h3').text()+'</h3>',
+				'<div class="area">'+$(this).find('div.area').html()+'</div>',
+				'<div class="desc">'+$(this).find('div.desc').html()+'</div>',
+				'<div class="location">'+$(this).find('div.location').html()+'</div>',
+				'<div class="datetime">'+$(this).find('div.datetime').html()+'</div>',
+				'<a class="escribinos btn btn-success">'+$(this).find('a.escribinos.btn.btn-success').html()+'</a>',
+				'</div>',
+				//'<a href="#signup" class="btn btn-success escribinos" role="button">Escribínos para participar</a>'
+			].join('\n');
+
+		$(this).attr('title', $(this).find('h4').text());
+		$(this).attr('data-content', html);
+	});
+
+	$('[data-toggle="calendar"] > .row > .calendar-day > .events > .event').on('shown.bs.popover', function () {
+		var $popup = $(this);
+		$('.popover:last-child').find('.close').on('click', function(event) {
+			$popup.popover('hide');
+		});
+	});
+});
+</script>
+ <script type="text/javascript">
+        $(document).ready(function() {
+            $("li a").click(function(event) {
+                event.preventDefault();
+                if ($("a").hasClass('active')) {
+                    $("a").removeClass('active');
+                }
+                $(this).addClass('active');
+            });
+        });
+    </script>
 <script data-cfasync="false" type="text/javascript"
 src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 <script src="js/jquery.min.js"></script>
