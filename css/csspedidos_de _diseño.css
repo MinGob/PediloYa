@@ -25,7 +25,46 @@ a.list-group-item.list-thumb {
 a.list-group-item.list-thumb {
 	border-top:0px;
 }
-
+.referencia-form {
+	height:25px;
+	width:25px;
+	display:inline-block;
+	content:'';
+	margin: 3px;
+	border-radius:50%;
+    border: solid 1px grey;
+    vertical-align: middle;
+}
+#evento-form {
+	background-color:#d13f34;
+}
+#curso-form {
+	background-color:#ff9624;
+}
+#lanzamiento-form {
+	background-color:#9bc12b;
+}
+#reuniondetrabajo-form {
+	background-color:#3cb5b1;
+}
+#convenio-form {
+	background-color:#4265bc;
+}
+#efemeride-form {
+	background-color:#9c43a3;
+}
+#visita-form {
+	background-color:#c64b7d;
+}
+#coparticipacion-form {
+	background-color:#ffd300;
+}
+#legislativa-form {
+	background-color:#5a2a5e;
+}
+#otros-form {
+	background-color:#424245;
+}
 @media only screen and (max-width: 1300px)  {
 .contenedor {
 	padding: 15px 5em;
