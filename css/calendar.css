@@ -226,3 +226,6 @@ div.alert.alert-danger.calendar-day {
 div.col-md-3 .cuadrado-ref span {
 	display:none;
 }
+.cuadrado-ref {
+	cursor:pointer;
+	}
