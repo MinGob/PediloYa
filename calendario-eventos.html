@@ -292,7 +292,7 @@ html {
                             <time datetime="2017-07-25">25</time>
                         </div>
                         <div class="col-xs-12 calendar-day">
-                            <time title="2017-07-26">26</time>
+                            <time datetime="2017-07-26">26</time>
                         </div>
                         <div class="col-xs-12 calendar-day">
                             <time datetime="2017-07-27">27</time>
@@ -2106,24 +2106,22 @@ $(function () {
 	});
 });
 </script>
-<script>
-	Date.prototype.yyyymmdd = function() {
+    <div datetime="27-07-2017" datetime="26-07-2017" id="todayStringFixed"></div>
+    <script>
+Date.prototype.yyyymmdd = function() {
   var mm = (this.getMonth() + 1).toString();
   var dd = this.getDate().toString();
-
   return [this.getFullYear() , mm.length===2 ? ''  : '-', '0', mm, dd.length===2 ? '-' : '0', dd].join(''); 
 };
-
   var date = new Date();
   var today = date.yyyymmdd();
-
- 
 
   document.getElementById('todayStringFixed').innerHTML = today;
 
   $(document).ready(function(){
-    $('[datetime="'+today+'"]').css("background-color", "yellow");})
-</script>
+    $('[datetime="'+today+'"]').css("background-color", "yellow");
+	});	
+	</script>
  <script type="text/javascript">
         $(document).ready(function() {
             $("li a").click(function(event) {
