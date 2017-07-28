@@ -113,6 +113,17 @@
 	color:white;
 	border-radius:3px;
 }
+.calendar-day > .events > .event2 h3 {
+	font-size: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 3px;
+	padding:3px;
+	color:white;
+	border-radius:3px;
+}
+
 .calendar-day > .events > #evento.event h3 {
 	background-color:#d13f34;
 }
@@ -143,6 +154,37 @@
 .calendar-day > .events > #otros.event h3 {
 	background-color:#424245;
 }
+.calendar-day > .events > #evento.event2 h3 {
+	background-color:#d13f34;
+}
+.calendar-day > .events > #curso.event2 h3 {
+	background-color:#ff9624;
+}
+.calendar-day > .events > #lanzamiento.event2 h3 {
+	background-color:#9bc12b;
+}
+.calendar-day > .events > #reuniondetrabajo.event2 h3 {
+	background-color:#3cb5b1;
+}
+.calendar-day > .events > #convenio.event2 h3 {
+	background-color:#4265bc;
+}
+.calendar-day > .events > #efemeride.event2 h3 {
+	background-color:#9c43a3;
+}
+.calendar-day > .events > #visita.event2 h3 {
+	background-color:#c64b7d;
+}
+.calendar-day > .events > #coparticipacion.event2 h3 {
+	background-color:#ffd300;
+}
+.calendar-day > .events > #legislativa.event2 h3 {
+	background-color:#5a2a5e;
+}
+.calendar-day > .events > #otros.event2 h3 {
+	background-color:#424245;
+}
+
 .img-center {
 	margin:0px auto;
 	text-align:center;
@@ -213,7 +255,18 @@ ul.pagination.pagination-sm li a.active {
 .calendar-day > .events > .event > .datetime,
 .calendar-day > .events > .event > .attending,
 .calendar-day > .events > .event > .escribinos.btn.btn-success,
-.calendar-day > .events > .event > .area {
+.calendar-day > .events > .event > .area,
+.calendar-day > .events > .event > .confirmado,
+.calendar-day > .events > .event > .no-confirmado, 
+.calendar-day > .events > .event2 > .desc,
+.calendar-day > .events > .event2 > .location,
+.calendar-day > .events > .event2 > .datetime,
+.calendar-day > .events > .event > .attending,
+.calendar-day > .events > .event2 > .escribinos.btn.btn-success,
+.calendar-day > .events > .event2 > .area,
+.calendar-day > .events > .event2 > .confirmado,
+.calendar-day > .events > .event2 > .no-confirmado {
+
 	display: none;
 }
 .calendar-day > .events > .event > .progress {
@@ -226,6 +279,14 @@ div.alert.alert-danger.calendar-day {
 div.col-md-3 .cuadrado-ref span {
 	display:none;
 }
+.hoy {
+	color:red;
+}
 .cuadrado-ref {
 	cursor:pointer;
 	}
+.stripes {
+	background-image: linear-gradient(-45deg, #ebecec 25%, #fff 25%, #fff 50%, #ebecec 50%, #ebecec 75%, #fff 75%, #fff);
+    background-size: 8px 8px;
+
+}
