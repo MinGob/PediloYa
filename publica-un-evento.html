@@ -90,9 +90,9 @@ html {
      <div id="menu2" class="tab-pane">
       <aside>
            <h1>
-		   Cargá un evento
+		   Compartí un evento
            </h1>
-           <h3>Una vez enviado el evento se cargará a la brevedad
+           <h3>Unos minutos después del envío del  formulario el evento aparecerá en agenda
            </h3>
       </aside>
       <script type="text/javascript">var submitted=false;</script>
@@ -118,7 +118,7 @@ style="display:none;" onload="if(submitted)
     
        <fieldset class="pure-group">
           <label for="email">Correo Electrónico de Contacto para el evento (para pedir información o inscribirse)</label>
-          <input class="form-control" id="email" name="entry.897989635" type="email" value=""  placeholder="tu.nombre@email.com">
+          <input class="form-control" id="email" name="entry.897989635" type="email" value="" required placeholder="tu.nombre@email.com">
           <span id="email-invalid" style="visibility:hidden">
             Tiene que ser un email valido</span>
         </fieldset>
@@ -191,6 +191,23 @@ style="display:none;" onload="if(submitted)
     </div>
   </fieldset>
       
+	   <fieldset class="form-group">
+    <legend>Estado del evento</legend>
+    <div class="form-check">
+      <label class="form-check-label check-responsive">
+        <input type="radio" class="form-check-input" name="entry.319455711" id="optionsRadios1" value="Confirmado" area-value="Confirmado">
+	      Evento Confirmado 
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label check-responsive">
+        <input type="radio" class="form-check-input" name="entry.319455711" id="optionsRadios2" value="no-confirmado" area-value="no-confirmado">
+        Ha Confirmar
+      </label>
+
+      </div>
+      
+  </fieldset>
 
 <fieldset class="pure-group">
           <label for="texto">Titulo del evento: </label>
