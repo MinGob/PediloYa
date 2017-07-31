@@ -199,7 +199,6 @@ ul.pagination.pagination-sm {
 }
 ul.pagination.pagination-sm li {
 	 display: table-cell;
-  width: auto;
   text-align: center;
 }
 ul.pagination.pagination-sm li a.active {
@@ -304,4 +303,25 @@ div.col-md-3 .cuadrado-ref span {
    .mostrar-xs {
 	   display:block;
    }
+   .popover.calendar-event-popover .location, .popover.calendar-event-popover .datetime {
+	   font-size:18px;
+   }
+   .popover.calendar-event-popover h4 {
+	   font-size:23px;
+   }
+   .popover.calendar-event-popover a.btn {
+	   font-size:20px;
+   }
+   .popover.calendar-event-popover {
+	   max-width:500px;
+}
+.googlecalendar {
+	font-size:22px;
+}
+.googlecalendar-btn {
+	width: 200px;	
+}
+.pagination-sm>li>a, .pagination-sm>li>span {
+	font-size:20px;
+}
 }
