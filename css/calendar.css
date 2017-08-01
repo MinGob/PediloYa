@@ -313,7 +313,7 @@ div.col-md-3 .cuadrado-ref span {
     text-overflow:clip;
 	position:absolute;
 	z-index: 999;
-	padding: 3px 40px;
+	padding: 3px 30px;
     text-align: center;
 }
 .calendar-day#diauno > .events > .event h3 {
