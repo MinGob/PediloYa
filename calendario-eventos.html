@@ -2156,7 +2156,7 @@ if (document.cookie.indexOf("CrewCentreSession=Valid") == -1) {
 Date.prototype.yyyymmdd = function() {
   var mm = (this.getMonth() + 1).toString();
   var dd = this.getDate().toString();
-  return [this.getFullYear() , mm.length===2 ? ''  : '-', '0', mm, dd.length===2 ? '-' : '0', dd].join(''); 
+  return [this.getFullYear() , mm.length===2 ? ''  : '-', '0', mm, dd.length===2 ? '-' : '-', '0', dd].join(''); 
 };
   var date = new Date();
   var today = date.yyyymmdd();
