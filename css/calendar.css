@@ -316,6 +316,14 @@ div.col-md-3 .cuadrado-ref span {
 	padding: 3px 40px;
     text-align: center;
 }
+.calendar-day#diauno > .events > .event h3 {
+    overflow:visible;
+    text-overflow:clip;
+	position:absolute;
+	z-index: 999;
+	padding: 3px 30px;
+    text-align: center;
+}
 .calendar-day#diados > .events > .event2 h3 {
 }
 @media only screen and (max-device-width: 769px) {
@@ -359,4 +367,18 @@ div.col-md-3 .cuadrado-ref span {
 	max-width: 160px;
 	
 }
+.calendar-day#diauno > .events > .event h3 {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 3px;
+    padding: 3px;
+    color: white;
+    border-radius: 3px;
+	position:absolute;
+	max-width: 160px;
+	
+}
+
 }
