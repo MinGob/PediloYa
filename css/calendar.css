@@ -134,7 +134,7 @@
 	background-color:#9bc12b;
 }
 .calendar-day > .events > #reuniondetrabajo.event h3 {
-	background-color:#3cb5b1;
+	background-color:#276d6b;
 }
 .calendar-day > .events > #convenio.event h3 {
 	background-color:#4265bc;
@@ -151,6 +151,9 @@
 .calendar-day > .events > #legislativa.event h3 {
 	background-color:#5a2a5e;
 }
+.calendar-day > .events > #trabajointerjuri.event h3 {
+	background-color:#51b7c8;
+}
 .calendar-day > .events > #otros.event h3 {
 	background-color:#424245;
 }
@@ -164,7 +167,7 @@
 	background-color:#9bc12b;
 }
 .calendar-day > .events > #reuniondetrabajo.event2 h3 {
-	background-color:#3cb5b1;
+	background-color:#276d6b;
 }
 .calendar-day > .events > #convenio.event2 h3 {
 	background-color:#4265bc;
@@ -180,6 +183,9 @@
 }
 .calendar-day > .events > #legislativa.event2 h3 {
 	background-color:#5a2a5e;
+}
+.calendar-day > .events > #trabajointerjuri.event2 h3 {
+	background-color:#51b7c8;
 }
 .calendar-day > .events > #otros.event2 h3 {
 	background-color:#424245;
@@ -228,7 +234,7 @@ ul.pagination.pagination-sm li a.active {
 	background-color:#9bc12b;
 }
 .cuadrado-ref.reuniondetrabajo {
-	background-color:#3cb5b1;
+	background-color:#276d6b;
 }
 .cuadrado-ref.convenio {
 	background-color:#4265bc;
@@ -247,6 +253,9 @@ ul.pagination.pagination-sm li a.active {
 }
 .cuadrado-ref.otros {
 	background-color:#424245;
+}
+.cuadrado-ref.trabajointerjuri {
+	background-color:#51b7c8;
 }
 .cuadrado-ref p {
 	margin-bottom:0px;
@@ -298,6 +307,17 @@ div.col-md-3 .cuadrado-ref span {
 .mostrar-xs {
 	display:none;
 }
+
+.calendar-day#diauno > .events > .event2 h3 {
+    overflow:visible;
+    text-overflow:clip;
+	position:absolute;
+	z-index: 999;
+	padding: 3px 40px;
+    text-align: center;
+}
+.calendar-day#diados > .events > .event2 h3 {
+}
 @media only screen and (max-device-width: 769px) {
    .no-mostrar-xs {
 	   display:none;
@@ -325,5 +345,18 @@ div.col-md-3 .cuadrado-ref span {
 }
 .pagination-sm>li>a, .pagination-sm>li>span {
 	font-size:20px;
+}
+.calendar-day#diauno > .events > .event2 h3 {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 3px;
+    padding: 3px;
+    color: white;
+    border-radius: 3px;
+	position:absolute;
+	max-width: 160px;
+	
 }
 }
