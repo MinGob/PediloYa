@@ -248,7 +248,7 @@ ul.pagination.pagination-sm li a.active {
 .cuadrado-ref.otros {
 	background-color:#424245;
 }
-.evento .cuadrado-ref p {
+.cuadrado-ref p {
 	margin-bottom:0px;
 }
 .calendar-day > .events > .event > .desc,
