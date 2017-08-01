@@ -1,8 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-.nav-tabs.nav-justified {
-	font-size:16px;
-}
+
 .footer {
 	clear:both;
 	
@@ -18,9 +16,6 @@
 .circuito {
 	margin:0px auto;
 	padding:25px 0 ;
-}
-a.list-group-item.list-thumb {
-	border-top:0px;
 }
 a.list-group-item.list-thumb {
 	border-top:0px;
@@ -45,7 +40,7 @@ a.list-group-item.list-thumb {
 	background-color:#9bc12b;
 }
 #reuniondetrabajo-form {
-	background-color:#3cb5b1;
+	background-color:#276d6b;
 }
 #convenio-form {
 	background-color:#4265bc;
@@ -61,6 +56,9 @@ a.list-group-item.list-thumb {
 }
 #legislativa-form {
 	background-color:#5a2a5e;
+}
+#trabajointerjuri-form {
+	background-color:#51b7c8;
 }
 #otros-form {
 	background-color:#424245;
@@ -155,7 +153,9 @@ label {
 fieldset {
 	clear:both	
 }
-
+fieldset.col-md-4 {
+	clear:none;
+}
 
 .modal-img-ejdenoticias {
 width:1130px;
