@@ -123,7 +123,16 @@
 	color:white;
 	border-radius:3px;
 }
-
+.calendar-day > .events > .event3 h3 {
+	font-size: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 3px;
+	padding:3px;
+	color:white;
+	border-radius:3px;
+}
 .calendar-day > .events > #evento.event h3 {
 	background-color:#d13f34;
 }
@@ -187,7 +196,7 @@
 .calendar-day > .events > #trabajointerjuri.event2 h3 {
 	background-color:#51b7c8;
 }
-.calendar-day > .events > #seguimiento.event2 h3 {
+.calendar-day > .events > #seguimiento.event3 h3 {
 	background-color:#E9967A;
 }
 .calendar-day > .events > #otros.event2 h3 {
@@ -266,6 +275,7 @@ ul.pagination.pagination-sm li a.active {
 .cuadrado-ref p {
 	margin-bottom:0px;
 }
+
 .calendar-day > .events > .event > .desc,
 .calendar-day > .events > .event > .location,
 .calendar-day > .events > .event > .datetime,
@@ -276,12 +286,19 @@ ul.pagination.pagination-sm li a.active {
 .calendar-day > .events > .event2 > .desc,
 .calendar-day > .events > .event2 > .location,
 .calendar-day > .events > .event2 > .datetime,
-.calendar-day > .events > .event > .attending,
+.calendar-day > .events > .event2 > .attending,
 .calendar-day > .events > .event2 > .escribinos.btn.btn-success,
 .calendar-day > .events > .event2 > .area,
-.calendar-day > .events > .event2 > .googlecalendar {
-
+.calendar-day > .events > .event2 > .googlecalendar
+ {
 	display: none;
+}
+.event3 > div, 
+.event3 > div
+ {
+	display: none;
+}
+
 }
 .googlecalendar {
 	margin-top: 5px;
