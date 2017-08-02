@@ -32,8 +32,8 @@ html {
 }
 </style>
 <script>
-if (document.cookie.indexOf("CrewCentreSession=Valid") == -1) {
-  location.href = "https://mingob.github.io/PediloYa/";}
+//if (document.cookie.indexOf("CrewCentreSession=Valid") == -1) {
+  //location.href = "https://mingob.github.io/PediloYa/";}
 </script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -332,6 +332,17 @@ if (document.cookie.indexOf("CrewCentreSession=Valid") == -1) {
                         </div>
                         <div class="col-xs-12 calendar-day">
                             <time datetime="2017-07-29">29</time>
+                            <div class="events">
+                                <div class="event3" id="seguimiento">
+                                    <h3>Reunión de Seguimiento</h3>
+                                   
+                                    <div class="location"> <i class="fa fa-map-marker" aria-hidden="true"></i> Centro Civico Parque Patricios - Uspallata 3160 </div>
+                                    <div class="datetime"> <i class="fa fa-calendar" aria-hidden="true"></i> 10:00 hs.</div>
+                                    
+                                    </div>
+                                
+                                
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -2180,78 +2191,12 @@ Date.prototype.yyyymmdd = function() {
   var today = date.yyyymmdd();
   //document.getElementById('todayStringFixed').innerHTML = today;
   $(document).ready(function(){
-    $('[datetime="'+today+'"]').addClass('today');
+    $('[datetime="'+today+'"]').parent().addClass('today');
 	});	
 	</script>
     
-<script>
-$(function () {
-	$('[data-toggle="calendar"] > .row > .calendar-day > .events > .event').popover({
-		container: 'body',
-		content: 'Hello World',
-		html: true,
-		placement: 'bottom',
-		template: '<div class="popover calendar-event-popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
-	});
-	$('[data-toggle="calendar"] > .row > .calendar-day > .events > .event').on('show.bs.popover', function () {
-		var html = [
-				'<button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>',
-				'<h3>'+$(this).find('h3').text()+'</h3>',
-				'<div class="area">'+$(this).find('div.area').html()+'</div>',
-				'<div class="desc">'+$(this).find('div.desc').html()+'</div>',
-				'<div class="location">'+$(this).find('div.location').html()+'</div>',
-				'<div class="datetime">'+$(this).find('div.datetime').html()+'</div>',
-				'<a class="escribinos btn btn-success">'+$(this).find('a.escribinos.btn.btn-success').html()+'</a>',
-				'<div class="googlecalendar">'+$(this).find('div.googlecalendar').html()+'</div>',
-				'</div>',
-				
-				//'<a href="#signup" class="btn btn-success escribinos" role="button">Escribínos para participar</a>'
-			].join('\n');
-		$(this).attr('title', $(this).find('h4').text());
-		$(this).attr('data-content', html);
-	});
-	$('[data-toggle="calendar"] > .row > .calendar-day > .events > .event').on('shown.bs.popover', function () {
-		var $popup = $(this);
-		$('.popover:last-child').find('.close').on('click', function(event) {
-			$popup.popover('hide');
-		});
-		//if ($(".event").hasClass("no-confirmado")) {
-    	//$(".popover:last-child").addClass("stripes");};
-	});
-});
-$(function () {
-	$('[data-toggle="calendar"] > .row > .calendar-day > .events > .event2').popover({
-		container: 'body',
-		content: 'Hello World',
-		html: true,
-		placement: 'bottom',
-		template: '<div class="popover calendar-event-popover stripes" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content "></div></div>'
-	});
-	$('[data-toggle="calendar"] > .row > .calendar-day > .events > .event2').on('show.bs.popover', function () {
-		var html = [
-				'<button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>',
-				'<h3>'+$(this).find('h3').text()+'</h3>',
-				'<div class="area">'+$(this).find('div.area').html()+'</div>',
-				'<div class="desc">'+$(this).find('div.desc').html()+'</div>',
-				'<div class="location">'+$(this).find('div.location').html()+'</div>',
-				'<div class="datetime">'+$(this).find('div.datetime').html()+'</div>',
-				'<a class="escribinos btn btn-success">'+$(this).find('a.escribinos.btn.btn-success').html()+'</a>',
-				'</div>',
-				
-				//'<a href="#signup" class="btn btn-success escribinos" role="button">Escribínos para participar</a>'
-			].join('\n');
-		$(this).attr('title', $(this).find('h4').text());
-		$(this).attr('data-content', html);
-	});
-	$('[data-toggle="calendar"] > .row > .calendar-day > .events > .event2').on('shown.bs.popover', function () {
-		var $popup = $(this);
-		$('.popover:last-child').find('.close').on('click', function(event) {
-			$popup.popover('hide');
-		});
-		//if ($(".event").hasClass("no-confirmado")) {
-    	//$(".popover:last-child").addClass("stripes");};
-	});
-});
+<script src="js/events-popup.js">
+
 </script>
 
  <script type="text/javascript">
