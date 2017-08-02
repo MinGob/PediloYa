@@ -187,6 +187,9 @@
 .calendar-day > .events > #trabajointerjuri.event2 h3 {
 	background-color:#51b7c8;
 }
+.calendar-day > .events > #seguimiento.event2 h3 {
+	background-color:#E9967A;
+}
 .calendar-day > .events > #otros.event2 h3 {
 	background-color:#424245;
 }
@@ -251,6 +254,9 @@ ul.pagination.pagination-sm li a.active {
 .cuadrado-ref.legislativa {
 	background-color:#5a2a5e;
 }
+.cuadrado-ref.seguimiento {
+	background-color:#E9967A;
+}
 .cuadrado-ref.otros {
 	background-color:#424245;
 }
@@ -290,8 +296,8 @@ div.alert.alert-danger.calendar-day {
 div.col-md-3 .cuadrado-ref span {
 	display:none;
 }
-.hoy {
-	color:red;
+.today {
+	background-color: #ffd200;
 }
 .cuadrado-ref {
 	cursor:pointer;
@@ -303,6 +309,7 @@ div.col-md-3 .cuadrado-ref span {
 .noconfirmado .cuadrado-ref {
 	color:#000000;
 	border: 1px solid #000;
+	height: 150%;
 }
 .mostrar-xs {
 	display:none;
