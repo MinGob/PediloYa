@@ -2069,64 +2069,77 @@ if (document.cookie.indexOf("CrewCentreSession=Valid") == -1) {
 <div class="container">
 	<h3 class="mes-titulo">Referencias</h3>
 	<div class="img-center">
-    	<div class="col-md-3 evento">
-        	<div class="cuadrado-ref evento">
-	            <p>Evento / Festival</p>
+        <div class="row">
+            <div class="col-md-3 seguimiento">
+                <div class="cuadrado-ref seguimiento">
+                    <p>Reunión de Seguimiento</p>
+                </div>
+            </div>
+        	<div class="col-md-3 evento">
+            	<div class="cuadrado-ref evento">
+    	            <p>Evento / Festival</p>
+                </div>
+            </div>
+            <div class="col-md-3 curso">
+            	<div class="cuadrado-ref curso">
+                    <p>Curso / Jornada </p>
+                </div>
+            	</div>
+            <div class="col-md-3 lanzamiento">
+            	<div class="cuadrado-ref lanzamiento">
+                    <p>Lanzamiento / Cierre de Programa </p>
+                </div>
             </div>
         </div>
-        <div class="col-md-3 curso">
-        	<div class="cuadrado-ref curso">
-                <p>Curso / Jornada </p>
+        <div class="row">
+            <div class="col-md-3 convenio">
+            	<div class="cuadrado-ref convenio">
+                    <p>Firma de Convenio </p>
+                </div>
             </div>
-        	</div>
-        <div class="col-md-3 lanzamiento">
-        	<div class="cuadrado-ref lanzamiento">
-                <p>Lanzamiento / Cierre de Programa </p>
+            <div class="col-md-3 efemeride">
+            	<div class="cuadrado-ref efemeride">
+                    <p>Celebración / Efeméride </p>
+               </div>
             </div>
-        </div>
-        <div class="col-md-3 reuniondetrabajo">
-        	<div class="cuadrado-ref reuniondetrabajo">
-                <p>Reunión de Trabajo con Otras Áreas GCBA </p>
-           </div>
-        </div>
-        <div class="col-md-3 convenio">
-        	<div class="cuadrado-ref convenio">
-                <p>Firma de Convenio </p>
+            <div class="col-md-3 legislativa">
+            	<div class="cuadrado-ref legislativa">
+                    <p>Actividad Legislativa </p>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3 efemeride">
-        	<div class="cuadrado-ref efemeride">
-                <p>Celebración / Efeméride </p>
-           </div>
-        </div>
-        <div class="col-md-3 legislativa">
-        	<div class="cuadrado-ref legislativa">
-                <p>Actividad Legislativa </p>
+            <div class="col-md-3 visita">
+            	<div class="cuadrado-ref visita">
+                    <p>Visita Municipios / Provincias</p>
+                </div>
             </div>
         </div>
-        <div class="col-md-3 coparticipacion">
-        	<div class="cuadrado-ref coparticipacion">
-                <p>Co Participación en Programa / Evento / Acción / Jornada</p>
+        <div class="row">
+            <div class="col-md-3 coparticipacion">
+                <div class="cuadrado-ref coparticipacion">
+                    <p>Co Participación en Programa / Evento / Acción / Jornada</p>
+                </div>
+            </div>
+            <div class="col-md-3 reuniondetrabajo">
+                <div class="cuadrado-ref reuniondetrabajo">
+                    <p>Reunión de Trabajo con Otras Áreas GCBA </p>
+               </div>
+            </div>
+            <div class="col-md-3 visita">
+                <div class="cuadrado-ref trabajointerjuri">
+                    <p>Reunión de Trabajo Interjurisdiccional (Ciudad - Provincia - Nación)</p>
+                </div>
+            </div>
+            <div class="col-md-3 noconfirmado">
+                <div class="cuadrado-ref stripes ">
+                    <p>Evento a Confirmar</p>
+                </div>
             </div>
         </div>
-        <div class="col-md-3 visita">
-        	<div class="cuadrado-ref trabajointerjuri">
-                <p>Reunión de Trabajo Interjurisdiccional (Ciudad - Provincia - Nación)</p>
-            </div>
-        </div>
-        <div class="col-md-3 visita">
-        	<div class="cuadrado-ref visita">
-                <p>Visita Municipios / Provincias</p>
-            </div>
-        </div>
-        <div class="col-md-3 noconfirmado">
-        	<div class="cuadrado-ref stripes ">
-                <p>Evento a Confirmar</p>
-            </div>
-        </div>
-        <div class="col-md-3 otros">
-        	<div class="cuadrado-ref otros">
-                <p>Otros</p>
+        <div class="row">
+            <div class="col-md-3 otros">
+            	<div class="cuadrado-ref otros">
+                    <p>Otros</p>
+                </div>
             </div>
         </div>
     </div>
@@ -2156,7 +2169,7 @@ if (document.cookie.indexOf("CrewCentreSession=Valid") == -1) {
       </div>
     </footer>
     
-    <div style="display:none;" datetime="27-07-2017" datetime="26-07-2017" id="todayStringFixed"></div>
+    <!--<div style="display:none;" datetime="27-07-2017" datetime="26-07-2017" id="todayStringFixed"></div>-->
     <script>
 Date.prototype.yyyymmdd = function() {
   var mm = (this.getMonth() + 1).toString();
@@ -2165,9 +2178,9 @@ Date.prototype.yyyymmdd = function() {
 };
   var date = new Date();
   var today = date.yyyymmdd();
-  document.getElementById('todayStringFixed').innerHTML = today;
+  //document.getElementById('todayStringFixed').innerHTML = today;
   $(document).ready(function(){
-    $('[datetime="'+today+'"]').css("background-color", "yellow");
+    $('[datetime="'+today+'"]').addClass('today');
 	});	
 	</script>
     
