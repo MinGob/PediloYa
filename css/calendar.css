@@ -314,7 +314,8 @@ div.col-md-3 .cuadrado-ref span {
 	display:none;
 }
 .today {
-	background-color: #d5d5d6;
+	background-color: #ccccd2;
+	
 	border: solid 1px #000 !important;
 }
 .cuadrado-ref {
