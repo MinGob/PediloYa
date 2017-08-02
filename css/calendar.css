@@ -314,8 +314,10 @@ div.col-md-3 .cuadrado-ref span {
 	display:none;
 }
 .today {
-	background-color: #ccccd2;
-	
+	/* Fallback for web browsers that don't support RGBa */
+    	background-color: rgb(204, 204, 210);
+    	/* RGBa with 0.6 opacity */
+    	background-color: rgba(204, 204, 210, 0.2);	
 	border: solid 1px #000 !important;
 }
 .cuadrado-ref {
