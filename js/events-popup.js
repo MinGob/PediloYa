@@ -104,3 +104,20 @@ $(function () {
     	//$(".popover:last-child").addClass("stripes");};
 	});
 });
+
+
+// ================ Esconder popover cuando se hace clic en cualqueir lado de la pantalla
+
+$(document).mouseup(function (e)
+{
+    var container = new Array();
+    container.push($('.popover'));
+        
+    $.each(container, function(key, value) {
+        if (!$(value).is(e.target) // if the target of the click isn't the container...
+            && $(value).has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            $(value).hide();
+        }
+    });
+});
