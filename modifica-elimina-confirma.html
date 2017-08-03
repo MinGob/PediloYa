@@ -110,22 +110,15 @@ style="display:none;" onload="if(submitted)
     </fieldset>
 
     <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#modifica">Modificá</a></li>
-        <li><a data-toggle="tab" href="#confirma">Confirmá</a></li>
+        <li class="active"><a data-toggle="tab" href="#confirma">Confirmá</a></li>
+        <li><a data-toggle="tab" href="#modifica">Modificá</a></li>
         <li><a data-toggle="tab" href="#elimina">Eliminá</a></li>
     </ul>
   
     <div class="tab-content">
 <!-- ================================================================ ================================================================ -->
         <div id="modifica" class="tab-pane fade in active">
-            <fieldset class="pure-group">
-                <label for="cambios">Cambios a realizar</label>
-                <textarea rows="5" class="form-control" id="email" name="entry.1880189485" type="email"></textarea>
-            </fieldset>
-        </div>
-<!-- ================================================================ ================================================================ -->
-        <div id="confirma" class="tab-pane fade">
-            <fieldset class="form-group">
+           <fieldset class="form-group">
                 <div class="form-check">
                     <label class="form-check-label check-responsive">
                         <input type="radio" class="form-check-input" name="entry.417711533" id="optionsRadios1" value="Confirmar" data-value="Confirmar">
@@ -138,7 +131,14 @@ style="display:none;" onload="if(submitted)
                         Cambiar el estado del evento a Evento a Confirmar
                     </label>
                 </div>
-            </fieldset>
+            </fieldset> 
+        </div>
+<!-- ================================================================ ================================================================ -->
+        <div id="confirma" class="tab-pane fade">
+		<fieldset class="pure-group">
+                	<label for="cambios">Cambios a realizar</label>
+                	<textarea rows="5" class="form-control" id="email" name="entry.1880189485" type="email"></textarea>
+            	</fieldset>
         </div>
 <!-- ================================================================ ================================================================ -->
         <div id="elimina" class="tab-pane fade">
