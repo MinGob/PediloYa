@@ -27,7 +27,9 @@
 html {
 	background-color:#fff;
 }
-
+label {
+	cursor: pointer;
+}
 [type="radio"] + span:before {
   content: '';
   display: inline-block;
@@ -39,38 +41,38 @@ html {
   margin-right: 0.75em;
   transition: 0.5s ease all;
 }
-[type="radio"] + span:before {
-  box-shadow: 0 0 0 0.15em #d13f34;
 
-}
 [type="radio"]#optionRadio1 + span:before {
-	box-shadow: 0 0 0 0.15em #ff9624;
+	box-shadow: 0 0 0 0.15em #d13f34;
 }
 [type="radio"]#optionsRadios2 + span:before {
-	box-shadow: 0 0 0 0.15em #9bc12b;
+	box-shadow: 0 0 0 0.15em #ff9624;
 }
 [type="radio"]#optionsRadios3 + span:before {
-	box-shadow: 0 0 0 0.15em #276d6b;
+	box-shadow: 0 0 0 0.15em #9bc12b;
 }
 [type="radio"]#optionsRadios4 + span:before {
-	box-shadow: 0 0 0 0.15em #4265bc;
+	box-shadow: 0 0 0 0.15em #276d6b;
 }
 [type="radio"]#optionsRadios5 + span:before {
-	box-shadow: 0 0 0 0.15em #9c43a3;
+	box-shadow: 0 0 0 0.15em #4265bc;
 }
 [type="radio"]#optionsRadios6 + span:before {
-	box-shadow: 0 0 0 0.15em #c64b7d;
+	box-shadow: 0 0 0 0.15em #9c43a3;
 }
 [type="radio"]#optionsRadios7 + span:before {
-	box-shadow: 0 0 0 0.15em #ffd300;
+	box-shadow: 0 0 0 0.15em #c64b7d;
 }
 [type="radio"]#optionsRadios8 + span:before {
-	box-shadow: 0 0 0 0.15em #5a2a5e;
+	box-shadow: 0 0 0 0.15em #ffd300;
 }
 [type="radio"]#optionsRadios9 + span:before {
-	box-shadow: 0 0 0 0.15em #51b7c8;
+	box-shadow: 0 0 0 0.15em #5a2a5e;
 }
 [type="radio"]#optionsRadios10 + span:before {
+	box-shadow: 0 0 0 0.15em #51b7c8;
+}
+[type="radio"]#optionsRadios11 + span:before {
 	box-shadow: 0 0 0 0.15em #424245;
 }
 [type="radio"]#optionRadio1,
@@ -217,16 +219,13 @@ style="display:none;" onload="if(submitted)
         <fieldset class="pure-group">
           <label for="name">Nombre: </label>
           <input class="form-control" id="nombre" name="entry.2122687369" required placeholder="Ej: Juan Vecinos">
-          
         </fieldset> 
         
         <fieldset class="pure-group">
           <label for="area">Área: </label>
           <input class="form-control" id="area" name="entry.277489402" required placeholder="SS - DG - UPE">
         </fieldset>
-        
-        
-    
+
        <fieldset class="pure-group">
           <label for="email">Correo Electrónico de Contacto para el evento (para pedir información o inscribirse)</label>
           <input class="form-control" id="email" name="entry.897989635" type="email" value="" required placeholder="tu.nombre@email.com">
