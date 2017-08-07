@@ -59,7 +59,7 @@ html {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="http://www.pediloya.club/calendario-eventos.html">Agenda</a>
+              <a class="navbar-brand" href="http://www.pediloya.club/calendario-eventos.html">Inicio</a>
             </div>
             <div class="collapse navbar-collapse" id="main-nav">
               <ul class="nav navbar-nav navbar-right">
@@ -90,7 +90,7 @@ html {
      <div id="menu2" class="tab-pane">
       <aside>
            <h1>
-		   Confirmá, modificá o eliminá un evento
+		   Modificá, Confirmá o Eliminá un evento
            </h1>
            <h3>Unos minutos después del envío del formulario se realizarán los cambios
            </h3>
@@ -104,21 +104,39 @@ style="display:none;" onload="if(submitted)
         <label for="name">Nombre: </label>
         <input class="form-control" id="nombre" name="entry.600451186" required placeholder="Ej: Juan Vecinos">
     </fieldset> 
-    <fieldset class="pure-group">
-        <label for="texto">Titulo del evento: </label>
+    
+	 <div class="form-group">
+      <label for="sel1">Titulo del evento</label>
+      
+      <select name="entry.2005336527" class="form-control" id="titulo" title="Elige el titulo del evento">
+        <option></option>
+        <option data-value="Dialogando BA Puertos" value="Dialogando BA Puertos">Dialogando BA Puertos</option>
+        <option data-value="Dialogando BA Conflicto de Intereses" value="Dialogando BA Conflicto de Intereses">Dialogando BA Conflicto de Intereses</option>
+        <option data-value="Celebración del Día del Riachuelo 2017" value="Celebración del Día del Riachuelo 2017">Celebración del Día del Riachuelo 2017</option>
+        <option data-value="Firma de convenio con IPS" value="Firma de convenio con IPS">Firma de convenio con IPS</option>
+      </select>
+      <p><i>Si no encontrás tu evento ingresalo más abajo</i></p>
+      <fieldset style="margin-top:7px;" class="pure-group">
         <input class="form-control" id="titulo" name="entry.12680350" required></input>
     </fieldset>
-
+    </div>
     <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#confirma">Confirmá</a></li>
-        <li><a data-toggle="tab" href="#modifica">Modificá</a></li>
+        <li class="active"><a data-toggle="tab" href="#modifica">Modificá</a></li>
+        <li><a data-toggle="tab" href="#confirma">Confirmá</a></li>
         <li><a data-toggle="tab" href="#elimina">Eliminá</a></li>
     </ul>
   
     <div class="tab-content">
 <!-- ================================================================ ================================================================ -->
-        <div id="confirma" class="tab-pane fade in active">
-           <fieldset class="form-group">
+        <div id="modifica" class="tab-pane fade in active">
+            <fieldset class="pure-group">
+                <label for="cambios">Cambios a realizar</label>
+                <textarea rows="5" class="form-control" id="email" name="entry.1880189485" type="email"></textarea>
+            </fieldset>
+        </div>
+<!-- ================================================================ ================================================================ -->
+        <div id="confirma" class="tab-pane fade">
+            <fieldset class="form-group">
                 <div class="form-check">
                     <label class="form-check-label check-responsive">
                         <input type="radio" class="form-check-input" name="entry.417711533" id="optionsRadios1" value="Confirmar" data-value="Confirmar">
@@ -128,17 +146,10 @@ style="display:none;" onload="if(submitted)
                 <div class="form-check">
                     <label class="form-check-label check-responsive">
                         <input type="radio" class="form-check-input" name="entry.417711533" id="optionsRadios2" value="Cancelar confirmación (manteniendo el evento en el calendario)" data-value="Cancelar confirmación (manteniendo el evento en el calendario)">
-                        Cambiar el estado del evento a Evento a Confirmar
+                        Cancelar confirmación (manteniendo el evento en el calendario) 
                     </label>
                 </div>
-            </fieldset> 
-        </div>
-<!-- ================================================================ ================================================================ -->
-        <div id="modifica" class="tab-pane fade">
-		<fieldset class="pure-group">
-                	<label for="cambios">Cambios a realizar</label>
-                	<textarea rows="5" class="form-control" id="email" name="entry.1880189485" type="email"></textarea>
-            	</fieldset>
+            </fieldset>
         </div>
 <!-- ================================================================ ================================================================ -->
         <div id="elimina" class="tab-pane fade">
