@@ -283,13 +283,15 @@ ul.pagination.pagination-sm li a.active {
 .calendar-day > .events > .event > .escribinos.btn.btn-success,
 .calendar-day > .events > .event > .area,
 .calendar-day > .events > .event > .googlecalendar,
+.calendar-day > .events > .event > .mailto,
 .calendar-day > .events > .event2 > .desc,
 .calendar-day > .events > .event2 > .location,
 .calendar-day > .events > .event2 > .datetime,
 .calendar-day > .events > .event2 > .attending,
 .calendar-day > .events > .event2 > .escribinos.btn.btn-success,
 .calendar-day > .events > .event2 > .area,
-.calendar-day > .events > .event2 > .googlecalendar
+.calendar-day > .events > .event2 > .googlecalendar,
+.calendar-day > .events > .event2 > .mailto
  {
 	display: none;
 }
