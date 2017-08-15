@@ -15,7 +15,8 @@
 	font-weight: 900;
 }
 .popover.calendar-event-popover .location,
-.popover.calendar-event-popover .datetime {
+.popover.calendar-event-popover .datetime,
+.popover.calendar-event-popover .contacto {
 	font-size: 14px;
 	font-weight: 700;
 	margin-bottom: 5px;
@@ -283,7 +284,7 @@ ul.pagination.pagination-sm li a.active {
 .calendar-day > .events > .event > .escribinos.btn.btn-success,
 .calendar-day > .events > .event > .area,
 .calendar-day > .events > .event > .googlecalendar,
-.calendar-day > .events > .event > .mailto,
+.calendar-day > .events > .event > .contacto,
 .calendar-day > .events > .event2 > .desc,
 .calendar-day > .events > .event2 > .location,
 .calendar-day > .events > .event2 > .datetime,
@@ -291,7 +292,7 @@ ul.pagination.pagination-sm li a.active {
 .calendar-day > .events > .event2 > .escribinos.btn.btn-success,
 .calendar-day > .events > .event2 > .area,
 .calendar-day > .events > .event2 > .googlecalendar,
-.calendar-day > .events > .event2 > .mailto
+.calendar-day > .events > .event2 > .contacto
  {
 	display: none;
 }
@@ -363,7 +364,9 @@ div.col-md-3 .cuadrado-ref span {
    .mostrar-xs {
 	   display:block;
    }
-   .popover.calendar-event-popover .location, .popover.calendar-event-popover .datetime {
+   .popover.calendar-event-popover .location,
+   .popover.calendar-event-popover .datetime,
+   .popover.calendar-event-popover .contacto   {
 	   font-size:18px;
    }
    .popover.calendar-event-popover h4 {
@@ -412,3 +415,6 @@ div.col-md-3 .cuadrado-ref span {
 }
 
 }
+
+
+/* section 5 */ 
