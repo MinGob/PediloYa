@@ -17,7 +17,8 @@ $(function () {
 				'<div class="desc">'+$(this).find('div.desc').html()+'</div>',
 				'<div class="location">'+$(this).find('div.location').html()+'</div>',
 				'<div class="datetime">'+$(this).find('div.datetime').html()+'</div>',
-				'<div class="mailto">'+$(this).find('div.mailto').html()+'</div>',
+				'<div class="contacto">'+$(this).find('div.contacto').html()+'</div>',
+				//'<div class="mailto">'+$(this).find('div.mailto').html()+'</div>',
 				'<div class="googlecalendar">'+$(this).find('div.googlecalendar').html()+'</div>',
 				'</div>',
 				
@@ -55,7 +56,8 @@ $(function () {
 				'<div class="desc">'+$(this).find('div.desc').html()+'</div>',
 				'<div class="location">'+$(this).find('div.location').html()+'</div>',
 				'<div class="datetime">'+$(this).find('div.datetime').html()+'</div>',
-				'<div class="mailto">'+$(this).find('div.mailto').html()+'</div>',
+				'<div class="contacto">'+$(this).find('div.contacto').html()+'</div>',
+				//'<div class="mailto">'+$(this).find('div.mailto').html()+'</div>',
 				'</div>',
 				
 				//'<a href="#signup" class="btn btn-success escribinos" role="button">Escribínos para participar</a>'
