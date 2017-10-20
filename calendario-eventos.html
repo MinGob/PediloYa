@@ -2204,11 +2204,11 @@ location.href = "https://mingob.github.io/PediloYa/";}
     
     <div style="display: none;" datetime="27-07-2017" datetime="26-07-2017" id="todayStringFixed"></div>
      
-    <script>
+<script>
 Date.prototype.yyyymmdd = function() {
   var mm = (this.getMonth() + 1).toString();
   var dd = this.getDate().toString();
-   return [this.getFullYear(), '-' , mm.length===2 ? ''  : '', '0', mm, '-', dd.length===2 ? '' : '0', '', dd].join(''); 
+   return [this.getFullYear(), '-' , mm.length===2 ? ''  : '0', '', mm, '-', dd.length===2 ? '' : '0', '', dd].join(''); 
 };
   var date = new Date();
   var today = date.yyyymmdd();
