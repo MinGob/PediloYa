@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
-
+::-moz-selection {
+	background-color:#3cb5b1;color:#FFF;
+}
+:selection {
+	background-color:#3cb5b1;color:#FFF;
+}
 .footer {
 	clear:both;
 	
