@@ -18,11 +18,17 @@
   $( function() {
     $( ".datepicker" ).datepicker({ minDate: 21, maxDate: "+2M",dateFormat: 'dd/mm/yy' });
   } );
+
+$("#datepickerinput").keydown(function (event) {
+    event.preventDefault();
+});
+
   </script>
 <style> 
 html {
   background-color:#fff;
 }
+
 </style>
   <script>
 $(document).ready(function(){
@@ -810,9 +816,9 @@ $(document).ready(function(){
         </fieldset>
 
       <fieldset class="pure-group">
-        <label for="fecha">Fecha de Entrega del Original: </label>
+        <label for="buildDate">Fecha de Entrega del Original: </label>
 <!-- ----------------------------------------------datepicker---------------------------------------------- -->
-        <input  style="cursor:pointer" readonly  name="entry.1669131330" type="text" class="datepicker" class="form-control" required placeholder="dd/mm/yyyy">
+        <input  style="cursor:pointer"  id="datepickerinput" name="entry.1669131330" type="text" class="datepicker" class="form-control" required placeholder="dd/mm/yyyy">
 <!-- ----------------------------------------------datepicker---------------------------------------------- -->
       </fieldset>
 <!-- ejemplos de flyers -->
@@ -965,7 +971,7 @@ IMPRESOS: Flyer doble faz, Libro, etc..."></textarea>
 
     <fieldset class="pure-group">
       <label for="fecha">Fecha de Entrega del Original: </label><p>(De tener más de una fecha para entrega de los originales utilizar la más próxima)</p>
-            <input class="datepicker"  style="cursor:pointer" readonly  name="entry.1235453217" type="text" class="form-control" required placeholder="dd/mm/yyyy">
+            <input id="datepickerinput" class="datepicker"  style="cursor:pointer"   name="entry.1235453217" type="text" class="form-control" required placeholder="dd/mm/yyyy">
     </fieldset>
       
     <fieldset>
