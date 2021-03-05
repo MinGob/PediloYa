@@ -3637,22 +3637,22 @@ a.alert-spot:active {
 /* Font files */
 @font-face {
   font-family: "OpenSans";
-  src: url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/opensans-regular.eot");
-  src: url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/opensans-regular.eot?#iefix") format("embedded-opentype"), 
-url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/opensans-regular.svg#OpenSansRegular") format("svg"), 
-url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/opensans-regular.woff") format("woff"), 
-url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/opensans-regular.ttf") format("truetype");
+  src: url("/fonts/opensans-regular.eot");
+  src: url("/fonts/opensans-regular.eot?#iefix") format("embedded-opentype"), 
+url("/fonts/opensans-regular.svg#OpenSansRegular") format("svg"), 
+url("/fonts/opensans-regular.woff") format("woff"), 
+url("/fonts/opensans-regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; 
 }
 
 @font-face {
   font-family: "OpenSansBold";
-  src: url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/opensans-bold.eot");
-  src: url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/opensans-bold.eot?#iefix") format("embedded-opentype"), 
-url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/opensans-bold.svg#OpenSansRegular") format("svg"), 
-url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/opensans-bold.woff") format("woff"), 
-url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/opensans-bold.ttf") format("truetype");
+  src: url("/fonts/opensans-bold.eot");
+  src: url("/fonts/opensans-bold.eot?#iefix") format("embedded-opentype"), 
+url("/fonts/opensans-bold.svg#OpenSansRegular") format("svg"), 
+url("/fonts/opensans-bold.woff") format("woff"), 
+url("/fonts/opensans-bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; 
 }
@@ -3670,22 +3670,22 @@ url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Conf
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/glyphicons-halflings-regular.eot");
-  src: url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), 
-url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/glyphicons-halflings-regular.woff") format("woff"), 
-url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/glyphicons-halflings-regular.ttf") format("truetype"), 
-url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); 
+  src: url("/fonts/glyphicons-halflings-regular.eot");
+  src: url("/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), 
+url("/fonts/glyphicons-halflings-regular.woff") format("woff"), 
+url("/fonts/glyphicons-halflings-regular.ttf") format("truetype"), 
+url("/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); 
 }
 
 
 /* BA Icon font */
 @font-face {
   font-family: "bastrap-icons";
-  src:url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/bastrap-icons.eot");
-  src:url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/bastrap-icons.eot?#iefix") format("embedded-opentype"),
-url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/bastrap-icons.woff") format("woff"),
-url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/bastrap-icons.ttf") format("truetype"),
-url("file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver CS6/es_ES/Configuration/Temp/DownloadCache/fonts/bastrap-icons.svg#bastrap-icons") format("svg");
+  src:url("/fonts/bastrap-icons.eot");
+  src:url("/fonts/bastrap-icons.eot?#iefix") format("embedded-opentype"),
+url("/fonts/bastrap-icons.woff") format("woff"),
+url("/fonts/bastrap-icons.ttf") format("truetype"),
+url("/fonts/bastrap-icons.svg#bastrap-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
