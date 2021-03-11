@@ -309,7 +309,6 @@ input[type=checkbox]:focus {
   line-height: 32px;
   border-radius: 6px;
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
 }
 
 @media (max-width: 767px) {
@@ -1280,7 +1279,6 @@ a.list-group-item.active > .badge {
 .badge {
   background-color: #aaa; 
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
 }
 
 /* dropdown-menu */
@@ -1319,7 +1317,6 @@ a.list-group-item.active > .badge {
   -webkit-background-size: contain;
   background-size: contain;
   display: inline-block; 
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/backgroundsize.min.htc);
 }
 
 .bac-header:hover,
@@ -1340,22 +1337,20 @@ a.list-group-item.active > .badge {
 .bac-header {
   width: 170px;
   height: 60px;
-  background-image: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/DownloadCache/bac-header-2.png);
+  background-image: url(https://gcba.github.io/BAstrap7/bastrap3/bac-header-2.png);
   background-image: url(https://gcba.github.io/BAstrap7/bastrap3/bac-header-2.svg) , none;
 }
 
 .bac-footer {
   width: 255px;
   height: 45px;
-  background-image: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/DownloadCache/bac-footer.png);
+  background-image: url(https://gcba.github.io/BAstrap7/bastrap3/bac-footer.png);
   background-image: url(https://gcba.github.io/BAstrap7/bastrap3/bac-footer.svg) , none;
 }
 
 .ba-btn {
   width: 51px;
   height: 30px;
-  background-image: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/DownloadCache/ba-btn.png);
-  background-image: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/DownloadCache/ba-btn.svg) , none;
   position: relative;
   left: 4px;
   top: 7px;
@@ -1437,7 +1432,6 @@ a.list-group-item.active > .badge {
   text-shadow: none;
   background-color: transparent;
   min-height: 48px; 
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
 }
 
 .lt-ie9 .navbar {
@@ -2016,23 +2010,7 @@ ul.affix-bottom {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.lt-ie9 .jumbotron-main .navbar-default .navbar-nav .active a,
-.lt-ie9 .jumbotron-main .navbar-default .nav > li > a:active
-.lt-ie9 .jumbotron-main .navbar-default .dropdown-menu li a:hover,
-.lt-ie9 .jumbotron-main .navbar-default .dropdown-menu li a:focus,
-.lt-ie9 .jumbotron-main .navbar-default .nav > li > a:focus,
-.lt-ie9 .jumbotron-main .navbar-default .nav > li > a:hover,
-.lt-ie9 .jumbotron-main .navbar-default .nav .open > a,
-.lt-ie9 .jumbotron-main .navbar-default .nav .open > a:focus,
-.lt-ie9 .jumbotron-main .navbar-default .nav .open > a:hover,
-.lt-ie9 .jumbotron-main .navbar-default .navbar-toggle:hover,
-.lt-ie9 .jumbotron-main .navbar-default .navbar-toggle:focus,
-.lt-ie9 .jumbotron-main .navbar-default .navbar-toggle:active,
-.lt-ie9 .jumbotron-main .navbar-default .navbar-nav .active a,
-.lt-ie9 .jumbotron-main .navbar-default .navbar-nav .active a:focus,
-.lt-ie9 .jumbotron-main .navbar-default .navbar-nav .active a:hover {
-  background: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/DownloadCache/white1.png) !important;
-}
+
 
 .jumbotron-main .navbar-default .navbar-nav > .disabled > a,
 .jumbotron-main .navbar-default .navbar-nav > .disabled > a:hover,
@@ -2083,9 +2061,7 @@ ul.affix-bottom {
 .jumbotron-overlay {
   background: rgba(0, 0, 0, 0.4); 
 }
-.lt-ie9 .jumbotron-overlay {
-  background: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/DownloadCache/black4.png) !important; 
-}
+
 
 .jumbotron-home {
   padding: 0;
@@ -2256,7 +2232,6 @@ ul.affix-bottom {
   padding: 10px 16px;
   border-radius: 4px; 
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
 }
 
 .pagination > li > a:hover,
@@ -2298,7 +2273,6 @@ ul.affix-bottom {
   border: 0;
   border-radius: 4px;
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
   padding: 10px 16px;
 }
 
@@ -2325,7 +2299,6 @@ ul.affix-bottom {
 .label {
   font-weight: 400; 
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
 }
 
 .label-default {
@@ -2452,7 +2425,6 @@ ul.affix-bottom {
 .media img {
   border-radius: 4px; 
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
 }
 
 /* carousel */
@@ -2460,7 +2432,6 @@ ul.affix-bottom {
   margin-bottom: 30px;
   border-radius: 6px; 
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
 }
 
 .carousel a:hover img,
@@ -2508,7 +2479,6 @@ ul.affix-bottom {
 .carousel-inner {
   border-radius: 6px; 
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
 }
 
 /*.carousel-inner > .item {
@@ -2532,7 +2502,6 @@ ul.affix-bottom {
   width: 100%;
   border-radius: 6px; 
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
 }
 
 @media (max-width: 560px) {
@@ -2583,7 +2552,6 @@ ul.affix-bottom {
 .jumbotron > .carousel .carousel-inner {
   border-radius: 0; 
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
 }
 
 .jumbotron > .carousel p {
@@ -2610,7 +2578,6 @@ ul.affix-bottom {
   color: #333;
   border-radius: 6px;
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
   display: block;
   background-color: transparent;
 }
@@ -2650,7 +2617,6 @@ ul.affix-bottom {
   height: 112px;
   border-radius: 56px;
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
   display: block;
 }
 
@@ -2751,7 +2717,6 @@ ul.affix-bottom {
 .list-group {
   border-radius: 4px;
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-box-shadow: 0 0 4px #aaa;
@@ -2836,7 +2801,6 @@ a.list-group-item:focus p {
 .list-group-panel-body .list-group-item:first-child {
   border-radius: 0; 
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
 }
 
 /* list-group-panel footer */
@@ -2942,7 +2906,6 @@ a.list-group-item:focus p {
   background-size: cover;
   overflow: auto;
   border-bottom: 0; 
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/backgroundsize.min.htc);
 }
 
 .list-heading-img h3 {
@@ -2990,8 +2953,6 @@ a.list-group-item:focus p {
   margin-right: 15px;
   border-radius: 4px; 
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/backgroundsize.min.htc);
 }
 
 @media (max-width: 560px) {
@@ -3038,7 +2999,6 @@ a.list-group-item:focus p {
   -webkit-background-size: cover;
   background-size: cover;
   text-align: center; 
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/backgroundsize.min.htc);
 }
 
 /* special panels */
@@ -3081,7 +3041,6 @@ a.list-group-item:focus p {
 .list-group-content .list-group-item {
   border-radius: 0;
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -3125,7 +3084,6 @@ a.list-group-item:focus p {
   margin-bottom: 20px;
   border-radius: 4px;
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
   background-color: #fff;
 }
 
@@ -3217,7 +3175,6 @@ a.list-group-item:focus p {
 .alert-spot {
   border-radius: 3px;
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
   padding: 15px;
   margin-bottom: 30px;
   overflow: auto;
@@ -3373,7 +3330,6 @@ a.alert-spot:active {
   border: none;
   border-radius: 0px;
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -3382,7 +3338,6 @@ a.alert-spot:active {
   margin: 0;
   border-radius: 0px;
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -3392,7 +3347,6 @@ a.alert-spot:active {
   box-shadow: none;
   border-radius: 4px;
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
   -webkit-box-shadow: 0px 0px 4px #aaa;
   box-shadow: 0px 0px 4px #aaa;
 }
@@ -3405,7 +3359,6 @@ a.alert-spot:active {
 #accordion .panel:first-child {
   border-radius: 0px;
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
@@ -3418,7 +3371,6 @@ a.alert-spot:active {
 #accordion .panel-heading {
   border-radius: 0px; 
   position: relative;
-  -ms-behavior: url(file:///C|/Users/EquipoDos/AppData/Roaming/Adobe/Dreamweaver%20CS6/es_ES/Configuration/Temp/bastrap3/pie.htc);
 }
 
 #accordion .panel-group .panel {
