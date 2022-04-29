@@ -43,138 +43,26 @@ html {
 
 <body>
 
-<header class="navbar navbar-primary navbar-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-6">
-              <a class="navbar-brand bac-header" href="index.html" data-original-title="" title=""></a>
-            </div>
-            <div class="col-md-6 col-sm-6 text-right oculto">
-              <h5 class="sub-brand"><img src="https://gcba.github.io/BAstrap7/bastrap3/bac-header-2.png"></h5>
-              <!--<h5 class="sub-brand">Vamos Buenos Aires</h5>-->
-           </div>
-          </div>
-        </div>
-      </header>
-      
-      <div class="jumbotron jumbotron-small jumbotron-misc jumbotron-main">
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="row">
-           <div class="collapse navbar-collapse" id="main-nav">
-              <ul class="nav navbar-nav navbar-right">
-                
-              <!--  <li><a data-toggle="tab" href="#menu8">Noticias Web</a></li>-->
-                <!-- <li class="disabled"><a href="#">Lineamientos</a></li> -->
-                <li><a  href="https://mingob.github.io/PediloYa/contacto.html" data-original-title="" title="">Contacto</a></li>
-                
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-        <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Ministerio de Gobierno</h1>
-        <p class="lead">Fortaleciendo el ejercicio pleno de la autonomía hacia la construcción de una cultura de convivencia y gestión responsable, abierta e innovadora entre la Ciudad, la Nación, las Provincias y los Municipios.</p>
-      </div>
-    </div>
-  </div>
-</div>
-      
-      <div class="container">
-<form style="margin-top:85px;margin-bottom:150px;" class='ingresar'>
-<table align=center>
-  <tr>
-     <td>Nombre de Usuario:</td>
-     <td><input type="text" name="username" style="background:#bfbfbf;color:#212121;border-color:#212121;" onFocus="this.style.background = '#ffffff';" onBlur="this.style.background = '#bfbfbf';"></td>
-  </tr>
-
-  <tr>
-     <td>Contraseña:</td>
-     <td><input id="password" type="password" name="password" style="background:#bfbfbf;color:#212121;border-color:#212121;" onFocus="this.style.background = '#ffffff';" onBlur="this.style.background = '#bfbfbf';" data-toggle="tooltip" data-trigger="manual" data-title="Caps lock is on"></td>
-  </tr>
-
-  <tr>
-  <td></td>
-  <td align=right><input type="button" value="Entrar" onClick="Login(this.form);" style="background:#bfbfbf;color:#000000;border-color:#212121;" onMouseOver="this.style.color = '#404040';" onMouseOut="this.style.color = '#000000';" onFocusr="this.style.color = '#404040';" onBlur="this.style.color = '#000000';"><a href="https://mingob.github.io/PediloYa/olvidelacontrase%C3%B1a.html"><p style="text-align:right">Olvidé la contraseña</p></a></td>
-  </tr>
-</table>
-</form><script>
-$('[type=password]').keypress(function(e) {
-  var $password = $(this),
-      tooltipVisible = $('.tooltip').is(':visible'),
-      s = String.fromCharCode(e.which);
-  
-  //Check if capslock is on. No easy way to test for this
-  //Tests if letter is upper case and the shift key is NOT pressed.
-  if ( s.toUpperCase() === s && s.toLowerCase() !== s && !e.shiftKey ) {
-    if (!tooltipVisible)
-    	$password.tooltip('show');
-  } else {
-    if (tooltipVisible)
-    	$password.tooltip('hide');
+<style>
+  *, *::after, *::before {box-sizing: border-box}
+  body { margin: 0 }
+  .fullContainer {
+    min-height: 100vh;
+    width: 100%;
+    background-color: hsl(0, 0%, 85%);
+    display: grid;
+    place-content: center;
   }
+</style>
+
+<div class='fullContainer'>
   
-  //Hide the tooltip when moving away from the password field
-  $password.blur(function(e) {
-    $password.tooltip('hide');
-  });
-});	
-	</script>
-	      <script>
-function Login(form) 
-{
-username = new Array("Admin","admin","MGOBGC","SSGOBIER","SSRPYAL","SSAIYPM","DGTALGOB","DGRC","DGRPM","DGRPOLYE","DGSOCAI","DGALE","DGAIYTC","DGPCYCCIU","CUMAR","UPEPBA","CEAMSE","MC","CAPM","Calendario","SSTIYC","DGEFT","DialogandoBA", "UPEIFPGP","BAaprende", "ykashytsya", "YKashytsya", "YKASHYTSYA");
-password = new Array("boris","boris","MGOBGC620","SSGOBIER620","SSRPYAL620","SSAIYPM620","DGTALGOB620","DGRC620","DGRPM620","DGRPOLYE620","DGSOCAI620", "DGALE620","DGAIYTC620","DGPCYCCIU620","CUMAR620","UPEPBA620","CEAMSE620","MC620","CAPM620","CalendarioMinGob","SSTIYC620","DGEFT620","DialogandoBA620", "UPEIFPGP620","BAaprende620","ykashytsya620", "ykashytsya620", "ykashytsya620");
-
-var sessionTimeout = 1; //hours
-var loginDuration = new Date();
-
-loginDuration.setTime(loginDuration.getTime()+(sessionTimeout*60*60*1000));
-document.cookie = "CrewCentreSession=Valid; "+loginDuration.toGMTString()+"; path=/";
-
-//page = "https://mingob.github.io/PediloYa/PediloYa.html";
-//calendario = "https://mingob.github.io/PediloYa/calendario-eventos.html";
-
-if (form.username.value == username[0] && form.password.value == password[0] || form.username.value == username[1] && form.password.value == password[1] || form.username.value == username[2] && form.password.value == password[2] || form.username.value == username[3] && form.password.value == password[3] || form.username.value == username[4] && form.password.value == password[4] || form.username.value == username[5] && form.password.value == password[5] || form.username.value == username[6] && form.password.value == password[6] || form.username.value == username[7] && form.password.value == password[7] || form.username.value == username[8] && form.password.value == password[8] || form.username.value == username[9] && form.password.value == password[9] || form.username.value == username[10] && form.password.value == password[10] || form.username.value == username[11] && form.password.value == password[11] || form.username.value == username[12] && form.password.value == password[12] || form.username.value == username[13] && form.password.value == password[13]|| form.username.value == username[14] && form.password.value == password[14] || form.username.value == username[15] && form.password.value == password[15] || form.username.value == username[16] && form.password.value == password[16] || form.username.value == username[17] && form.password.value == password[17] || form.username.value == username[18] && form.password.value == password[18] || form.username.value == username[19] && form.password.value == password[19] || form.username.value == username[20] && form.password.value == password[20]|| form.username.value == username[21] && form.password.value == password[21]|| form.username.value == username[22] && form.password.value == password[22]|| form.username.value == username[23] && form.password.value == password[23]|| form.username.value == username[24] && form.password.value == password[24]|| form.username.value == username[25] && form.password.value == password[25] || form.username.value == username[26] && form.password.value == password[26]) 
-	{
-		self.location.href = "https://mingob.github.io/PediloYa/PediloYa.html"
-	}
-else if (form.username.value == username[19] && form.password.value == password[19]) {
-	self.location.href = "https://mingob.github.io/PediloYa/calendario-eventos.html"
-}
-
-
-
-else {
-alert("Usuario y/o Contraseña incorrectos.\nPor Favor intenta nuevamente.");
-form.username.focus();
-}
-return true;
-}
-
-
-</script>
-     
-<footer>
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-6">
-              <a class="navbar-brand bac-footer" href="http://www.buenosaires.gob.ar" target="_blank"></a>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <div class="sub-brand">
-                <p>Comunicación Interna<br />
-                <span class="text-muted">Ministerio de Gobierno</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+  <div>
+    <h1>Ingresá a la <a href="https://pediloya.github.io/pediloya2.0/">nueva plataforma</a></h1>
+    
+  </div>
+  
+</div>
 
 
 <script src="js/jquery.min.js"></script>
