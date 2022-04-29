@@ -34,173 +34,26 @@ html {
     <![endif]-->
 </head>
 <body>
-<header class="navbar navbar-primary navbar-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-6">
-              <a class="navbar-brand bac-header" href="index.html" data-original-title="" title=""></a>
-            </div>
-            <div class="col-md-6 col-sm-6 text-right oculto">
-              <h5 class="sub-brand"><img src="https://gcba.github.io/BAstrap7/bastrap3/bac-header-2.png"></h5>
-              <!--<h5 class="sub-brand">Vamos Buenos Aires</h5>-->
-           </div>
-          </div>
-        </div>
-      </header>
-      <!-- portada -->
-      <div class="jumbotron jumbotron-small jumbotron-misc jumbotron-main">
-      <nav class="navbar navbar-default yellownav" role="navigation">
-        <div class="container">
-          <div class="row">
-           <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                <span class="sr-only">Cambiar navegación</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="http://www.pediloya.club/calendario-eventos.html">Agenda</a>
-            </div>
-            <div class="collapse navbar-collapse" id="main-nav">
-              <ul class="nav navbar-nav navbar-right">
-             <!--   <li><a class="navbar-brand" data-toggle="tab" href="#menu6" data-original-title="" title="">Cómo hacer un pedido</a></li> -->
-              <!--  <li><a class="navbar-brand" href="https://mingob.github.io/PediloYa/descargas.html" data-original-title="" title="">Material Útil</a></li>
-              <!--  <li><a data-toggle="tab" href="#menu8">Noticias Web</a></li>-->
-                <!-- <li class="disabled"><a href="#">Lineamientos</a></li> 
-               -->
-                <!-- <li><a class="navbar-brand" href="https://mingob.github.io/PediloYa/contacto.html" data-original-title="" title="">Contacto</a></li>-->
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-        <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Ministerio de Gobierno</h1>
-        <p class="lead">Fortaleciendo el ejercicio pleno de la autonomía hacia la construcción de una cultura de convivencia y gestión responsable, abierta e innovadora entre la Ciudad, la Nación, las Provincias y los Municipios.</p>
-      </div>
-    </div>
-  </div>
-</div>
+<style>
+  *, *::after, *::before {box-sizing: border-box}
+  body { margin: 0 }
+  .fullContainer {
+    min-height: 100vh;
+    width: 100%;
+    background-color: hsl(0, 0%, 85%);
+    display: grid;
+    place-content: center;
+  }
+</style>
 
-
-
-<!-- aca va el formulario de publicacion en facebook-->
-     <div id="menu2" class="tab-pane">
-      <aside>
-           <h1>
-		   Modificá, Confirmá o Eliminá un evento
-           </h1>
-           <h3>Unos minutos después del envío del formulario se realizarán los cambios
-           </h3>
-      </aside>
-      <script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe"
-style="display:none;" onload="if(submitted)
-{window.location='https://mingob.github.io/PediloYa/calendario-eventos.html';}"></iframe>
-<form method="POST" class="pure-form pure-form-stacked container" action="https://docs.google.com/forms/d/e/1FAIpQLSd0b-xQAj2lPggSGKXCC1bPHDwVroWLGp6ClIgcxk0W9rFZww/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
-    <fieldset class="pure-group">
-        <label for="name">Nombre: </label>
-        <input class="form-control" id="nombre" name="entry.600451186" required placeholder="Ej: Juan Vecinos">
-    </fieldset> 
-    
-	 <div class="form-group">
-      <label for="sel1">Titulo del evento</label>
-      
-      <select name="entry.2005336527" class="form-control" id="titulo" title="Elige el titulo del evento">
-        <option></option>
-        <option data-value="Dialogando BA RC - Nacimientos y nombres, legalizaciones" value="Dialogando BA RC - Nacimientos y nombres, legalizaciones" aria-label="Dialogando BA RC - Nacimientos y nombres, legalizaciones">Dialogando BA RC - Nacimientos y nombres, legalizaciones</option>
-        <option data-value="Dialogando BA RC - Matrimonios, uniones convivenciales y civiles" value="Dialogando BA RC - Matrimonios, uniones convivenciales y civiles" aria-label="Dialogando BA RC - Matrimonios, uniones convivenciales y civiles">Dialogando BA RC - Matrimonios, uniones convivenciales y civiles</option>
-        <option data-value="Dialogando BA RC - Rectificaciones e identidad de género" value="Dialogando BA RC - Rectificaciones e identidad de género" aria-label="Dialogando BA RC - Rectificaciones e identidad de género">Dialogando BA RC - Rectificaciones e identidad de género</option>
-        <option data-value="Dialogando BA RC - Filiación y THRA" value="Dialogando BA RC - Filiación y THRA" aria-label="Dialogando BA RC - Filiación y THRA">Dialogando BA RC - Filiación y THRA</option>
-        <option data-value="Jornada de Cercanía" value="Jornada de Cercanía" aria-label="Jornada de Cercanía">Jornada de Cercanía</option>
-      </select>
-      <p><i>Si no encontrás tu evento ingresalo más abajo</i></p>
-      <fieldset style="margin-top:7px;" class="pure-group">
-        <input class="form-control" id="titulo" name="entry.12680350" ></input>
-    </fieldset>
-    </div>
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#modifica">Modificá</a></li>
-        <li><a data-toggle="tab" href="#confirma">Confirmá</a></li>
-        <li><a data-toggle="tab" href="#elimina">Eliminá</a></li>
-    </ul>
+<div class='fullContainer'>
   
-    <div class="tab-content">
-<!-- ================================================================ ================================================================ -->
-        <div id="modifica" class="tab-pane fade in active">
-            <fieldset class="pure-group">
-                <label for="cambios">Cambios a realizar</label>
-                <textarea rows="5" class="form-control" id="email" name="entry.1880189485" type="email"></textarea>
-            </fieldset>
-        </div>
-<!-- ================================================================ ================================================================ -->
-        <div id="confirma" class="tab-pane fade">
-            <fieldset class="form-group">
-                <div class="form-check">
-                    <label class="form-check-label check-responsive">
-                        <input type="radio" class="form-check-input" name="entry.417711533" id="optionsRadios1" value="Confirmar" data-value="Confirmar">
-                        Confirmar
-                    </label>
-                </div>	
-                <div class="form-check">
-                    <label class="form-check-label check-responsive">
-                        <input type="radio" class="form-check-input" name="entry.417711533" id="optionsRadios2" value="Cancelar confirmación (manteniendo el evento en el calendario)" data-value="Cancelar confirmación (manteniendo el evento en el calendario)">
-                        Cancelar confirmación (manteniendo el evento en el calendario) 
-                    </label>
-                </div>
-            </fieldset>
-        </div>
-<!-- ================================================================ ================================================================ -->
-        <div id="elimina" class="tab-pane fade">
-            <fieldset class="form-group">
-                <div class="form-check">
-                    <label class="form-check-label check-responsive">
-                        <input type="radio" class="form-check-input" name="entry.102304953" id="optionsRadios1" value="Eliminar" data-value="Eliminar">
-                        Eliminar
-                    </label>
-                </div>
-            </fieldset>
-        </div>
-	</div>
-    <button class="btn button-xlarge btn-primary btnenviar" style="margin-bottom: 35px; display:block; clear:both">
-    <i class="fa fa-paper-plane"></i>&nbsp;Envíar</button>
-	</form>
+  <div>
+    <h1>Ingresá a la <a href="https://pediloya.github.io/pediloya2.0/">nueva plataforma</a></h1>
     
-      <!-- Customise the Thankyou Message People See when they submit the form: -->
-      <div style="display:none;" id="thankyou_message">
-        <h2><b>Gracias</b> por tu pedido!
-          Nos comunicaremos por email a la brevedad</h2>
-      </div>
-	  </div>
-<!-- aca termina el segundo formulario -->
-
-    
-<!-- footer -->
-<footer>
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-6">
-              <a class="navbar-brand bac-footer" href="http://www.buenosaires.gob.ar/gobierno" target="_blank" data-original-title="" title=""></a>
-            </div>
-            <div class="col-md-6 col-sm-6">
-            <div style="text-align:right;">
-            <div class="sub-brand">
-                <p>Comunicación Interna<br>
-                <span class="text-muted">Ministerio de Gobierno</span></p>
-              </div>
-          <a href="https://www.facebook.com/MinisterioDeGobiernoBA/" data-original-title="" title=""><i class="fa fa-facebook-official fa-3x margin-left-md redes"></i></a>
-            <a href="https://twitter.com/MinGobBA" data-original-title="" title=""><i class="fa fa-twitter-square fa-3x margin-left-md redes"></i></a>
-            <a href="https://www.youtube.com/channel/UCBR7UnGnxmh8fFEOoCqEWvQ" data-original-title="" title=""><i class="fa fa-youtube-square fa-3x margin-left-md redes"></i></a>
-            </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+  </div>
+  
+</div>
 
 <script data-cfasync="false" type="text/javascript"
 src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
